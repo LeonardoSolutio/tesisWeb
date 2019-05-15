@@ -1,0 +1,54 @@
+.footer {
+  font-size: 1.3rem;
+  margin-top: 2%;
+  color: $color-black;
+  position: absolute;
+  bottom: 0;
+
+
+  &__welcome,
+  &__portafolio {
+    font-size: 1.7rem;
+    right: 8%;
+
+    @include respond(tab-port) {
+      font-size: 1.2rem;
+      transform: translateY(2.5rem);
+    }
+
+    @include respond(phone) {
+      right: 12%;
+      font-size: 1rem;
+      transform: translateY(1rem);
+    }
+  }
+
+  &__portafolio {
+    color: $color-white;
+  }
+
+  &__contact {
+    @include respond(phone) {
+      position:relative;
+      right: 0%;
+      text-align: center;
+      transform: translateY(5rem);
+    }
+  }
+
+  span {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  /* Portrait tablet */
+  @include respond(tab-port) {
+    margin-top: 1%;
+    margin-bottom: 4%;
+  }
+}

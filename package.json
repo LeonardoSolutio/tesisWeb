@@ -1,0 +1,27 @@
+{
+  "name": "Tesis",
+  "version": "1.0.0",
+  "description": "Starter SASS Project",
+  "autor": "Leonardo Grinn",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.comp.css",
+    "concat:css": "concat -o assets/css/style.concat.css assets/css/icon-font.css assets/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer - 'last 10 versions' assets/css/style.concat.css -o assets/css/style.prefix.css",
+    "compress:css": "node-sass assets/css/style.prefix.css assets/css/styles.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css concat:css"
+  },
+  "author": "Leo",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "concat": "^1.0.3",
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^4.1.1"
+  },
+  "dependencies": {}
+}

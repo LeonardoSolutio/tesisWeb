@@ -1,0 +1,29 @@
+.logo {
+    width: 30%;
+    position: absolute;
+    
+    &__about-us {
+        @include logoPosition;
+    }
+    
+    &__contact {
+       @include respond(phone) {
+           position: relative;
+           width: 55%;
+           margin-top: 2rem;
+           transform: translate(10%, 0%);
+       }
+    }
+
+    &__welcome {
+        width: 40%;
+        right: 0;
+        bottom: 0;
+        transform: translate(-25%, -60%);
+
+        @include respond(phone) {
+            width: 70%;
+            transform: translate(-20%, -100%);
+        }
+    }
+}

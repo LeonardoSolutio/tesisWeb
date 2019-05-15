@@ -1,0 +1,54 @@
+.welcome {
+    &[back-img] {
+        background-size: 55%;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+
+        @include respond(tab-port) {
+            background-size: 65%;
+        }
+
+        @include respond(phone) {
+            background: $color-white !important;
+            max-height: 85vh;
+            overflow-y: hidden !important;
+        }
+        
+    }
+    h1 {
+        position: absolute;
+        right: 0;
+        transform: translate(-35%, 180%);
+
+        @include respond(tab-port) {
+            position: relative;
+            transform: translate(0, 0);
+            text-align: center;
+            padding-top: 20vw;
+        }
+    }
+
+    &__info {
+            color: $color-secondary-light;
+            margin-top: 1vh;
+            margin-left: 15vw;
+            font-size: 1.5rem;
+            padding: 0 5vw;
+            position: absolute;
+
+            @include respond(tab-port) {
+               padding: 0 20vw;
+               margin-left: 0vw;
+               font-size: 2rem;
+            }
+
+            @include respond(phone) {
+                padding: 0 8vw;
+                font-size: 1.5rem;
+            }
+        
+    }
+}
+
+
+

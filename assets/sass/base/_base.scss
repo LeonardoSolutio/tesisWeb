@@ -1,0 +1,61 @@
+/* ************* G E N E R A L ************* */
+
+*,
+*::after,
+*::before { /* all elements has the same behavior*/
+  margin: 0;
+  padding: 0;
+
+  box-sizing: inherit; /* better practice */
+}
+
+* {
+  outline: none;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+html {
+  //This define what 1rem is.
+  font-size: 62.5%; /* 16px/10px = .625 root font-size declararion that means 1 rem = 10px*/
+
+  @include respond(tab-land) { //Width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%.
+  }
+
+  @include respond(tab-port) { //Width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%.
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1 rem = 12px, 12/16 = 75%.
+  }
+}
+
+body {
+  box-sizing: border-box; /* better practice */
+  //padding: 3rem;
+
+  @include respond(tab-port) { //Width < 900?
+    padding: 0;
+  }
+}
+
+::selection { //Changes the default selection text styles.
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+/* Full section view */
+section[back-img] {
+    background-size: 100vw;
+    width: 100vw;
+    height: 100vh;
+}

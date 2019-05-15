@@ -1,0 +1,23 @@
+.portafolio {
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
+    overflow-y: none;
+    background-color: $color-black;
+
+    h1 {
+        color: $color-white;
+        text-align: center;
+        padding-top: 1rem;
+
+        @include respond(phone) {
+            padding-top: 10vh;
+            margin-bottom: 5vh;
+        }
+    }
+
+    @include respond(phone) {
+        //max-height: 100vh;
+        overflow-y: hidden !important;
+    }
+}

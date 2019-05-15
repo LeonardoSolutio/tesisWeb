@@ -1,0 +1,51 @@
+.social {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 0.1fr;
+    align-items: center;
+    justify-content: center;
+
+
+    &__icons {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        border-top: 1px solid $color-white;
+        padding: 3rem 30% 0 35%;
+
+        /* Portrait tablet */
+        @include respond(tab-port) {
+            top: 1rem;
+            //transform: scale(1.5);
+            padding: 3rem 20% 0 25%;
+        }
+
+        @include respond(phone) {
+            top: 1rem; //transform: scale(1.5);
+            padding: 3rem 0% 0 5%;
+        }
+
+        img {
+            width: 75%;
+            transition: all ease 0.2s;
+        }
+
+        a {
+            cursor: pointer;
+            &:hover {
+                img {
+                   width: 78%;
+                   border-radius: 100%; // give a shadow a circular shape.
+                   box-shadow: 0px 1rem 2rem -0.8rem rgba($color-black, 0.3);
+                }
+
+                /* Portrait tablet */
+                @include respond(tab-port) {
+                   img {
+                      width: 75%;
+                      border-radius: 100%; // give a shadow a circular shape.
+                      box-shadow: none;
+                   } 
+                }
+            }
+        }
+    }
+}
