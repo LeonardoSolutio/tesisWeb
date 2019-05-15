@@ -7,20 +7,25 @@ myApp.config(function($routeProvider) {
 
     $routeProvider
         .when('/', {
-            templateUrl : 'vistas/inicio.html',
+            templateUrl : 'vistas/home.html',
             controller  : 'mainController'
         })
-        .when('/nosotros', {
-            templateUrl : 'vistas/nosotros.html',
+        .when('/about', {
+            templateUrl : 'vistas/about.html',
             controller  : 'aboutController'
         })
         .when('/portafolio', {
             templateUrl : 'vistas/portafolio.html',
             controller  : 'portafolioController'
         })
-        .when('/contacto', {
-            templateUrl : 'vistas/contacto.html',
-            controller  : 'contactoController'
+        .when('/services', {
+            templateUrl : 'vistas/services.html',
+            controller  : 'servicesController'
+        })
+
+        .when('/quizz', {
+            templateUrl : 'vistas/quizz.html',
+            controller  : 'quizzController'
         })
 
 
@@ -136,7 +141,11 @@ myApp.controller('portafolioController', function ($scope) {
 
 });
 
-myApp.controller('contactoController', function ($scope) {
+myApp.controller('servicesController', function ($scope) {
+
+});
+
+myApp.controller('quizzController', function ($scope) {
 
 });
 
