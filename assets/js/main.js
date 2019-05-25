@@ -59,7 +59,18 @@ myApp.controller('quizController', ['$scope','$http','$sce','$route', function($
 /* =====================================
 ***** H O M E  C O N T R O L L E R *****
 ===================================== */ 
-myApp.controller('mainController', function ($scope) {
+myApp.controller('mainController', function ($scope, $rootScope) {
+    //var homeType = '';
+    switch (uiState) {
+        case 1:
+            $scope.homeType = function () {
+                    return 'vistas/home-li.html';
+            } 
+            break;
+    
+        default:
+            break;
+    }
 });
 
 /* =======================================
