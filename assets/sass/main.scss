@@ -12,7 +12,6 @@
 /* -------------------- Components Files -------------------- */
 @import "components/buttons"; //Import a _buttons.scss file.
 @import "components/gallery"; //Import a _gallery.scss file.
-@import "components/form"; //Import a _form.scss file.
 @import "components/social"; //Import a _social.scss file.
 /* -------------------- Layout Files -------------------- */
 @import "layout/logo"; //Import a _navigation.scss file.
@@ -24,4 +23,5 @@
 @import "pages/about"; //Import a _home.scss file.
 @import "pages/portafolio"; //Import a _home.scss file.
 @import "pages/services"; //Import a _home.scss file.
+@import "pages/quiz"; //Import a _home.scss file.
 

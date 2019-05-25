@@ -51,7 +51,7 @@
 /*************** M E D I A  Q U E R I E S ****************/
 @mixin respond($breakpoint) {
 
-    /*@if $breakpoint == full-desktop {
+    @if $breakpoint == full-desktop {
         @media only screen and (max-width: 120em) and (min-width: 120em) and (min-height: 67.5em) { @content };    //1920px
     }
 
@@ -101,7 +101,7 @@
 
     @if $breakpoint == iphone-x {
     @media only screen and (max-width: 23.4375em) and  (min-height: 50.75em) { @content }; //375px
-  }*/
+  }/*
 
     @if $breakpoint == iphone-x {
         @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
@@ -126,4 +126,5 @@
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
+    */
 }

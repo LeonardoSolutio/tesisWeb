@@ -1,47 +1,77 @@
 // Build module.
 var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate']);
-let portafolioOn = false;
+//let portafolioOn = false;
 
+var uiState = 1;
 // Routes configuration. 
 myApp.config(function($routeProvider) {
+    $routeProvider
+    .when('/', {
+        templateUrl : 'vistas/home.html',
+        controller  : 'mainController'
+    })
+    .when('/about', {
+        templateUrl : 'vistas/about.html',
+        controller  : 'aboutController'
+    })
+    .when('/portafolio', {
+        templateUrl : 'vistas/portafolio.html',
+        controller  : 'portafolioController'
+    })
+    .when('/services', {
+        templateUrl : 'vistas/services.html',
+        controller  : 'servicesController'
+    })
 
     $routeProvider
-        .when('/', {
-            templateUrl : 'vistas/home.html',
-            controller  : 'mainController'
-        })
-        .when('/about', {
-            templateUrl : 'vistas/about.html',
-            controller  : 'aboutController'
-        })
-        .when('/portafolio', {
-            templateUrl : 'vistas/portafolio.html',
-            controller  : 'portafolioController'
-        })
-        .when('/services', {
-            templateUrl : 'vistas/services.html',
-            controller  : 'servicesController'
-        })
+    .when('/ui-quiz', {
+        templateUrl : 'vistas/quiz.html',
+        controller  : 'quizController'
+    }) 
 
-        .when('/quizz', {
-            templateUrl : 'vistas/quizz.html',
-            controller  : 'quizzController'
-        })
-
-
-
-        .otherwise({
-            redirectTo: '/'
-        });
+    .otherwise({
+        redirectTo: '/'
+    });
+    
 });
 
+/* =====================================
+***** Q U I Z  C O N T R O L L E R *****
+===================================== */ 
+myApp.controller('quizController', ['$scope','$http','$sce','$route', function($scope,$http,$sce){
+    var quizState = true;
+    var landingUrl = "http://www.google.com";
+
+
+    document.querySelector('.btn').addEventListener('click', function() {
+        quizState = false;
+        console.log('quiz is finished');
+        
+        window.location.replace('/');
+    });
+    
+    if (quizState = true) {
+        console.log('quiz is running');
+    } 
+    
+}]);
+
+/* =====================================
+***** H O M E  C O N T R O L L E R *****
+===================================== */ 
 myApp.controller('mainController', function ($scope) {
 });
 
+/* =======================================
+***** A B O U T  C O N T R O L L E R *****
+======================================= */ 
 myApp.controller('aboutController', function ($scope) {
 
 });
 
+/* =================================================
+***** P O R T A F O L I O  C O N T R O L L E R *****
+================================================= */ 
 myApp.controller('portafolioController', function ($scope) {
     /* Gallery Controller Variables */
     
@@ -145,9 +175,6 @@ myApp.controller('servicesController', function ($scope) {
 
 });
 
-myApp.controller('quizzController', function ($scope) {
-
-});
 
 
 myApp.controller('ctrl', function ($scope) {
