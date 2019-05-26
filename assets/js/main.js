@@ -1,10 +1,18 @@
 // Build module.
 var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 //let portafolioOn = false;
+var quizState = false;
 
-var uiState = 1;
+var uiState;
+
+/* Choose a random UI to as default */
+if (uiState === undefined) {
+    uiState = Math.floor(Math.random() * 5) + 1;
+}
+
+
 // Routes configuration. 
-myApp.config(function($routeProvider) {
+myApp.config(function($routeProvider, $locationProvider) {
     $routeProvider
     .when('/', {
         templateUrl : 'vistas/home.html',
@@ -32,39 +40,87 @@ myApp.config(function($routeProvider) {
     .otherwise({
         redirectTo: '/'
     });
+
+    $locationProvider.html5Mode(true);
     
 });
 
 /* =====================================
 ***** Q U I Z  C O N T R O L L E R *****
 ===================================== */ 
-myApp.controller('quizController', ['$scope','$http','$sce','$route', function($scope,$http,$sce){
-    var quizState = true;
-    var landingUrl = "http://www.google.com";
-
-
-    document.querySelector('.btn').addEventListener('click', function() {
-        quizState = false;
+myApp.controller('quizController', ['$scope','$http','$sce','$location', '$window', function($scope,$http,$sce, $location, $window){
+    //uiState = 3;
+    //quizState = true;
+    document.querySelector('.btn').addEventListener('click', function(quizState) {
         console.log('quiz is finished');
-        
-        window.location.replace('/');
+        //quizState = true;
+        quizState = false;
+        uiState = 3;
+        //return $location.path('/');;
     });
     
-    if (quizState = true) {
-        console.log('quiz is running');
-    } 
+    function reloadUI() {
+        uiState = 3 
     
+        return $location.path('/');
+    }
+    // if (quizState = true) {
+    //     console.log('quiz is running');
+    // }
+    
+    //$scope.uiState = uiState;
+    
+    //return $scope.uiState;
+    
+    //return $location.path('/');
+
+    // Reload UI 
+
+    // do {
+
+    //     if (quizState == true) {
+
+    //     } else {
+    //         return reloadUI()
+    //     }
+
+    // } while (quizState== true);
 }]);
 
 /* =====================================
 ***** H O M E  C O N T R O L L E R *****
 ===================================== */ 
 myApp.controller('mainController', function ($scope, $rootScope) {
-    //var homeType = '';
+
+    /* Choose the current uiState */
     switch (uiState) {
         case 1:
             $scope.homeType = function () {
-                    return 'vistas/home-li.html';
+                    return 'vistas/homeTypes/home-li.html';
+            } 
+            break;
+
+        case 2:
+            $scope.homeType = function () {
+                    return 'vistas/homeTypes/home-na.html';
+            } 
+            break;
+
+        case 3:
+            $scope.homeType = function () {
+                    return 'vistas/homeTypes/home-lm.html';
+            } 
+            break;
+
+        case 4:
+            $scope.homeType = function () {
+                    return 'vistas/homeTypes/home-ki.html';
+            } 
+            break;
+            
+        case 5:
+            $scope.homeType = function () {
+                    return 'vistas/homeTypes/home-ve.html';
             } 
             break;
     
@@ -77,13 +133,84 @@ myApp.controller('mainController', function ($scope, $rootScope) {
 ***** A B O U T  C O N T R O L L E R *****
 ======================================= */ 
 myApp.controller('aboutController', function ($scope) {
+    /* Choose the current uiState */
+    switch (uiState) {
+        case 1:
+            $scope.aboutType = function () {
+                    return 'vistas/aboutTypes/about-li.html';
+            } 
+            break;
 
+        case 2:
+            $scope.aboutType = function () {
+                    return 'vistas/aboutTypes/about-na.html';
+            } 
+            break;
+
+        case 3:
+            $scope.aboutType = function () {
+                    return 'vistas/aboutTypes/about-lm.html';
+            } 
+            break;
+
+        case 4:
+            $scope.aboutType = function () {
+                    return 'vistas/aboutTypes/about-ki.html';
+            } 
+            break;
+            
+        case 5:
+            $scope.aboutType = function () {
+                    return 'vistas/aboutTypes/about-ve.html';
+            } 
+            break;
+
+        default:
+            break;
+    }
 });
 
 /* =================================================
 ***** P O R T A F O L I O  C O N T R O L L E R *****
 ================================================= */ 
 myApp.controller('portafolioController', function ($scope) {
+    /* Choose the current uiState */
+    switch (uiState) {
+        case 1:
+            $scope.portafolioType = function () {
+                return 'vistas/portafolioTypes/portafolio-li.html';
+            } 
+            break;
+    
+        case 2:
+            $scope.portafolioType = function () {
+                return 'vistas/portafolioTypes/portafolio-na.html';
+            } 
+            break;
+    
+        case 3:
+            $scope.portafolioType = function () {
+                    return 'vistas/portafolioTypes/portafolio-lm.html';
+            } 
+            break;
+    
+        case 4:
+            $scope.portafolioType = function () {
+                    return 'vistas/portafolioTypes/portafolio-ki.html';
+            } 
+            break;
+                
+        case 5:
+            $scope.portafolioType = function () {
+                    return 'vistas/portafolioTypes/portafolio-ve.html';
+            } 
+            break;
+    
+        default:
+            break;
+    }
+
+
     /* Gallery Controller Variables */
     
     let imageIndex = 0; // Current image.
@@ -182,8 +309,46 @@ myApp.controller('portafolioController', function ($scope) {
 
 });
 
-myApp.controller('servicesController', function ($scope) {
+/* =============================================
+***** S E R V I C E S  C O N T R O L L E R *****
+============================================= */ 
 
+myApp.controller('servicesController', function ($scope) {
+    /* Choose the current uiState */
+    switch (uiState) {
+        case 1:
+            $scope.servicesType = function () {
+                    return 'vistas/servicesTypes/services-li.html';
+            } 
+            break;
+
+        case 2:
+            $scope.servicesType = function () {
+                    return 'vistas/servicesTypes/services-na.html';
+            } 
+            break;
+
+        case 3:
+            $scope.servicesType = function () {
+                    return 'vistas/servicesTypes/services-lm.html';
+            } 
+            break;
+
+        case 4:
+            $scope.aboutType = function () {
+                    return 'vistas/servicesTypes/services-ki.html';
+            } 
+            break;
+            
+        case 5:
+            $scope.aboutType = function () {
+                    return 'vistas/servicesTypes/services-ve.html';
+            } 
+            break;
+
+        default:
+            break;
+    }
 });
 
 
