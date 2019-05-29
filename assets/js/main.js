@@ -1,8 +1,7 @@
 // Build module.
 var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 //let portafolioOn = false;
-var quizState = false;
-
+var quizState;
 var uiState;
 
 /* Choose a random UI to as default */
@@ -10,6 +9,30 @@ if (uiState === undefined) {
     uiState = Math.floor(Math.random() * 5) + 1;
 }
 
+/* Result A (Linguistic) */
+function linguistic(){ 
+    uiState = 1;
+}
+
+/* Result B (Naturalistic) */
+function naturalistic(){ 
+    uiState = 2;
+}
+
+/* Result C (Logical Mathemathical) */
+function logical(){ 
+    uiState = 3;
+}
+
+/* Result D (Kinesthetic) */
+function kinesthetic(){ 
+    uiState = 4;
+}
+
+/* Result E (Viso Spatial) */
+function viso(){ 
+    uiState = 5;
+}
 
 // Routes configuration. 
 myApp.config(function($routeProvider, $locationProvider) {
@@ -41,7 +64,8 @@ myApp.config(function($routeProvider, $locationProvider) {
         redirectTo: '/'
     });
 
-    $locationProvider.html5Mode(true);
+    /* Remember to uncomment */
+    //$locationProvider.html5Mode(true);
     
 });
 
@@ -50,20 +74,21 @@ myApp.config(function($routeProvider, $locationProvider) {
 ===================================== */ 
 myApp.controller('quizController', ['$scope','$http','$sce','$location', '$window', function($scope,$http,$sce, $location, $window){
     //uiState = 3;
-    //quizState = true;
-    document.querySelector('.btn').addEventListener('click', function(quizState) {
-        console.log('quiz is finished');
-        //quizState = true;
-        quizState = false;
-        uiState = 3;
-        //return $location.path('/');;
-    });
-    
-    function reloadUI() {
-        uiState = 3 
-    
-        return $location.path('/');
+    let lineState;
+
+    /* Start with the firt question of the quiz */
+    if (lineState === undefined) {
+        lineState = 1;
     }
+
+    // document.querySelector('.btn').addEventListener('click', function(quizState) {
+    //     console.log('quiz is finished');
+    //     //quizState = true;
+    //     quizState = false;
+    //     uiState = 3;
+    //     //return $location.path('/');;
+    // });
+
     // if (quizState = true) {
     //     console.log('quiz is running');
     // }
@@ -85,6 +110,64 @@ myApp.controller('quizController', ['$scope','$http','$sce','$location', '$windo
     //     }
 
     // } while (quizState== true);
+
+    /* Quiz question arrays */
+
+    let question1 = {
+        question: "Do you prefer a menu with icons or text?",
+        answer1: `<span class="icon icon-home"></span> icons`,
+        answer2: "Only text"
+    }
+
+    let question2 = {
+        question: "How do you prefer the content being displayed?",
+        answer1: `<a onclick="linguistic()" href="/">Text short and concise</a>`,
+        answer2: `<a onclick="naturalistic()" href="/">Text complemented with pictures</a>`
+    }
+
+    let question3 = {
+        question: "",
+        answer1: "",
+        answer2: ""
+    }
+
+    let question4 = {
+        question: "",
+        answer1: "",
+        answer2: ""
+    }
+
+    /* Set the initial quiz question */
+    if (lineState == 1) {
+        document.querySelector('.quiz__question').innerHTML = question1.question;
+
+        document.querySelector('.quiz__answer1').innerHTML = question1.answer1;
+        document.querySelector('.quiz__answer2').innerHTML = question1.answer2;
+    }
+
+    /* === PATH ONE === */
+    /* first question */ 
+    document.querySelector('.quiz__answer2').addEventListener('click', function() {
+        document.querySelector('.quiz__question').innerHTML = question2.question;
+
+        document.querySelector('.quiz__answer1').innerHTML = question2.answer1;
+        document.querySelector('.quiz__answer2').innerHTML = question2.answer2;
+
+        lineState = 2;
+    });
+    /* === PATH TWO === */
+    document.querySelector('.quiz__answer1').addEventListener('click', function() {
+
+        document.querySelector('.quiz__question').innerHTML = question3.question;
+
+        document.querySelector('.quiz__answer1').innerHTML = question3.answer1;
+        document.querySelector('.quiz__answer2').innerHTML = question3.answer2;
+
+        lineState = 3;
+    });
+    /* Set the initial quiz questions */
+    if (lineState == 3) {
+    }
 }]);
 
 /* =====================================
@@ -120,7 +203,7 @@ myApp.controller('mainController', function ($scope, $rootScope) {
             
         case 5:
             $scope.homeType = function () {
-                    return 'vistas/homeTypes/home-ve.html';
+                    return 'vistas/homeTypes/home-vs.html';
             } 
             break;
     
@@ -161,7 +244,7 @@ myApp.controller('aboutController', function ($scope) {
             
         case 5:
             $scope.aboutType = function () {
-                    return 'vistas/aboutTypes/about-ve.html';
+                    return 'vistas/aboutTypes/about-vs.html';
             } 
             break;
 
@@ -202,7 +285,7 @@ myApp.controller('portafolioController', function ($scope) {
                 
         case 5:
             $scope.portafolioType = function () {
-                    return 'vistas/portafolioTypes/portafolio-ve.html';
+                    return 'vistas/portafolioTypes/portafolio-vs.html';
             } 
             break;
     
@@ -342,7 +425,7 @@ myApp.controller('servicesController', function ($scope) {
             
         case 5:
             $scope.aboutType = function () {
-                    return 'vistas/servicesTypes/services-ve.html';
+                    return 'vistas/servicesTypes/services-vs.html';
             } 
             break;
 

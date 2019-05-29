@@ -2500,11 +2500,42 @@ button {
     */ }
 
 .quiz {
-  background-color: black;
+  background-color: #001114;
   height: 100vh;
-  width: 100vw; }
-  .quiz a {
-    color: white;
-    background: red;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  overflow: hidden; }
+  .quiz__container {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    text-align: center; }
+  .quiz__question {
+    color: #f5f4f0;
+    font-size: 4rem; }
+  .quiz__answers {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .quiz__answers a {
+      text-decoration: none;
+      color: inherit;
+      width: 100%;
+      height: 100%; }
+  .quiz__answer {
+    color: #f5f4f0;
+    background: #9a3324;
+    font-size: 1.5rem;
     padding: 10px 20px 10px 20px;
     cursor: pointer; }
+    .quiz__answer:first-child {
+      margin-right: 1rem; }
+
+.icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: cover; }
+
+.icon-home {
+  background-image: url(../../assets/img/Icons-menu/home.svg); }

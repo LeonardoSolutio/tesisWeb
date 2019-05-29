@@ -1,12 +1,58 @@
 .quiz {
-    background-color: black;
+    background-color: $color-secondary-dark;
     height: 100vh;
     width: 100vw;
 
-    a{
-        color: white;
-        background: red;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+    overflow: hidden;
+
+    &__container {
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+        text-align: center;
+    }
+
+    &__question {
+        color: $color-tertiary;
+        font-size: 4rem;
+    }
+
+    &__answers {
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__answer {
+        color: $color-tertiary;
+        background: $color-primary;
+        font-size: 1.5rem;
+
         padding: 10px 20px 10px 20px;
         cursor: pointer;
+
+        &:first-child {
+            margin-right: 1rem;
+        }
     }
 }
+
+.icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: cover;
+  }
+  .icon-home {
+    background-image: url(../../assets/img/Icons-menu/home.svg);
+  }
+
