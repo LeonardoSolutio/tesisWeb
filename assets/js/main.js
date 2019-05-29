@@ -3,7 +3,58 @@ var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 //let portafolioOn = false;
 var quizState;
 var uiState;
+let lineState;
+let lastQ;
 
+/* Quiz question arrays */
+let question1 = {
+    question: "Do you prefer a menu with icons or text?",
+    answer1: `<p><span class="icon icon-home-quiz"></span> icons</p>`,
+    answer2: "<p>Only text</p>"
+}
+
+let question2 = {
+    question: "How do you prefer the content being displayed?",
+    answer1: `<p><a onclick="linguistic()" href="/">Text short and concise</a></p>`,
+    answer2: `<p><a onclick="naturalistic()" href="/">Text complemented with pictures</a></p>`
+}
+
+let question3 = {
+    question: "Which arrangement has more logic for you?",
+    answer1: `<img onclick="lastQuestion()" src="assets/img/Icons-quiz/visual.svg">`,
+    answer2: `<img onclick="lastQuestion()" src="assets/img/Icons-quiz/logical.svg">`
+}
+
+let question4 = {
+    question: "Which icon style do you prefer?",
+    answer1: `<a onclick="kinesthetic()" href="/"><img class="icon-quiz" src="assets/img/Icons-quiz/kinestetic.svg"></a>`,
+    answer2: `<a onclick="lastUIResult()" href="/"><img class="icon-quiz" src="assets/img/Icons-quiz/normal-icon.svg"></a>`
+}
+
+/* Last question function */ 
+function lastQuestion() {
+
+    lastQ = true;
+
+    if ((lineState == 3) && (lastQ == true)) {
+        
+        document.querySelector('.quiz__question').innerHTML = question4.question;
+        document.querySelector('.quiz__answer1').innerHTML = question4.answer1;
+        document.querySelector('.quiz__answer2').innerHTML = question4.answer2;
+
+        document.querySelector('.quiz__answer1').addEventListener('click', function() {
+            lineState = 4;
+        });
+        
+        document.querySelector('.quiz__answer2').addEventListener('click', function() {    
+            lineState = 5;
+        });
+    }
+}
+/* Reset lineState */
+function resetLineState (){
+    lineState = undefined;
+}
 /* Choose a random UI to as default */
 if (uiState === undefined) {
     uiState = Math.floor(Math.random() * 5) + 1;
@@ -19,19 +70,28 @@ function naturalistic(){
     uiState = 2;
 }
 
-/* Result C (Logical Mathemathical) */
-function logical(){ 
-    uiState = 3;
-}
-
-/* Result D (Kinesthetic) */
+/* Result C (Kinesthetic) */
 function kinesthetic(){ 
     uiState = 4;
 }
 
-/* Result E (Viso Spatial) */
-function viso(){ 
-    uiState = 5;
+/* Last UI Result */
+function lastUIResult(){ 
+
+    /* Result E (Viso Spatial) */
+    if (lineState == 4) {
+
+        uiState = 5;
+
+    }
+
+    /* Result D (Logical Mathemathical) */
+    if (lineState == 5) {
+
+        uiState = 3;
+
+    }
+    
 }
 
 // Routes configuration. 
@@ -74,67 +134,11 @@ myApp.config(function($routeProvider, $locationProvider) {
 ===================================== */ 
 myApp.controller('quizController', ['$scope','$http','$sce','$location', '$window', function($scope,$http,$sce, $location, $window){
     //uiState = 3;
-    let lineState;
 
     /* Start with the firt question of the quiz */
     if (lineState === undefined) {
         lineState = 1;
-    }
-
-    // document.querySelector('.btn').addEventListener('click', function(quizState) {
-    //     console.log('quiz is finished');
-    //     //quizState = true;
-    //     quizState = false;
-    //     uiState = 3;
-    //     //return $location.path('/');;
-    // });
-
-    // if (quizState = true) {
-    //     console.log('quiz is running');
-    // }
-    
-    //$scope.uiState = uiState;
-    
-    //return $scope.uiState;
-    
-    //return $location.path('/');
-
-    // Reload UI 
-
-    // do {
-
-    //     if (quizState == true) {
-
-    //     } else {
-    //         return reloadUI()
-    //     }
-
-    // } while (quizState== true);
-
-    /* Quiz question arrays */
-
-    let question1 = {
-        question: "Do you prefer a menu with icons or text?",
-        answer1: `<span class="icon icon-home"></span> icons`,
-        answer2: "Only text"
-    }
-
-    let question2 = {
-        question: "How do you prefer the content being displayed?",
-        answer1: `<a onclick="linguistic()" href="/">Text short and concise</a>`,
-        answer2: `<a onclick="naturalistic()" href="/">Text complemented with pictures</a>`
-    }
-
-    let question3 = {
-        question: "",
-        answer1: "",
-        answer2: ""
-    }
-
-    let question4 = {
-        question: "",
-        answer1: "",
-        answer2: ""
+        lastQ = false;
     }
 
     /* Set the initial quiz question */
@@ -143,31 +147,48 @@ myApp.controller('quizController', ['$scope','$http','$sce','$location', '$windo
 
         document.querySelector('.quiz__answer1').innerHTML = question1.answer1;
         document.querySelector('.quiz__answer2').innerHTML = question1.answer2;
+
+        /* === PATH ONE === */
+        /* first question */ 
+        document.querySelector('.quiz__answer2').addEventListener('click', function() {
+
+            
+            if (lineState == 1) {
+                lineState = 2;
+            }
+            
+
+            if (lineState == 2) {
+
+                document.querySelector('.quiz__question').innerHTML = question2.question;
+
+                document.querySelector('.quiz__answer1').innerHTML = question2.answer1;
+                document.querySelector('.quiz__answer2').innerHTML = question2.answer2;
+            }
+        });
+
+        /* === PATH TWO === */
+        document.querySelector('.quiz__answer1').addEventListener('click', function() {
+
+            if (lineState == 1) {
+                lineState = 3;
+            }
+            
+            if ((lineState == 3) && (lastQ == false)) {
+                document.querySelector('.quiz__question').innerHTML = question3.question;
+
+                document.querySelector('.quiz__answer1').innerHTML = question3.answer1;
+                document.querySelector('.quiz__answer2').innerHTML = question3.answer2;
+            }
+        });
+    
     }
 
-    /* === PATH ONE === */
-    /* first question */ 
-    document.querySelector('.quiz__answer2').addEventListener('click', function() {
-        document.querySelector('.quiz__question').innerHTML = question2.question;
-
-        document.querySelector('.quiz__answer1').innerHTML = question2.answer1;
-        document.querySelector('.quiz__answer2').innerHTML = question2.answer2;
-
-        lineState = 2;
-    });
-    /* === PATH TWO === */
-    document.querySelector('.quiz__answer1').addEventListener('click', function() {
-
-        document.querySelector('.quiz__question').innerHTML = question3.question;
-
-        document.querySelector('.quiz__answer1').innerHTML = question3.answer1;
-        document.querySelector('.quiz__answer2').innerHTML = question3.answer2;
-
-        lineState = 3;
-    });
+    
     /* Set the initial quiz questions */
-    if (lineState == 3) {
-    }
+    
+
+    
 }]);
 
 /* =====================================

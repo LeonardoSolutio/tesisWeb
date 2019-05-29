@@ -20,39 +20,73 @@
     }
 
     &__answers {
-        margin-top: 10rem;
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        min-height: 8rem;
+        margin-top: 10rem;
+
+        p {
+            padding-top: 1.5rem;
+            cursor: pointer;
+        }
 
         a {
             text-decoration: none;
             color: inherit;
-            width: 100%;
-            height: 100%;
+        }
+
+        img {
+            width: 100%; 
+            cursor: pointer;
+        }
+
+        img.icon-quiz {
+            width: 50%;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
         }
     }
 
     &__answer {
         color: $color-tertiary;
         background: $color-primary;
-        font-size: 1.5rem;
-
-        padding: 10px 20px 10px 20px;
-        cursor: pointer;
+        font-size: 2.5rem;
 
         &:first-child {
-            margin-right: 1rem;
+            margin-right: 4rem;
+        }
+
+        &:last-child {
+            margin-left: 4rem;
         }
     }
 }
 
+/* Q U I Z  I C O N S */
 .icon {
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
     background-size: cover;
-  }
-  .icon-home {
+}
+
+
+
+// .icon-quiz {
+//     display: inline-block;
+//     width: 10rem;
+//     height: 6rem;
+//     background-size: cover;
+// }
+.icon-home-quiz {
     background-image: url(../../assets/img/Icons-menu/home.svg);
-  }
+}
+
+// .icon-viso-quiz {
+//     background-image: url(../../assets/img/Icons-quiz/visual.svg);
+// }
+
+// .icon-logic-quiz {
+//     background-image: url(../../assets/img/Icons-quiz/logical.svg);
+// }
 

@@ -2514,28 +2514,38 @@ button {
     color: #f5f4f0;
     font-size: 4rem; }
   .quiz__answers {
-    margin-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 8rem;
+    margin-top: 10rem; }
+    .quiz__answers p {
+      padding-top: 1.5rem;
+      cursor: pointer; }
     .quiz__answers a {
       text-decoration: none;
-      color: inherit;
+      color: inherit; }
+    .quiz__answers img {
       width: 100%;
-      height: 100%; }
+      cursor: pointer; }
+    .quiz__answers img.icon-quiz {
+      width: 50%;
+      padding-top: 4rem;
+      padding-bottom: 4rem; }
   .quiz__answer {
     color: #f5f4f0;
     background: #9a3324;
-    font-size: 1.5rem;
-    padding: 10px 20px 10px 20px;
-    cursor: pointer; }
+    font-size: 2.5rem; }
     .quiz__answer:first-child {
-      margin-right: 1rem; }
+      margin-right: 4rem; }
+    .quiz__answer:last-child {
+      margin-left: 4rem; }
 
+/* Q U I Z  I C O N S */
 .icon {
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
   background-size: cover; }
 
-.icon-home {
+.icon-home-quiz {
   background-image: url(../../assets/img/Icons-menu/home.svg); }
