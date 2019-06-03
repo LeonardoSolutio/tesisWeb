@@ -16,6 +16,46 @@ let lastQ;
 if ((Cookies.get('uiCurrentState') > 0) && (Cookies.get('quizState') === 'true')) {
     uiState = parseInt(Cookies.get('uiCurrentState'))
 }
+
+/* Set Navigation */
+function navigationController($scope) {
+  /* Choose the current uiState */
+  switch (uiState) {
+    case 1:
+        $scope.navigationType = function () {
+                return 'navigationTypes/navigation-li.html';
+        } 
+        break;
+
+    case 2:
+        $scope.navigationType = function () {
+                return 'navigationTypes/navigation-na.html';
+        } 
+        break;
+
+    case 3:
+        $scope.navigationType = function () {
+                return 'navigationTypes/navigation-lm.html';
+        } 
+        break;
+
+    case 4:
+        $scope.navigationType = function () {
+                return 'navigationTypes/navigation-ki.html';
+        } 
+        break;
+        
+    case 5:
+        $scope.navigationType = function () {
+                return 'navigationTypes/navigation-vs.html';
+        } 
+        break;
+
+    default:
+        break;
+}  
+}
+
 /* Quiz question arrays */
 let question1 = {
     question: "Do you prefer a menu with icons or text?",
