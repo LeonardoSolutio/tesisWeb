@@ -1,11 +1,21 @@
 // Build module.
 var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 //let portafolioOn = false;
-var quizState;
+
+/* Set Cookies */
+Cookies.set('uiCurrentState');
+Cookies.set('quizState');
+
+/* Global Variables*/
 var uiState;
 let lineState;
 let lastQ;
 
+
+/* get Cookies */
+if ((Cookies.get('uiCurrentState') > 0) && (Cookies.get('quizState') === 'true')) {
+    uiState = parseInt(Cookies.get('uiCurrentState'))
+}
 /* Quiz question arrays */
 let question1 = {
     question: "Do you prefer a menu with icons or text?",
@@ -62,17 +72,26 @@ if (uiState === undefined) {
 
 /* Result A (Linguistic) */
 function linguistic(){ 
-    uiState = 1;
+    //uiState = 1;
+    Cookies.set('uiCurrentState', 1);
+    Cookies.set('quizState', 'true');
+    uiState = parseInt(Cookies.get('uiCurrentState'));
 }
 
 /* Result B (Naturalistic) */
 function naturalistic(){ 
-    uiState = 2;
+    //uiState = 2;
+    Cookies.set('uiCurrentState', 2);
+    Cookies.set('quizState', 'true');
+    uiState = parseInt(Cookies.get('uiCurrentState'));
 }
 
 /* Result C (Kinesthetic) */
 function kinesthetic(){ 
-    uiState = 4;
+    //uiState = 4;
+    Cookies.set('uiCurrentState', 4);
+    Cookies.set('quizState', 'true');
+    uiState = parseInt(Cookies.get('uiCurrentState'));
 }
 
 /* Last UI Result */
@@ -81,14 +100,20 @@ function lastUIResult(){
     /* Result E (Viso Spatial) */
     if (lineState == 4) {
 
-        uiState = 5;
+        //uiState = 5;
+        Cookies.set('uiCurrentState', 5);
+        Cookies.set('quizState', 'true');
+        uiState = parseInt(Cookies.get('uiCurrentState'));
 
     }
 
     /* Result D (Logical Mathemathical) */
     if (lineState == 5) {
 
-        uiState = 3;
+        //uiState = 3;
+        Cookies.set('uiCurrentState', 3);
+        Cookies.set('quizState', 'true');
+        uiState = parseInt(Cookies.get('uiCurrentState'));
 
     }
     
