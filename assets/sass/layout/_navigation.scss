@@ -1,3 +1,7 @@
+nav {
+    z-index: 999;
+}
+
 /* Nav button */
 button {
     @include transitions;
