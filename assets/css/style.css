@@ -1458,6 +1458,9 @@ button {
   text-align: center; }
   button span.activeOn {
     display: none; }
+  button span.li-btnOn {
+    font-size: 1.5rem;
+    margin-left: -2rem; }
   button.nav-trigger {
     position: fixed;
     background: none;
@@ -1531,6 +1534,11 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
+    button.active span.li-btn {
+      font-size: 1.5rem; }
+    button.active span.li-btnOn {
+      display: none;
+      position: absolute; }
     button.active span.activeOn {
       display: none;
       position: absolute; }
@@ -1539,6 +1547,8 @@ button {
       transform: translateX(5rem); }
   button:hover {
     color: #9a3324; }
+    button:hover span.li-btnOn {
+      text-decoration: underline; }
 
 /* General styles for all menus */
 .nav {
@@ -1548,7 +1558,8 @@ button {
   /* Transitions */
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  /*  L I N G U I S T I C */ }
   .nav li {
     list-style: none;
     display: flex;
@@ -1732,6 +1743,13 @@ button {
       /*Remember change the font-family */ }
       .nav li:hover a span, .nav li.active a span {
         opacity: 1; }
+  .nav .li a {
+    font-size: 1.8rem; }
+    .nav .li a:hover, .nav .li a.active {
+      color: #f5f4f0;
+      font-size: 2.5rem; }
+    .nav .li a span {
+      color: #f5f4f0; }
 
 /* Orientation-dependent styles for the content of the menu */
 .nav-vertical {
@@ -1863,7 +1881,10 @@ button {
   background-repeat: no-repeat;
   background-color: #f5f4f0;
   position: absolute;
-  transition: all ease 0.4s; }
+  /* Transitions */
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .icon-vs-menu:hover {
     background-color: #9a3324; }
 

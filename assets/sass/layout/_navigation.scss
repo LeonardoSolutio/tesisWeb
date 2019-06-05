@@ -16,6 +16,10 @@ button {
     span.activeOn {
         display: none;
     }
+    span.li-btnOn {
+        font-size: 1.5rem;
+        margin-left: -2rem;
+    }
 
     &.nav-trigger {
         position: fixed;
@@ -47,6 +51,15 @@ button {
         top: 0rem;
         left: 0rem;
 
+        span.li-btn {
+            font-size: 1.5rem;
+        }
+
+        span.li-btnOn {
+            display: none;
+            position: absolute;
+        }
+
         span.activeOn {
             display: none;
             position: absolute;
@@ -68,6 +81,10 @@ button {
 
     &:hover {
         color: $color-primary;
+
+        span.li-btnOn {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -106,7 +123,6 @@ button {
             margin-left: 14vw;
             
         }
-
         
         .up, .down {
             font-size: 3rem;
@@ -177,6 +193,22 @@ button {
         
     }
 
+    /*  L I N G U I S T I C */
+    .li {
+        a {
+            font-size: 1.8rem;
+            &:hover,
+            &.active {
+                color: $color-tertiary;
+                font-size: 2.5rem;
+            }
+
+            span {
+                color: $color-tertiary;
+            }
+        }
+    }
+
 }
 
 /* Orientation-dependent styles for the content of the menu */
@@ -241,7 +273,7 @@ button {
     @include iconSize;
     background-color: $color-tertiary;
     position: absolute;
-    transition: all ease 0.4s;
+    @include transitions;
 
     &:hover {
         background-color: $color-primary;
