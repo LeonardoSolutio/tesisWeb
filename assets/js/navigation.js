@@ -1,3 +1,5 @@
+window.onload = function() {
+
 /* Locate DOM elements */
 let menuRight = document.querySelector('.nav-s2'),
     showRight = document.querySelector('.nav-trigger'),
@@ -40,7 +42,7 @@ let disableOther = (button) => {
     } 
 }
 
-
+}
 
 
 
