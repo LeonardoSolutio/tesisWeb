@@ -65,8 +65,8 @@ let question1 = {
 
 let question2 = {
     question: "How do you prefer the content being displayed?",
-    answer1: `<p><a onclick="linguistic()" href="/">Text short and concise</a></p>`,
-    answer2: `<p><a onclick="naturalistic()" href="/">Text complemented with pictures</a></p>`
+    answer1: `<p><a onclick="linguistic()">Text short and concise</a></p>`,
+    answer2: `<p><a onclick="naturalistic()">Text complemented with pictures</a></p>`
 }
 
 let question3 = {
@@ -77,8 +77,8 @@ let question3 = {
 
 let question4 = {
     question: "Which icon style do you prefer?",
-    answer1: `<a onclick="kinesthetic()" href="/"><img class="icon-quiz" src="assets/img/Icons-quiz/kinestetic.svg"></a>`,
-    answer2: `<a onclick="lastUIResult()" href="/"><img class="icon-quiz" src="assets/img/Icons-quiz/normal-icon.svg"></a>`
+    answer1: `<a onclick="kinesthetic()"><img class="icon-quiz" src="assets/img/Icons-quiz/kinestetic.svg"></a>`,
+    answer2: `<a onclick="lastUIResult()"><img class="icon-quiz" src="assets/img/Icons-quiz/normal-icon.svg"></a>`
 }
 
 /* Last question function */ 
@@ -116,6 +116,9 @@ function linguistic(){
     Cookies.set('uiCurrentState', 1);
     Cookies.set('quizState', 'true');
     uiState = parseInt(Cookies.get('uiCurrentState'));
+
+    /* Reload */
+    location.replace('/');
 }
 
 /* Result B (Naturalistic) */
@@ -124,6 +127,9 @@ function naturalistic(){
     Cookies.set('uiCurrentState', 2);
     Cookies.set('quizState', 'true');
     uiState = parseInt(Cookies.get('uiCurrentState'));
+
+    /* Reload */
+    location.replace('/');
 }
 
 /* Result C (Kinesthetic) */
@@ -132,6 +138,9 @@ function kinesthetic(){
     Cookies.set('uiCurrentState', 4);
     Cookies.set('quizState', 'true');
     uiState = parseInt(Cookies.get('uiCurrentState'));
+
+    /* Reload */
+    location.replace('/');
 }
 
 /* Last UI Result */
@@ -145,6 +154,9 @@ function lastUIResult(){
         Cookies.set('quizState', 'true');
         uiState = parseInt(Cookies.get('uiCurrentState'));
 
+        /* Reload */
+        location.replace('/');
+
     }
 
     /* Result D (Logical Mathemathical) */
@@ -154,6 +166,9 @@ function lastUIResult(){
         Cookies.set('uiCurrentState', 3);
         Cookies.set('quizState', 'true');
         uiState = parseInt(Cookies.get('uiCurrentState'));
+
+        /* Reload */
+        location.replace('/');
 
     }
     

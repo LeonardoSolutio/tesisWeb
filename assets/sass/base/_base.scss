@@ -25,6 +25,7 @@
 html {
   //This define what 1rem is.
   font-size: 62.5%; /* 16px/10px = .625 root font-size declararion that means 1 rem = 10px*/
+  background-color: $color-secondary;
 
   @include respond(tab-land) { //Width < 1200?
     font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%.
@@ -41,8 +42,8 @@ html {
 
 body {
   box-sizing: border-box; /* better practice */
-  //padding: 3rem;
-
+  overflow: hidden;
+  margin: 6rem 0 6rem 0; // in order to give space for the navbar
   @include respond(tab-port) { //Width < 900?
     padding: 0;
   }

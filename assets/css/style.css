@@ -1,4 +1,6 @@
 /* -------------------- Abstracts Files -------------------- */
+/* Logo Home */
+/* Icons Size */
 /* Layout logo position */
 /* Fix tilde weird behavior */
 /* Margin Heading top */
@@ -27,6 +29,7 @@
 html {
   font-size: 62.5%;
   /* 16px/10px = .625 root font-size declararion that means 1 rem = 10px*/
+  background-color: #2d2c2f;
   /*
 
     @if $breakpoint == iphone-x {
@@ -109,6 +112,8 @@ html {
 body {
   box-sizing: border-box;
   /* better practice */
+  overflow: hidden;
+  margin: 6rem 0 6rem 0;
   /*
 
     @if $breakpoint == iphone-x {
@@ -1965,154 +1970,60 @@ button {
   right: 0px; }
 
 /* Example media queries */
-/* -------------------- Pages Files -------------------- */
-.welcome[back-img] {
-  background-size: 55%;
+/* ================================
+***** V I S O - S P A T I A L *****
+================================ */
+.icon-vs-menu {
+  width: 5.8rem;
+  height: 5.8rem;
+  background-position: center;
+  background-size: 70%;
   background-repeat: no-repeat;
-  background-position: bottom left;
-  /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */
-  /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-
-.welcome h1 {
+  background-color: #f5f4f0;
   position: absolute;
+  transition: all ease 0.4s; }
+  .icon-vs-menu:hover {
+    background-color: #9a3324; }
+
+.icon-vs-home {
+  top: 0;
+  left: 0;
+  background-image: url(../../assets/img/Icons-menu/home-red.svg); }
+  .icon-vs-home:hover {
+    background-image: url(../../assets/img/Icons-menu/home.svg); }
+
+.icon-vs-about {
+  bottom: 0;
+  left: 0;
+  background-image: url(../../assets/img/Icons-menu/about-red.svg); }
+  .icon-vs-about:hover {
+    background-image: url(../../assets/img/Icons-menu/about.svg); }
+
+.icon-vs-services {
+  bottom: 0;
   right: 0;
-  transform: translate(-35%, 180%);
-  /*
+  background-image: url(../../assets/img/Icons-menu/services-red.svg); }
+  .icon-vs-services:hover {
+    background-image: url(../../assets/img/Icons-menu/services.svg); }
 
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
+.icon-vs-portafolio {
+  top: 0;
+  right: 0;
+  background-image: url(../../assets/img/Icons-menu/portafolio-red.svg); }
+  .icon-vs-portafolio:hover {
+    background-image: url(../../assets/img/Icons-menu/portafolio.svg); }
 
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-
-.welcome__info {
-  color: #f4f4f0;
-  margin-top: 1vh;
-  margin-left: 15vw;
-  font-size: 1.5rem;
-  padding: 0 5vw;
-  position: absolute;
-  /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */
-  /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
+/* -------------------- Pages Files -------------------- */
+.welcome {
+  background-color: #f5f4f0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */ }
+  .welcome img {
+    width: 20%; }
 
 .about-us {
   /*

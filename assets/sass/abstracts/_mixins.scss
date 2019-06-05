@@ -13,6 +13,21 @@
   transform: translate(-50%, -50%);
 }
 
+/* Logo Home */
+@mixin homeLogo {
+    width: 20%;
+}
+
+/* Icons Size */
+@mixin iconSize {
+    width: 5.8rem;
+    height: 5.8rem;
+
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
 @mixin transitions {
     /* Transitions */
     -webkit-transition: all 0.3s ease;

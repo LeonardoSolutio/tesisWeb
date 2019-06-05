@@ -200,7 +200,62 @@ button {
 
 
 
+/* ================================
+***** V I S O - S P A T I A L *****
+================================ */ 
+.navigation__viso-spatial {
+}
 
+.icon-vs-menu {
+    @include iconSize;
+    background-color: $color-tertiary;
+    position: absolute;
+    transition: all ease 0.4s;
+
+    &:hover {
+        background-color: $color-primary;
+    }
+}
+
+.icon-vs-home {
+    top: 0;
+    left: 0;
+    background-image: url(../../assets/img/Icons-menu/home-red.svg);
+
+    &:hover {
+        background-image: url(../../assets/img/Icons-menu/home.svg);
+    }
+}
+
+.icon-vs-about {
+    bottom: 0;
+    left: 0;
+    background-image: url(../../assets/img/Icons-menu/about-red.svg);
+
+    &:hover {
+        background-image: url(../../assets/img/Icons-menu/about.svg);
+    }
+}
+
+.icon-vs-services {
+    bottom: 0;
+    right: 0;
+    background-image: url(../../assets/img/Icons-menu/services-red.svg);
+
+    &:hover {
+        background-image: url(../../assets/img/Icons-menu/services.svg);
+    }
+}
+
+.icon-vs-portafolio {
+    top: 0;
+    right: 0;
+    background-image: url(../../assets/img/Icons-menu/portafolio-red.svg);
+
+    &:hover {
+        background-image: url(../../assets/img/Icons-menu/portafolio.svg);
+    }
+}
 
 
 
