@@ -51,6 +51,7 @@ button {
         top: 0rem;
         left: 0rem;
 
+        /* Linguistic */
         span.li-btn {
             font-size: 1.5rem;
         }
@@ -59,7 +60,7 @@ button {
             display: none;
             position: absolute;
         }
-
+        /* Linguistic */
         span.activeOn {
             display: none;
             position: absolute;
@@ -82,9 +83,11 @@ button {
     &:hover {
         color: $color-primary;
 
+        /* Linguistic */
         span.li-btnOn {
             text-decoration: underline;
         }
+        /* Linguistic */
     }
 }
 
@@ -320,7 +323,109 @@ button {
     }
 }
 
+/* ==============================
+***** K I N E S T H E T I C *****
+============================== */
+.navigation__kinesthetic {
+    position: absolute;
+    left: 5rem;
+    display: grid;
+    grid-template-rows: 4fr 4fr 4fr;
 
+    a {
+        color: $color-tertiary;
+        text-decoration: none;
+    }
+
+    // &-container {
+        
+    // }
+
+    .icon-ki-menu {
+        background-color: $color-secondary;
+
+        text-align: center;
+        color: $color-tertiary;
+        @include transitions;
+        margin-bottom: 2rem;
+
+        /* Box shadow */
+        @include boxShadow;
+
+        list-style: none;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        @include iconSize;
+        overflow: hidden;
+
+        .li-ki-text {
+            text-align: center; 
+            font-weight: lighter;
+            font-size: 3rem;
+            max-width: 5.8rem;
+            display: block;
+            opacity: 1;
+            @include transitions;
+        }
+
+        li:last-child {
+            transform: translateX(-4rem);
+        }
+
+        .li-ki-icon {
+            transform: translateX(6rem);
+            opacity: 0;
+            @include transitions;
+            img {
+                width: 4rem;
+                float: right;
+                margin-top: 1.5rem;
+                margin-right: 1rem;
+                opacity: 0;
+                transform: translateX(6rem);
+                @include transitions;
+            }
+
+            p {
+                font-size: 1.5rem;
+                opacity: 0;
+                transform: translateX(1.2rem);
+                @include transitions;
+                text-align: left;
+                margin-left: 4rem;
+            }
+        }
+    
+        &:hover, &:active {
+            background-color: $color-primary;
+            width: 18rem;
+
+            /* Box shadow */
+            @include boxShadowDelete;
+            transform: translate(-3px, 3px);
+
+            .li-ki-text {
+                transform: translate(-4rem, -6rem);
+                opacity: 0;
+            }
+
+            .li-ki-icon {
+                transform: translateX(-6rem);
+                opacity: 1;
+
+                img {
+                    opacity: 1;
+                    transform: translateY(-8rem);
+                }
+
+                p {
+                    transform: translate(-2.2rem, -3.5rem);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
 
 
 

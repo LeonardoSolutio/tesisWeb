@@ -1,6 +1,7 @@
 /* -------------------- Abstracts Files -------------------- */
 /* Logo Home */
 /* Icons Size */
+/* Box shadow */
 /* Layout logo position */
 /* Fix tilde weird behavior */
 /* Margin Heading top */
@@ -1482,6 +1483,8 @@ button {
     height: 5.8rem;
     top: 0rem;
     left: 0rem;
+    /* Linguistic */
+    /* Linguistic */
     /*
 
     @if $breakpoint == iphone-x {
@@ -1546,7 +1549,9 @@ button {
       display: block;
       transform: translateX(5rem); }
   button:hover {
-    color: #9a3324; }
+    color: #9a3324;
+    /* Linguistic */
+    /* Linguistic */ }
     button:hover span.li-btnOn {
       text-decoration: underline; }
 
@@ -1915,6 +1920,101 @@ button {
   background-image: url(../../assets/img/Icons-menu/portafolio-red.svg); }
   .icon-vs-portafolio:hover {
     background-image: url(../../assets/img/Icons-menu/portafolio.svg); }
+
+/* ==============================
+***** K I N E S T H E T I C *****
+============================== */
+.navigation__kinesthetic {
+  position: absolute;
+  left: 5rem;
+  display: grid;
+  grid-template-rows: 4fr 4fr 4fr; }
+  .navigation__kinesthetic a {
+    color: #f5f4f0;
+    text-decoration: none; }
+  .navigation__kinesthetic .icon-ki-menu {
+    background-color: #2d2c2f;
+    text-align: center;
+    color: #f5f4f0;
+    /* Transitions */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    /* Box shadow */
+    -webkit-box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
+    -moz-box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
+    box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    width: 5.8rem;
+    height: 5.8rem;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    overflow: hidden; }
+    .navigation__kinesthetic .icon-ki-menu .li-ki-text {
+      text-align: center;
+      font-weight: lighter;
+      font-size: 3rem;
+      max-width: 5.8rem;
+      display: block;
+      opacity: 1;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .navigation__kinesthetic .icon-ki-menu li:last-child {
+      transform: translateX(-4rem); }
+    .navigation__kinesthetic .icon-ki-menu .li-ki-icon {
+      transform: translateX(6rem);
+      opacity: 0;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .navigation__kinesthetic .icon-ki-menu .li-ki-icon img {
+        width: 4rem;
+        float: right;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+        opacity: 0;
+        transform: translateX(6rem);
+        /* Transitions */
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .navigation__kinesthetic .icon-ki-menu .li-ki-icon p {
+        font-size: 1.5rem;
+        opacity: 0;
+        transform: translateX(1.2rem);
+        /* Transitions */
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        text-align: left;
+        margin-left: 4rem; }
+    .navigation__kinesthetic .icon-ki-menu:hover, .navigation__kinesthetic .icon-ki-menu:active {
+      background-color: #9a3324;
+      width: 18rem;
+      /* Box shadow */
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      transform: translate(-3px, 3px); }
+      .navigation__kinesthetic .icon-ki-menu:hover .li-ki-text, .navigation__kinesthetic .icon-ki-menu:active .li-ki-text {
+        transform: translate(-4rem, -6rem);
+        opacity: 0; }
+      .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon, .navigation__kinesthetic .icon-ki-menu:active .li-ki-icon {
+        transform: translateX(-6rem);
+        opacity: 1; }
+        .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon img, .navigation__kinesthetic .icon-ki-menu:active .li-ki-icon img {
+          opacity: 1;
+          transform: translateY(-8rem); }
+        .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon p, .navigation__kinesthetic .icon-ki-menu:active .li-ki-icon p {
+          transform: translate(-2.2rem, -3.5rem);
+          opacity: 1; }
 
 /* -------------------- Pages Files -------------------- */
 .welcome {
