@@ -57,6 +57,7 @@ function navigationController($scope) {
 
     window.onload = function() {
 
+        /* L I N G U I S T I C   O R   N A T U R A L I S T I C */
         if ((uiState == 1) || (uiState == 2)) {
             /* Locate DOM elements */
             let menuRight = document.querySelector('.nav-s2'),
@@ -100,7 +101,37 @@ function navigationController($scope) {
                 } 
             }
     
-        }   
+        }
+        
+        
+        /* L O G I C A L   M A T H E M A T H I C A L */
+        if ( uiState == 3) {
+            let els = document.getElementsByClassName('step');
+            let steps = [];
+            Array.prototype.forEach.call(els, (e) => {
+            steps.push(e);
+            e.addEventListener('click', (x) => {
+                progress(x.target.id);
+            });
+            });
+
+            function progress(stepNum) {
+            let p = stepNum * 32;
+            document.getElementsByClassName('percent')[0].style.width = `${p}%`;
+            steps.forEach((e) => {
+                if (e.id === stepNum) {
+                e.classList.add('selected');
+                e.classList.remove('completed');
+                }
+                if (e.id < stepNum) {
+                e.classList.add('completed');
+                }
+                if (e.id > stepNum) {
+                e.classList.remove('selected', 'completed');
+                }
+            });
+            }
+        }
     }
 }
 
