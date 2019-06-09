@@ -1447,9 +1447,9 @@ body {
 .navigation {
   z-index: 999; }
 
-/* ================================
-***** V I S O - S P A T I A L *****
-================================ */
+/* ==========================================================
+***** N A T U R A L I S T I C   &   L I N G U I S T I C *****
+========================================================== */
 /* Nav button */
 button {
   color: #f5f4f0;
@@ -1757,6 +1757,8 @@ button {
     .nav .li a:hover, .nav .li a.active {
       color: #f5f4f0;
       font-size: 2.5rem; }
+      .nav .li a:hover span, .nav .li a.active span {
+        opacity: 1; }
     .nav .li a span {
       color: #f5f4f0; }
 

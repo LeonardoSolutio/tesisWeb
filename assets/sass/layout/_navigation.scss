@@ -6,9 +6,9 @@
     z-index: 999;
 }
 
-/* ================================
-***** V I S O - S P A T I A L *****
-================================ */ 
+/* ==========================================================
+***** N A T U R A L I S T I C   &   L I N G U I S T I C *****
+========================================================== */ 
 /* Nav button */
 button {
     color: $color-tertiary;
@@ -208,6 +208,10 @@ button {
             &.active {
                 color: $color-tertiary;
                 font-size: 2.5rem;
+
+                span {
+                    opacity: 1;
+                }
             }
 
             span {

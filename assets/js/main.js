@@ -100,6 +100,36 @@ function navigationController($scope) {
                     classie.toggle(showRight, 'disabled');
                 } 
             }
+
+            /* L I N G U I S T I C */
+            if (uiState == 1) {
+                // Get all buttons with class="btn" inside the container
+                var btns = document.getElementsByClassName("li-a");
+
+                // Loop through the buttons and add the active class to the current/clicked button
+                for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+                }
+            }
+
+            /* N A T U R A L I S T I C */
+            if (uiState == 2) {
+                // Get all buttons with class="btn" inside the container
+                var btns = document.getElementsByClassName("na-a");
+
+                // Loop through the buttons and add the active class to the current/clicked button
+                for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+                }
+            }
     
         }
         
