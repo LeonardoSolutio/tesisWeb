@@ -132,6 +132,38 @@ function navigationController($scope) {
             });
             }
         }
+
+        /* K I N E S T H E T I C */
+        if (uiState == 4) {
+           
+            // Get all buttons with class="btn" inside the container
+            var btns = document.getElementsByClassName("icon-ki-menu");
+
+            // Loop through the buttons and add the active class to the current/clicked button
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+        }
+
+        /* V I S O - S P A T I A L */
+        if (uiState == 5) {
+           
+            // Get all buttons with class="btn" inside the container
+            var btns = document.getElementsByClassName("icon-vs-menu");
+
+            // Loop through the buttons and add the active class to the current/clicked button
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+        }
     }
 }
 

@@ -274,6 +274,7 @@ button {
 ***** V I S O - S P A T I A L *****
 ================================ */ 
 .navigation__viso-spatial {
+    z-index: 999;
 }
 
 .icon-vs-menu {
@@ -282,7 +283,7 @@ button {
     position: absolute;
     @include transitions;
 
-    &:hover {
+    &:hover, &.active {
         background-color: $color-primary;
     }
 }
@@ -292,7 +293,7 @@ button {
     left: 0;
     background-image: url(../../assets/img/Icons-menu/home-red.svg);
 
-    &:hover {
+    &:hover, &.active {
         background-image: url(../../assets/img/Icons-menu/home.svg);
     }
 }
@@ -302,7 +303,7 @@ button {
     left: 0;
     background-image: url(../../assets/img/Icons-menu/about-red.svg);
 
-    &:hover {
+    &:hover, &.active {
         background-image: url(../../assets/img/Icons-menu/about.svg);
     }
 }
@@ -312,7 +313,7 @@ button {
     right: 0;
     background-image: url(../../assets/img/Icons-menu/services-red.svg);
 
-    &:hover {
+    &:hover, &.active {
         background-image: url(../../assets/img/Icons-menu/services.svg);
     }
 }
@@ -322,7 +323,7 @@ button {
     right: 0;
     background-image: url(../../assets/img/Icons-menu/portafolio-red.svg);
 
-    &:hover {
+    &:hover, &.active {
         background-image: url(../../assets/img/Icons-menu/portafolio.svg);
     }
 }
@@ -331,6 +332,7 @@ button {
 ***** K I N E S T H E T I C *****
 ============================== */
 .navigation__kinesthetic {
+    z-index: 999;
     position: absolute;
     left: 5rem;
     display: grid;
@@ -400,7 +402,7 @@ button {
             }
         }
     
-        &:hover, &:active {
+        &:hover {
             background-color: $color-primary;
             width: 18rem;
 
@@ -427,6 +429,12 @@ button {
                     opacity: 1;
                 }
             }
+        } 
+
+        &.active {
+            /* Box shadow */
+            @include boxShadowDelete;
+            background-color: $color-primary; 
         }
     }
 }

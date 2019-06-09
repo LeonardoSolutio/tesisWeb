@@ -1882,6 +1882,9 @@ button {
 /* ================================
 ***** V I S O - S P A T I A L *****
 ================================ */
+.navigation__viso-spatial {
+  z-index: 999; }
+
 .icon-vs-menu {
   width: 5.8rem;
   height: 5.8rem;
@@ -1894,41 +1897,42 @@ button {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  .icon-vs-menu:hover {
+  .icon-vs-menu:hover, .icon-vs-menu.active {
     background-color: #9a3324; }
 
 .icon-vs-home {
   top: 0;
   left: 0;
   background-image: url(../../assets/img/Icons-menu/home-red.svg); }
-  .icon-vs-home:hover {
+  .icon-vs-home:hover, .icon-vs-home.active {
     background-image: url(../../assets/img/Icons-menu/home.svg); }
 
 .icon-vs-about {
   bottom: 0;
   left: 0;
   background-image: url(../../assets/img/Icons-menu/about-red.svg); }
-  .icon-vs-about:hover {
+  .icon-vs-about:hover, .icon-vs-about.active {
     background-image: url(../../assets/img/Icons-menu/about.svg); }
 
 .icon-vs-services {
   bottom: 0;
   right: 0;
   background-image: url(../../assets/img/Icons-menu/services-red.svg); }
-  .icon-vs-services:hover {
+  .icon-vs-services:hover, .icon-vs-services.active {
     background-image: url(../../assets/img/Icons-menu/services.svg); }
 
 .icon-vs-portafolio {
   top: 0;
   right: 0;
   background-image: url(../../assets/img/Icons-menu/portafolio-red.svg); }
-  .icon-vs-portafolio:hover {
+  .icon-vs-portafolio:hover, .icon-vs-portafolio.active {
     background-image: url(../../assets/img/Icons-menu/portafolio.svg); }
 
 /* ==============================
 ***** K I N E S T H E T I C *****
 ============================== */
 .navigation__kinesthetic {
+  z-index: 999;
   position: absolute;
   left: 5rem;
   display: grid;
@@ -1999,7 +2003,7 @@ button {
         transition: all 0.3s ease;
         text-align: left;
         margin-left: 4rem; }
-    .navigation__kinesthetic .icon-ki-menu:hover, .navigation__kinesthetic .icon-ki-menu:active {
+    .navigation__kinesthetic .icon-ki-menu:hover {
       background-color: #9a3324;
       width: 18rem;
       /* Box shadow */
@@ -2007,18 +2011,24 @@ button {
       -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
       box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
       transform: translate(-3px, 3px); }
-      .navigation__kinesthetic .icon-ki-menu:hover .li-ki-text, .navigation__kinesthetic .icon-ki-menu:active .li-ki-text {
+      .navigation__kinesthetic .icon-ki-menu:hover .li-ki-text {
         transform: translate(-4rem, -6rem);
         opacity: 0; }
-      .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon, .navigation__kinesthetic .icon-ki-menu:active .li-ki-icon {
+      .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon {
         transform: translateX(-6rem);
         opacity: 1; }
-        .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon img, .navigation__kinesthetic .icon-ki-menu:active .li-ki-icon img {
+        .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon img {
           opacity: 1;
           transform: translateY(-8rem); }
-        .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon p, .navigation__kinesthetic .icon-ki-menu:active .li-ki-icon p {
+        .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon p {
           transform: translate(-2.2rem, -3.5rem);
           opacity: 1; }
+    .navigation__kinesthetic .icon-ki-menu.active {
+      /* Box shadow */
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      background-color: #9a3324; }
 
 /* ================================================
 ***** L O G I C A L   M A T H E M A T I C A L *****
