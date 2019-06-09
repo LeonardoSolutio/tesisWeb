@@ -11,7 +11,6 @@ var uiState;
 let lineState;
 let lastQ;
 
-
 /* get Cookies */
 if ((Cookies.get('uiCurrentState') > 0) && (Cookies.get('quizState') === 'true')) {
     uiState = parseInt(Cookies.get('uiCurrentState'))
@@ -435,6 +434,9 @@ myApp.controller('quizController', ['$scope','$http','$sce','$location', '$windo
 ===================================== */ 
 myApp.controller('mainController', function ($scope, $rootScope) {
 
+    /* L o c a l   v a r i a b l e s */
+    
+
     /* Choose the current uiState */
     switch (uiState) {
         case 1:
@@ -469,6 +471,16 @@ myApp.controller('mainController', function ($scope, $rootScope) {
     
         default:
             break;
+    }
+
+
+    /* Show take quiz message */
+    if (Cookies.get('quizState') === undefined) {
+        var quizTimer;
+
+        quizTimer = setTimeout( function() {
+            document.querySelector('.takeQuiz').style.display = 'block';
+        }, 5000);
     }
 });
 

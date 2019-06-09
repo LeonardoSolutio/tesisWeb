@@ -46,6 +46,36 @@
   }
 }
 
+/* ============= Q U I Z   B U T T O N ============= */
+@keyframes showQuizButton{
+  0% {
+
+      opacity: 1;
+      transform: translateX(31rem);
+  }
+
+  10% {
+
+      opacity: 1;
+      transform: translateX(1rem);
+  }
+
+  25% {
+      opacity: 1;
+      transform: translateX(1rem);
+  }
+
+  90% {
+      opacity: 1;
+      transform: translateX(1rem);
+  }
+
+  100% {
+      opacity: 1;
+      display: none;
+      transform: translateX(31rem);
+  }
+}
 
 /* ============= G A L L E R Y ============= */
 
@@ -110,3 +140,5 @@
    //left: 0;
    opacity: 0;
  }
+
+

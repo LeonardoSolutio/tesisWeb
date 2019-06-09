@@ -178,6 +178,25 @@ section[back-img] {
   100% {
     opacity: 1; } }
 
+/* ============= Q U I Z   B U T T O N ============= */
+@keyframes showQuizButton {
+  0% {
+    opacity: 1;
+    transform: translateX(31rem); }
+  10% {
+    opacity: 1;
+    transform: translateX(1rem); }
+  25% {
+    opacity: 1;
+    transform: translateX(1rem); }
+  90% {
+    opacity: 1;
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    display: none;
+    transform: translateX(31rem); } }
+
 /* ============= G A L L E R Y ============= */
 .transition-fadeIn {
   animation: fadeIn 1s; }
@@ -1260,6 +1279,30 @@ body {
     color: #9a3324;
     letter-spacing: 1rem;
     font-size: 1.5rem; }
+
+.takeQuiz {
+  display: none;
+  width: 30rem;
+  height: 5rem;
+  background-color: #9a3324;
+  color: #f5f4f0;
+  font-size: 1.5rem;
+  z-index: 800 !important;
+  text-decoration: none;
+  position: fixed;
+  padding: 1rem;
+  text-align: center;
+  opacity: 1;
+  bottom: 6rem;
+  right: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  transform: translateX(31rem);
+  /* Transitions */
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  animation: showQuizButton 10s ease-in 1; }
 
 /* -------------------- Layout Files -------------------- */
 .logo {
