@@ -2,6 +2,50 @@
 /////////////// ANIMATIONS & EFFECTS ////////////////
 ================================================== */
 
+/* ============= P R E L O A D E R ============= */
+
+@keyframes paddles {
+  0% {
+    box-shadow: -25px -10px 0px $color-secondary, 25px 10px 0px $color-secondary;
+    
+    //transform: translateX(0px);
+  }
+  50% {
+    box-shadow: -25px 8px 0px $color-secondary, 25px -10px 0px $color-secondary;
+    
+    //transform: translateX(-15px);
+  }
+  100% {
+    box-shadow: -25px -10px 0px $color-secondary, 25px 10px 0px $color-secondary;
+    
+    //transform: translateX(0px);
+  }
+}
+
+@keyframes ballbounce {
+  0%{
+    transform: translateX(-20px) rotate(90deg);
+  }
+
+  50% {
+    transform: translateX(15px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(-20px) rotate(-90deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /* ============= G A L L E R Y ============= */
 

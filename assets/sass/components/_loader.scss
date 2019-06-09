@@ -1,0 +1,47 @@
+.preloader-screen {
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 2000;
+
+    background-color: $color-tertiary;
+    top: 0;
+    position: fixed;
+    border-bottom: 6rem solid $color-secondary;
+    border-top: 6rem solid $color-secondary;
+    opacity: 1;
+}
+
+.pong-loader {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 4rem;
+    width: 0.6rem;
+    background-color: transparent;
+    animation: paddles 1s ease-out infinite;
+    transform: translate3d(0,0,0);
+    
+    &:before {
+      content: "";
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 1.5rem;
+      width: 1rem;
+      height: 1rem;
+      background-color: $color-primary;
+      animation: ballbounce 0.75s ease-out infinite;
+    }
+    
+    P {
+      transform: translate(-5.5rem, 6.5rem);
+      animation: loading 6s ease-out infinite;
+      color: $color-primary;
+      letter-spacing: 1rem;
+      font-size: 1.5rem;
+    }
+  }
