@@ -11,6 +11,8 @@ var uiState;
 let lineState;
 let lastQ;
 
+let navigationBar = document.querySelector('.navigation');
+
 /* get Cookies */
 if ((Cookies.get('uiCurrentState') > 0) && (Cookies.get('quizState') === 'true')) {
     uiState = parseInt(Cookies.get('uiCurrentState'))
@@ -264,7 +266,7 @@ function linguistic(){
     location.replace('/');
 
     /* Show nav again */
-    document.querySelector('.navigation').classList.remove('nav-invisible');
+    //document.querySelector('.navigation').classList.remove('nav-invisible');
 }
 
 /* Result B (Naturalistic) */
@@ -278,7 +280,7 @@ function naturalistic(){
     location.replace('/');
 
     /* Show nav again */
-    document.querySelector('.navigation').classList.remove('nav-invisible');
+    //document.querySelector('.navigation').classList.remove('nav-invisible');
 }
 
 /* Result C (Kinesthetic) */
@@ -292,7 +294,7 @@ function kinesthetic(){
     location.replace('/');
 
     /* Show nav again */
-    document.querySelector('.navigation').classList.remove('nav-invisible');
+    //document.querySelector('.navigation').classList.remove('nav-invisible');
 }
 
 /* Last UI Result */
@@ -310,7 +312,7 @@ function lastUIResult(){
         location.replace('/');
 
         /* Show nav again */
-        document.querySelector('.navigation').classList.remove('nav-invisible');
+        //document.querySelector('.navigation').classList.remove('nav-invisible');
 
     }
 
@@ -326,7 +328,7 @@ function lastUIResult(){
         location.replace('/');
 
         /* Show nav again */
-        document.querySelector('.navigation').classList.remove('nav-invisible');
+        //document.querySelector('.navigation').classList.remove('nav-invisible');
 
     }
     
@@ -373,6 +375,10 @@ myApp.config(function($routeProvider, $locationProvider) {
 myApp.controller('quizController', ['$scope','$http','$sce','$location', '$window', function($scope,$http,$sce, $location, $window){
     //uiState = 3;
 
+    /* hide navigation bar */
+    document.querySelector('.navigation').classList.add('nav-invisible');
+
+    
     /* Start with the firt question of the quiz */
     if (lineState === undefined) {
         lineState = 1;
@@ -435,7 +441,9 @@ myApp.controller('quizController', ['$scope','$http','$sce','$location', '$windo
 myApp.controller('mainController', function ($scope, $rootScope) {
 
     /* L o c a l   v a r i a b l e s */
-    
+
+    /* hide navigation bar */
+    navigationBar.classList.remove('nav-invisible');
 
     /* Choose the current uiState */
     switch (uiState) {
@@ -488,6 +496,10 @@ myApp.controller('mainController', function ($scope, $rootScope) {
 ***** A B O U T  C O N T R O L L E R *****
 ======================================= */ 
 myApp.controller('aboutController', function ($scope) {
+
+    /* hide navigation bar */
+    navigationBar.classList.remove('nav-invisible');
+
     /* Choose the current uiState */
     switch (uiState) {
         case 1:
@@ -529,6 +541,10 @@ myApp.controller('aboutController', function ($scope) {
 ***** P O R T A F O L I O  C O N T R O L L E R *****
 ================================================= */ 
 myApp.controller('portafolioController', function ($scope) {
+
+    /* hide navigation bar */
+    navigationBar.classList.remove('nav-invisible');
+
     /* Choose the current uiState */
     switch (uiState) {
         case 1:
@@ -669,6 +685,10 @@ myApp.controller('portafolioController', function ($scope) {
 ============================================= */ 
 
 myApp.controller('servicesController', function ($scope) {
+
+    /* hide navigation bar */
+    navigationBar.classList.remove('nav-invisible');
+    
     /* Choose the current uiState */
     switch (uiState) {
         case 1:
