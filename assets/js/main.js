@@ -245,6 +245,9 @@ function lastQuestion() {
 /* Reset lineState */
 function resetLineState (){
     lineState = undefined;
+
+    /* Hide nav again */
+    document.querySelector('.navigation').classList.add('nav-invisible');
 }
 /* Choose a random UI to as default */
 if (uiState === undefined) {
@@ -260,6 +263,9 @@ function linguistic(){
 
     /* Reload */
     location.replace('/');
+
+    /* Show nav again */
+    document.querySelector('.navigation').classList.remove('nav-invisible');
 }
 
 /* Result B (Naturalistic) */
@@ -271,6 +277,9 @@ function naturalistic(){
 
     /* Reload */
     location.replace('/');
+
+    /* Show nav again */
+    document.querySelector('.navigation').classList.remove('nav-invisible');
 }
 
 /* Result C (Kinesthetic) */
@@ -282,6 +291,9 @@ function kinesthetic(){
 
     /* Reload */
     location.replace('/');
+
+    /* Show nav again */
+    document.querySelector('.navigation').classList.remove('nav-invisible');
 }
 
 /* Last UI Result */
@@ -298,6 +310,9 @@ function lastUIResult(){
         /* Reload */
         location.replace('/');
 
+        /* Show nav again */
+        document.querySelector('.navigation').classList.remove('nav-invisible');
+
     }
 
     /* Result D (Logical Mathemathical) */
@@ -310,6 +325,9 @@ function lastUIResult(){
 
         /* Reload */
         location.replace('/');
+
+        /* Show nav again */
+        document.querySelector('.navigation').classList.remove('nav-invisible');
 
     }
     

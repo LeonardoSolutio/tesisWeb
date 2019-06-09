@@ -2,10 +2,10 @@
     background-color: $color-secondary-dark;
     height: 100vh !important;
     width: 100vw !important;
-    transform: translateY(-6rem);
-
+    //transform: translateY(-6rem);
+    top: 0;
     z-index: 2000;
-
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
 

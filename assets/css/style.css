@@ -2565,8 +2565,9 @@ button {
   background-color: #001114;
   height: 100vh !important;
   width: 100vw !important;
-  transform: translateY(-6rem);
+  top: 0;
   z-index: 2000;
+  position: fixed;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   overflow: hidden; }

@@ -4,6 +4,7 @@
 
 .navigation {
     z-index: 999;
+    //@include transitions;
 }
 
 /* ==========================================================
@@ -41,11 +42,11 @@ button {
             display: block;
             bottom: 0rem !important;
             font-size: 3rem;
+           
         }
 
         span.activeOff {
-            display: none;
-            
+            display: none;  
         }
     }
 
