@@ -2189,7 +2189,8 @@ button {
   grid-template-columns: repeat(2, 1fr);
   /* ---- L I N G U I S T I C ---- */
   /* ---- V I S O - S P A T I A L ---- */
-  /* ---- N A T U R A L I S T I C ---- */ }
+  /* ---- N A T U R A L I S T I C ---- */
+  /* ---- L O G I C A L   M A T H E M A T I C A L ---- */ }
   .about[back-img] {
     /* fix the weird backgroun behavior*/
     height: 100%;
@@ -2275,9 +2276,7 @@ button {
         background-color: #9a3324; }
   .about__links-na {
     display: grid;
-    grid-column-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 20vw; }
+    grid-template-columns: 1fr 35rem; }
     .about__links-na a {
       width: 5.8rem;
       height: 5.8rem;
@@ -2285,15 +2284,35 @@ button {
       background-size: 70%;
       background-repeat: no-repeat;
       text-decoration: none;
-      background-color: #2d2c2f;
-      transform: rotate(45deg);
       cursor: pointer;
       /* Transitions */
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-      .about__links-na a:hover {
-        background-color: #9a3324; }
+    .about__links-na .pic {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-color: #2d2c2f;
+      display: inline-block;
+      margin-left: 3rem;
+      transform: rotateZ(45deg);
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .about__links-na .pic img {
+        width: 50%;
+        margin-top: 1.3rem;
+        margin-left: 1.3rem;
+        transform: rotate(-45deg); }
+    .about__links-na .pic:hover {
+      background-color: #9a3324; }
+    .about__links-na .row-2 {
+      margin-left: 4.6rem;
+      margin-top: -1.3rem; }
 
 .portafolio {
   width: 100vw;

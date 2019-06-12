@@ -88,24 +88,45 @@
     &__links-na {
 
         display: grid;
-        grid-column-gap: 1rem;
-        //grid-row-gap: 1rem;
-        grid-template-columns: repeat(3, 1fr);
-        padding-left: 20vw;
+        grid-template-columns:  1fr 35rem;
         
 
         a {
             @include iconSize;
             text-decoration: none;  
-            background-color: $color-secondary;
-            transform: rotate(45deg);
+            //transform: rotate(45deg);
             cursor: pointer;
             @include transitions;
+        }
 
-            &:hover {
-                background-color: $color-primary;
+        .pic {
+            @include iconSize;
+        
+            background-color:$color-secondary;
+            display:inline-block;
+            margin-left: 3rem;
+            transform: rotateZ(45deg);
+            @include transitions;
+
+
+            img {
+                width: 50%;
+                margin-top: 1.3rem;
+                margin-left: 1.3rem;
+                transform: rotate(-45deg);
             }
+          }
+          .pic:hover{
+            background-color: $color-primary
+          }
+          .row-2 {
+            margin-left: 4.6rem;
+            margin-top: -1.3rem;
         }
     }
+
+    /* ---- L O G I C A L   M A T H E M A T I C A L ---- */
 }
 
+
+  
