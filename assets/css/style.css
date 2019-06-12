@@ -168,6 +168,9 @@ section[back-img] {
     .pageTitle span.red-letter {
       color: #9a3324; }
 
+.title-lm {
+  right: 10vw; }
+
 /* ==================================================
 /////////////// ANIMATIONS & EFFECTS ////////////////
 ================================================== */
@@ -2190,6 +2193,7 @@ button {
   /* ---- L I N G U I S T I C ---- */
   /* ---- V I S O - S P A T I A L ---- */
   /* ---- N A T U R A L I S T I C ---- */
+  /* ---- K I N E S T H E T I C ---- */
   /* ---- L O G I C A L   M A T H E M A T I C A L ---- */ }
   .about[back-img] {
     /* fix the weird backgroun behavior*/
@@ -2321,6 +2325,53 @@ button {
     .about__links-na .row-2 {
       margin-left: 4.6rem;
       margin-top: -1.3rem; }
+  .about__links-ki {
+    display: grid;
+    grid-template-columns: 1fr 25rem; }
+    .about__links-ki a {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      text-decoration: none;
+      cursor: pointer;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .about__links-ki .pic {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-color: #2d2c2f;
+      display: inline-block;
+      margin-left: 3rem;
+      transform: rotateZ(45deg);
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      -webkit-box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
+      -moz-box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
+      box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4); }
+      .about__links-ki .pic img {
+        width: 50%;
+        margin-top: 1.3rem;
+        margin-left: 1.3rem;
+        transform: rotate(-45deg); }
+    .about__links-ki .pic:hover {
+      background-color: #9a3324;
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4); }
+    .about__links-ki .row-2 {
+      margin-left: 4.6rem;
+      margin-top: -1rem; }
+    .about__links-ki .row-3 {
+      margin-top: -1rem; }
   .about__empty-lm {
     display: grid;
     grid-template-rows: repeat(2, 1fr); }

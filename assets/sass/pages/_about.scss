@@ -126,12 +126,59 @@
             }
           }
           .pic:hover{
-            background-color: $color-primary
+            background-color: $color-primary;
           }
           .row-2 {
             margin-left: 4.6rem;
             margin-top: -1.3rem;
         }
+    }
+
+    /* ---- K I N E S T H E T I C ---- */
+    &__links-ki {
+
+        display: grid;
+        grid-template-columns:  1fr 25rem;
+        
+
+        a {
+            @include iconSize;
+            text-decoration: none;  
+            //transform: rotate(45deg);
+            cursor: pointer;
+            @include transitions;
+        }
+
+        .pic {
+            @include iconSize;
+        
+            background-color:$color-secondary;
+            display:inline-block;
+            margin-left: 3rem;
+            transform: rotateZ(45deg);
+            @include transitions;
+            @include boxShadow;
+
+
+            img {
+                width: 50%;
+                margin-top: 1.3rem;
+                margin-left: 1.3rem;
+                transform: rotate(-45deg);
+            }
+          }
+          .pic:hover{
+            background-color: $color-primary;
+            @include boxShadowDelete;
+          }
+          .row-2 {
+            margin-left: 4.6rem;
+            margin-top: -1rem;
+          }
+
+          .row-3{
+            margin-top: -1rem;
+          }
     }
 
     /* ---- L O G I C A L   M A T H E M A T I C A L ---- */
