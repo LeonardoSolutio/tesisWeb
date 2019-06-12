@@ -28,6 +28,11 @@
     background-repeat: no-repeat;
 }
 
+/* Description text Size */
+@mixin textSize {
+    font-size: 2rem;
+    line-height: 3rem;
+}
 /* Box shadow */
 @mixin boxShadow {
     -webkit-box-shadow: -3px 3px 2px 1px rgba(45,44,47,0.4);

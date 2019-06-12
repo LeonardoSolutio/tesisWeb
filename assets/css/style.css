@@ -1,6 +1,7 @@
 /* -------------------- Abstracts Files -------------------- */
 /* Logo Home */
 /* Icons Size */
+/* Description text Size */
 /* Box shadow */
 /* Layout logo position */
 /* Fix tilde weird behavior */
@@ -152,6 +153,21 @@ section[back-img] {
   width: 100vw;
   height: 100vh; }
 
+/* Page Title */
+.pageTitle {
+  position: absolute;
+  right: 10rem;
+  margin-top: 3rem;
+  color: #f5f4f0;
+  font-family: 'Helvetica Neue Thin', sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  letter-spacing: -0.05rem; }
+  .pageTitle span {
+    background-color: #2d2c2f; }
+    .pageTitle span.red-letter {
+      color: #9a3324; }
+
 /* ==================================================
 /////////////// ANIMATIONS & EFFECTS ////////////////
 ================================================== */
@@ -251,6 +267,27 @@ section[back-img] {
   font-family: "Centhury-gothic-bold";
   src: url('../fonts/centuryGothicBold.otf') format('opentype');
 }*/
+/* ---- Acumin Pro R */
+@font-face {
+  font-family: "Acumin Pro R";
+  src: url("../fonts/Acumin-RPro.woff") format("opentype"); }
+
+/* ---- Avenir Book */
+@font-face {
+  font-family: "Avenir Book";
+  src: url("../fonts/Avenir-Book.ttf") format("opentype"); }
+
+/* ---- Avenir Book 45 */
+@font-face {
+  font-family: "Avenir LT 45";
+  src: url("../fonts/Avenir_LT_45_Book.tt") format("opentype"); }
+
+/* ---- Helvetica Neue Thin  */
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  src: url("../fonts/HelveticaNeue-Thin.otf") format("opentype"); }
+
+/* G E N E R A L */
 body {
   font-family: "Avenir Book", sans-serif;
   font-weight: 400;
@@ -1139,106 +1176,33 @@ body {
     }
     */ }
 
-.social {
-  display: grid;
-  grid-template-columns: 0.1fr 2fr 0.1fr;
-  align-items: center;
-  justify-content: center; }
-  .social__icons {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    border-top: 1px solid #fff;
-    padding: 3rem 30% 0 35%;
-    /* Portrait tablet */
-    /*
+/* ---- G E N E R A L   S O C I A L   I C O N S ---- */
+/* Facebook */
+.facebook-icon {
+  background-image: url(../../assets/img/Icons-social-media/facebook.svg); }
 
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
+/* Instagram */
+.instagram-icon {
+  background-image: url(../../assets/img/Icons-social-media/instagram.svg); }
 
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
+/* Skype */
+.skype-icon {
+  background-image: url(../../assets/img/Icons-social-media/skype-logo.svg); }
 
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
+/* Mail */
+.mail-icon {
+  background-image: url(../../assets/img/Icons-social-media/mail.svg); }
 
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
+/* LinkedIn */
+.linkedin-icon {
+  background-image: url(../../assets/img/Icons-social-media/linkedin.svg); }
 
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
+/* LinkedIn */
+.whatsapp-icon {
+  background-image: url(../../assets/img/Icons-social-media/whatsapp.svg); }
 
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */
-    /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-    .social__icons img {
-      width: 75%;
-      transition: all ease 0.2s; }
-    .social__icons a {
-      cursor: pointer; }
-      .social__icons a:hover {
-        /* Portrait tablet */
-        /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-        .social__icons a:hover img {
-          width: 78%;
-          border-radius: 100%;
-          box-shadow: 0px 1rem 2rem -0.8rem rgba(0, 0, 0, 0.3); }
+.icon-social {
+  background-size: 50% !important; }
 
 .preloader-screen {
   width: 100vw;
@@ -2219,38 +2183,20 @@ button {
   .welcome img {
     width: 25%; }
 
-.about-us {
-  /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-  .about-us[back-img] {
-    background-size: 80%;
+.about {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* ---- L I N G U I S T I C ---- */
+  /* ---- V I S O - S P A T I A L ---- */
+  /* ---- N A T U R A L I S T I C ---- */ }
+  .about[back-img] {
+    /* fix the weird backgroun behavior*/
+    height: 100%;
+    background-size: 50%;
     background-repeat: no-repeat;
-    background-position: bottom right;
-    background-color: #F4EFDD;
+    background-position: bottom left;
+    background-color: #f4f4f0;
     /*
 
     @if $breakpoint == iphone-x {
@@ -2277,149 +2223,77 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-  .about-us__info {
+  .about__container {
     display: grid;
-    grid-template-columns: 1.1fr 2fr 1.1fr;
-    /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-    .about-us__info h1 {
+    grid-template-rows: 1fr 0.5fr;
+    padding-top: 20rem;
+    padding-right: 10rem; }
+  .about__text {
+    display: block;
+    float: right;
+    padding-left: 10vw;
+    font-size: 2rem;
+    line-height: 3rem; }
+  .about__links-li {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10vw; }
+    .about__links-li a {
       text-align: center;
-      margin-top: 5rem; }
-    .about-us__info p {
-      margin-top: 5rem;
+      text-decoration: none;
+      color: #f5f4f0;
+      background-color: #2d2c2f;
       font-size: 2rem;
-      letter-spacing: .1rem;
-      /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */
-      /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-      .about-us__info p span {
-        font-size: 2.2rem;
-        font-weight: 300;
-        /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */
-        /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .about__links-li a:hover {
+        background-color: #9a3324; }
+  .about__links-vs {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: 10vw;
+    padding-right: 10vw; }
+    .about__links-vs a {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      text-decoration: none;
+      background-color: #2d2c2f;
+      cursor: pointer;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .about__links-vs a:hover {
+        background-color: #9a3324; }
+  .about__links-na {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 20vw; }
+    .about__links-na a {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      text-decoration: none;
+      background-color: #2d2c2f;
+      transform: rotate(45deg);
+      cursor: pointer;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .about__links-na a:hover {
+        background-color: #9a3324; }
 
 .portafolio {
   width: 100vw;

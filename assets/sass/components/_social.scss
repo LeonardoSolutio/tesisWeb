@@ -1,51 +1,34 @@
-.social {
-    display: grid;
-    grid-template-columns: 0.1fr 2fr 0.1fr;
-    align-items: center;
-    justify-content: center;
+/* ---- G E N E R A L   S O C I A L   I C O N S ---- */
+/* Facebook */
+.facebook-icon {
+    background-image: url(../../assets/img/Icons-social-media/facebook.svg);
+}
 
+/* Instagram */
+.instagram-icon {
+    background-image: url(../../assets/img/Icons-social-media/instagram.svg);
+}
 
-    &__icons {
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        border-top: 1px solid $color-white;
-        padding: 3rem 30% 0 35%;
+/* Skype */
+.skype-icon {
+    background-image: url(../../assets/img/Icons-social-media/skype-logo.svg);
+}
 
-        /* Portrait tablet */
-        @include respond(tab-port) {
-            top: 1rem;
-            //transform: scale(1.5);
-            padding: 3rem 20% 0 25%;
-        }
+/* Mail */
+.mail-icon {
+    background-image: url(../../assets/img/Icons-social-media/mail.svg);
+}
 
-        @include respond(phone) {
-            top: 1rem; //transform: scale(1.5);
-            padding: 3rem 0% 0 5%;
-        }
+/* LinkedIn */
+.linkedin-icon {
+    background-image: url(../../assets/img/Icons-social-media/linkedin.svg);
+}
 
-        img {
-            width: 75%;
-            transition: all ease 0.2s;
-        }
+/* LinkedIn */
+.whatsapp-icon {
+    background-image: url(../../assets/img/Icons-social-media/whatsapp.svg);
+}
 
-        a {
-            cursor: pointer;
-            &:hover {
-                img {
-                   width: 78%;
-                   border-radius: 100%; // give a shadow a circular shape.
-                   box-shadow: 0px 1rem 2rem -0.8rem rgba($color-black, 0.3);
-                }
-
-                /* Portrait tablet */
-                @include respond(tab-port) {
-                   img {
-                      width: 75%;
-                      border-radius: 100%; // give a shadow a circular shape.
-                      box-shadow: none;
-                   } 
-                }
-            }
-        }
-    }
+.icon-social {
+    background-size: 50% !important;
 }

@@ -13,6 +13,31 @@
   src: url('../fonts/centuryGothicBold.otf') format('opentype');
 }*/
 
+/* ---- Acumin Pro R */
+@font-face {
+  font-family: "Acumin Pro R";
+  src: url('../fonts/Acumin-RPro.woff') format('opentype');
+}
+
+/* ---- Avenir Book */
+@font-face {
+  font-family: "Avenir Book";
+  src: url('../fonts/Avenir-Book.ttf') format('opentype');
+}
+
+/* ---- Avenir Book 45 */
+@font-face {
+  font-family: "Avenir LT 45";
+  src: url('../fonts/Avenir_LT_45_Book.tt') format('opentype');
+}
+
+/* ---- Helvetica Neue Thin  */
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  src: url('../fonts/HelveticaNeue-Thin.otf') format('opentype');
+}
+
+/* G E N E R A L */
 body {
   font-family: "Avenir Book", sans-serif;
   font-weight: 400;

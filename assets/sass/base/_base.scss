@@ -60,3 +60,27 @@ section[back-img] {
     width: 100vw;
     height: 100vh;
 }
+
+
+/* Page Title */
+.pageTitle {
+  
+  position: absolute;
+  right: 10rem;
+  margin-top: 3rem;
+
+  color: $color-tertiary;
+  span {
+   
+    background-color: $color-secondary;
+
+    &.red-letter {
+      color: $color-primary;
+    }
+  }
+
+  font-family: 'Helvetica Neue Thin', sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  letter-spacing: -0.05rem;
+}

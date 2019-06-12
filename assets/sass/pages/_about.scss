@@ -1,54 +1,111 @@
-.about-us {
+.about {
+    
+    overflow: hidden;
     &[back-img] {
-        background-size: 80%;
+        
+        /* fix the weird backgroun behavior*/
+        height: 100%;
+
+
+        background-size: 50%;
         background-repeat: no-repeat;
-        background-position: bottom right;
-        background-color: #F4EFDD;
+        background-position: bottom left;
+        background-color: #f4f4f0;
 
         @include respond(tab-port) {
-            background: linear-gradient(to bottom, #F4EFDD, #F4EFDD, white)!important;
+            //background: linear-gradient(to bottom, #F4EFDD, #F4EFDD, white)!important;
         }
     }
-    &__info {
+
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__container {
+        
         display: grid;
-        grid-template-columns: 1.1fr 2fr 1.1fr;
+        grid-template-rows: 1fr 0.5fr;
+        padding-top: 20rem;
+        padding-right: 10rem;
+        
+    }
 
-        @include respond(tab-port) {
-            grid-template-columns: 0.5fr 3fr 0.5fr;
-        }
+    &__text {
+        display: block;
+        float: right;
+        padding-left: 10vw;
+        @include textSize;
+    }
 
-        h1 {
+    /* ---- L I N G U I S T I C ---- */
+    &__links-li {
+
+        display: grid;
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 10vw;
+
+        a {
             text-align: center;
-            @include topHeading;
-        }
-
-        p {
-            margin-top:  5rem;
+            text-decoration: none;
+            color: $color-tertiary;
+            background-color: $color-secondary;
             font-size: 2rem;
-            letter-spacing: .1rem;
-            span { //Fix the weird behavior of the tilde. 
-                @include fixTilde;
-                @include respond(tab-port) {
-                    font-size: 3rem;
-                }
 
-                @include respond(phone) {
-                    font-size: 1.5rem;
-                }
-            }
+            @include transitions;
 
-            @include respond(tab-port) {
-               font-size: 3rem;
-            }
-
-            @include respond(phone) {
-                margin-top : 2rem;
-                font-size: 1.3rem;
+            &:hover {
+                background-color: $color-primary;
             }
         }
     }
 
-    @include respond(phone) {
-        max-height: 80vh;
+    /* ---- V I S O - S P A T I A L ---- */
+    &__links-vs {
+
+        display: grid;
+        grid-column-gap: 1rem;
+        //grid-row-gap: 1rem;
+        grid-template-columns: repeat(6, 1fr);
+        padding-left: 10vw;
+        padding-right: 10vw;
+
+        a {
+            @include iconSize;
+            text-decoration: none;  
+            background-color: $color-secondary;
+            cursor: pointer;
+            @include transitions;
+
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    /* ---- N A T U R A L I S T I C ---- */
+    &__links-na {
+
+        display: grid;
+        grid-column-gap: 1rem;
+        //grid-row-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 20vw;
+        
+
+        a {
+            @include iconSize;
+            text-decoration: none;  
+            background-color: $color-secondary;
+            transform: rotate(45deg);
+            cursor: pointer;
+            @include transitions;
+
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
     }
 }
+
