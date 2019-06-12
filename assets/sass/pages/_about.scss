@@ -17,9 +17,9 @@
         }
     }
 
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
 
     &__container {
         
@@ -35,6 +35,15 @@
         float: right;
         padding-left: 10vw;
         @include textSize;
+
+        /* ---- Logical Mathematical ---- */
+        &-lm {
+            display: block;
+            float: right;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            @include textSize;  
+        } 
     }
 
     /* ---- L I N G U I S T I C ---- */
@@ -126,6 +135,50 @@
     }
 
     /* ---- L O G I C A L   M A T H E M A T I C A L ---- */
+    &__empty-lm {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    &__links-lm {
+        transform: rotate(90deg) scale(1, -1);
+        position: absolute;
+        bottom: 25rem;
+        left: -2vw;
+
+        a {
+            @include iconSize;
+            text-decoration: none;  
+            //transform: rotate(45deg);
+            cursor: pointer;
+            @include transitions;
+        }
+
+        .pic {
+            @include iconSize;
+        
+            background-color:$color-secondary;
+            display:inline-block;
+            margin-left: 3rem;
+            transform: rotateZ(45deg);
+            @include transitions;
+
+
+            img {
+                width: 50%;
+                margin-top: 1.3rem;
+                margin-left: 1.3rem;
+                transform: rotate(-135deg) scale(-1, 1);
+            }
+          }
+          .pic:hover{
+            background-color: $color-primary
+          }
+          .row-2 {
+            margin-left: 4.6rem;
+            margin-top: -1.3rem;
+        }
+    }
 }
 
 

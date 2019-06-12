@@ -2234,7 +2234,15 @@ button {
     float: right;
     padding-left: 10vw;
     font-size: 2rem;
-    line-height: 3rem; }
+    line-height: 3rem;
+    /* ---- Logical Mathematical ---- */ }
+    .about__text-lm {
+      display: block;
+      float: right;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      font-size: 2rem;
+      line-height: 3rem; }
   .about__links-li {
     display: grid;
     grid-column-gap: 2rem;
@@ -2311,6 +2319,50 @@ button {
     .about__links-na .pic:hover {
       background-color: #9a3324; }
     .about__links-na .row-2 {
+      margin-left: 4.6rem;
+      margin-top: -1.3rem; }
+  .about__empty-lm {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); }
+  .about__links-lm {
+    transform: rotate(90deg) scale(1, -1);
+    position: absolute;
+    bottom: 25rem;
+    left: -2vw; }
+    .about__links-lm a {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      text-decoration: none;
+      cursor: pointer;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .about__links-lm .pic {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-color: #2d2c2f;
+      display: inline-block;
+      margin-left: 3rem;
+      transform: rotateZ(45deg);
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .about__links-lm .pic img {
+        width: 50%;
+        margin-top: 1.3rem;
+        margin-left: 1.3rem;
+        transform: rotate(-135deg) scale(-1, 1); }
+    .about__links-lm .pic:hover {
+      background-color: #9a3324; }
+    .about__links-lm .row-2 {
       margin-left: 4.6rem;
       margin-top: -1.3rem; }
 
