@@ -80,6 +80,17 @@
     margin-top: 5rem;
 }
 
+/* L I N G U I S T I C   M I X I N */
+@mixin titleLi {
+    font-size: 4.5rem;
+    color: $color-secondary;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Avenir Roman';
+    font-weight: 600;
+
+}
+
 
 /*************** M E D I A  Q U E R I E S ****************/
 @mixin respond($breakpoint) {

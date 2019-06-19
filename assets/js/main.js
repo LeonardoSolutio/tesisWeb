@@ -18,8 +18,10 @@ if ((Cookies.get('uiCurrentState') > 0) && (Cookies.get('quizState') === 'true')
     uiState = parseInt(Cookies.get('uiCurrentState'))
 }
 
+
 /* Set Navigation */
 function navigationController($scope) {
+
   /* Choose the current uiState */
   switch (uiState) {
     case 1:
@@ -339,7 +341,7 @@ myApp.config(function($routeProvider, $locationProvider) {
     $routeProvider
     .when('/', {
         templateUrl : 'vistas/home.html',
-        controller  : 'mainController'
+        controller  : 'mainController',
     })
     .when('/about', {
         templateUrl : 'vistas/about.html',
@@ -724,6 +726,14 @@ myApp.controller('servicesController', function ($scope) {
         default:
             break;
     }
+
+
+    /* Linguistic Services JS */
+    if (uiState === 1) { 
+    }
+
+
+   
 });
 
 

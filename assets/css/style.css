@@ -6,6 +6,7 @@
 /* Layout logo position */
 /* Fix tilde weird behavior */
 /* Margin Heading top */
+/* L I N G U I S T I C   M I X I N */
 /*************** M E D I A  Q U E R I E S ****************/
 /* -------------------- Base Files -------------------- */
 /* ************* G E N E R A L ************* */
@@ -20,6 +21,9 @@
 
 * {
   outline: none; }
+
+a {
+  cursor: pointer; }
 
 /* Hide scrollbar */
 ::-webkit-scrollbar {
@@ -156,7 +160,7 @@ section[back-img] {
 /* Page Title */
 .pageTitle {
   position: absolute;
-  right: 10rem;
+  right: 5vw;
   margin-top: 3rem;
   color: #f5f4f0;
   font-family: 'Helvetica Neue Thin', sans-serif;
@@ -284,6 +288,11 @@ section[back-img] {
 @font-face {
   font-family: "Avenir LT 45";
   src: url("../fonts/Avenir_LT_45_Book.tt") format("opentype"); }
+
+/* ---- Avenir Roman */
+@font-face {
+  font-family: "Avenir Roman";
+  src: url("../fonts/AvenirLTStd-Heavy.otf") format("opentype"); }
 
 /* ---- Helvetica Neue Thin  */
 @font-face {
@@ -2232,7 +2241,7 @@ button {
     display: grid;
     grid-template-rows: 1fr 0.5fr;
     padding-top: 20rem;
-    padding-right: 10rem; }
+    padding-right: 5vw; }
   .about__text {
     display: block;
     float: right;
@@ -2377,9 +2386,10 @@ button {
     grid-template-rows: repeat(2, 1fr); }
   .about__links-lm {
     transform: rotate(90deg) scale(1, -1);
-    position: absolute;
+    position: fixed;
     bottom: 25rem;
-    left: -2vw; }
+    left: -2vw;
+    z-index: 999; }
     .about__links-lm a {
       width: 5.8rem;
       height: 5.8rem;
@@ -2480,125 +2490,82 @@ button {
     }
     */ }
 
-.contact {
-  /*
+.services {
+  background-color: #f5f4f0;
+  height: 100%; }
+  .services__li {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    height: 100%; }
+    .services__li .title-li {
+      font-size: 4.5rem;
+      color: #2d2c2f;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Avenir Roman';
+      font-weight: 600; }
+    .services__li .li-acc {
+      min-width: 90vw;
+      text-align: left;
+      border-bottom: 1px solid #2d2c2f;
+      margin-bottom: 3rem;
+      overflow: hidden !important;
+      height: auto; }
+      .services__li .li-acc:last-child {
+        border-bottom: 0px solid transparent; }
+    .services__li .tab-container {
+      margin-left: 10vw;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      overflow: hidden; }
+    .services__li .tab-links a {
+      color: #2d2c2f;
+      font-family: 'Avenir Roman', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 600; }
+      .services__li .tab-links a.active {
+        color: #9a3324; }
+    .services__li .tab-details {
+      overflow: hidden;
+      max-width: 50vw;
+      right: 0;
+      margin-bottom: 3rem; }
+      .services__li .tab-details p {
+        font-size: 2.5rem; }
+    .services__li .action-btn {
+      color: #9a3324;
+      text-decoration: underline;
+      font-size: 2rem;
+      font-weight: bolder;
+      font-family: 'Avenir Roman', sans-serif;
+      float: right;
+      margin-top: 1rem;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .services__li .action-btn:hover {
+        background-color: #9a3324;
+        color: #f5f4f0; }
 
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
+.fade.ng-hide {
+  opacity: 0; }
 
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
+.fade.ng-hide-remove,
+.fade.ng-hide-add {
+  display: block !important;
+  /* or inline-block, as appropriate */ }
 
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
+.fade.ng-hide-remove {
+  transition: all linear 1000ms; }
 
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-  .contact[back-img] {
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-color: #F4EFDD;
-    /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-  .contact__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-  .contact__form {
-    padding: 0 5rem; }
-    .contact__form h1 {
-      margin-top: 5rem;
-      text-align: center;
-      margin-bottom: 1rem;
-      /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
+.fade.ng-hide-add {
+  transition: all linear 500ms;
+  height: 0; }
 
 .quiz {
   background-color: #001114;

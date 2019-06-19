@@ -13,6 +13,10 @@
   outline: none;
 }
 
+a {
+  cursor: pointer;
+}
+
 /* Hide scrollbar */
 ::-webkit-scrollbar {
   width: 0px;
@@ -66,7 +70,7 @@ section[back-img] {
 .pageTitle {
   
   position: absolute;
-  right: 10rem;
+  right: 5vw;
   margin-top: 3rem;
 
   color: $color-tertiary;
