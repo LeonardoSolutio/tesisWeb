@@ -88,6 +88,24 @@
     &__na {
 
     }
+
+
+
+    &-li-link {
+        //position: fixed;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 2rem;
+        position: fixed;
+        right: 5vw;
+        bottom: 10rem;
+        
+        a {
+            @include socialLinkLi;
+            min-width: 18rem;
+        }
+    }
 }
 
 
@@ -101,11 +119,11 @@
   }
   
   .fade.ng-hide-remove {
-    transition: all linear 1000ms;
+    transition: all ease 1000ms;
   }
   
   .fade.ng-hide-add {
-    transition: all linear 500ms;
+    transition: all ease 1000ms;
     height: 0;
 }
   

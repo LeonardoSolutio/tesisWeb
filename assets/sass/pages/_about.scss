@@ -56,17 +56,7 @@
         padding-left: 10vw;
 
         a {
-            text-align: center;
-            text-decoration: none;
-            color: $color-tertiary;
-            background-color: $color-secondary;
-            font-size: 2rem;
-
-            @include transitions;
-
-            &:hover {
-                background-color: $color-primary;
-            }
+            @include socialLinkLi;
         }
     }
 

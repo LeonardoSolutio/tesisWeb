@@ -1,23 +1,211 @@
 .portafolio {
-    width: 100vw;
-    overflow-x: hidden;
-    height: 100vh;
-    overflow-y: none;
-    background-color: $color-black;
+    background-color: $color-tertiary;
+    height: 100%;
 
-    h1 {
-        color: $color-white;
-        text-align: center;
-        padding-top: 1rem;
+    /* L I N G U I S T I C */
+    &__li {
 
-        @include respond(phone) {
-            padding-top: 10vh;
-            margin-bottom: 5vh;
+        .tab {
+            &-links {
+                position: fixed;
+                top: 12.5rem;
+                left: 2.5vw;
+                font-size: 1.5rem;
+                font-family: 'Helvetica Neue Thin', sans-serif;
+                overflow: hidden;
+                
+                h3 {
+                    margin-bottom: 1.5rem;
+                }
+
+                a {
+                    @include transitions;
+                    padding: 1rem;
+
+                    &:hover,
+                    &.active {
+                        background-color: $color-primary;
+                        color: $color-tertiary;
+                    }
+                }
+            }
+
+            &-details {
+                display: flex;
+                height: 100%;
+                justify-content: center; /* align horizontal */
+                align-items: center; /* align vertical */
+                overflow: hidden;
+            }
+        }
+
+
+        .project {
+            &-details {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding-left: 15vw;
+                padding-right: 10vw;
+                position: fixed;
+            }
+
+            &-title {
+                @include titleLi;
+                transform: translateY(-20rem);
+                position: fixed;
+                left: 15vw;
+                .second-line {
+                    margin-left: 15rem;
+                    margin-top: -2rem;
+                }
+            }
+
+            &-content {
+                transform: translateY(-5rem);
+                position: fixed;
+                margin-right: 10vw;
+                p {
+                    font-size: 2rem;
+                }
+                
+                .action-btn {
+                    color: $color-primary;
+                    font-size: 1.8rem;
+                    font-family: 'Avenir Roman', sans-serif;
+                    float: right;
+
+                    
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &-li-link {
+        //position: fixed;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 2rem;
+        position: fixed;
+        right: 5vw;
+        bottom: 10rem;
+        
+        a {
+            @include socialLinkLi;
+            min-width: 18rem;
         }
     }
 
-    @include respond(phone) {
-        //max-height: 100vh;
-        overflow-y: hidden !important;
+    /* N A T U R A L I S T I C */
+    &__na {
+        overflow: hidden;
+        height: 100%;
+
+        .tab{
+            &-links {
+                display: grid;
+                transform: rotate(-90deg);
+                position: fixed;
+                bottom: 0rem;
+                left: 6vw;
+                z-index: 999;
+
+                h3 {
+                    transform: rotate(90deg);
+                    margin-bottom: 3rem;
+                }
+
+                a {
+                    background-color: $color-secondary;
+                    color: $color-tertiary;
+                    padding: 1rem;
+                    @include transitions;
+
+
+                    &:hover,
+                    &.active {
+                        background-color: $color-primary;
+                    }
+                }
+            }
+
+            &-details {
+
+                .project {
+                    &-details {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    &-title {
+                        z-index: 888;
+                        img {
+                            height: 90vh;
+                            max-width: 50vw;
+                        }
+                        h3 {
+                            position: fixed;
+                            height: 95vh;
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 50vw;
+                            transform: translate(0,-100%);
+                            color: $color-tertiary;
+                            @include titleLi;
+                            color: $color-tertiary;
+                        }
+                    }
+
+                    &-content {
+                        // display: flex;
+                        // align-items: center;
+                        // justify-content: center;
+
+                        padding-left: 5vw;
+                        padding-right: 5vw;
+                        margin-top: 25rem;
+            
+                        p {
+                            font-size: 2.2rem;
+                            color: $color-secondary;
+                            line-height: 3rem;
+
+
+                            position: fixed;
+                            right: 5vw;
+                            padding-left: 55vw;
+                            top: 35rem;
+                        }
+
+                        a {
+                            color: $color-tertiary;
+                            background-color: $color-primary; 
+                            text-decoration: none;
+                            font-size: 1.6rem;
+                            padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+                            bottom: 30vh;
+                            //font-family: 'Helvetica Neue Thin', sans-serif;
+                            //float: right;
+                            /* float: right; */
+                            position: fixed;
+                            right: 5vw;
+
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
     }
 }
+

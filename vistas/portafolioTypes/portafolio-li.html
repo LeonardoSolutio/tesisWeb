@@ -1,1 +1,107 @@
-<h1>Portafolio Linguistic</h1>
+<p class="pageTitle">
+  <span> < P O R T A F O L I<span class="red-letter"> O </span>/ ></span>
+</p>
+
+<div class="portafolio__li" ng-init="project=1"> <!-- portafolio__li-->
+
+  <!-- Tab Links-->  
+  <div class="tab-links">
+    <h3 ng-class="{active:project==1}"> <!--  h3 -->
+      <a ng-class="{active:project==1}" ng-click="project = 1">01</a>
+    </h3> <!--  ./h3 -->
+
+    <h3 ng-class="{active:project==2}"> <!--  h3 -->
+      <a ng-class="{active:project==2}" ng-click="project = 2">02</a>
+    </h3> <!--  ./h3 -->
+
+    <h3 ng-class="{active:project==3}">
+      <a ng-class="{active:project==3}" ng-click="project = 3">03</a>
+    </h3>
+
+    <h3 ng-class="{active:project==4}"> <!--  h3 -->
+      <a ng-class="{active:project==4}" ng-click="project = 4">04</a>
+    </h3> <!--  ./h3 -->
+  </div> <!-- ./Tab Links-->
+
+  <!-- Tabs Details --> 
+  <div class="tab-details">
+
+        <div class="project-details fade" ng-show="project==1"> <!-- project-details -->
+            <div class="project-title"> <!-- project-title -->
+                <h3>• industrial</h3>
+                <h3 class="second-line">mueblera</h3>
+            </div> <!-- ./project-title -->
+            <div class="project-content" style="overflow: hidden;"> <!-- project-content -->
+              <p>
+                Begin Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit
+              </p>
+              <a class="action-btn" href="http://industrialmueblera.com.mx/">TAKE A LOOK</a>
+            </div> <!-- ./project-content -->
+        </div> <!-- ./project-details -->
+
+        <div class="project-details fade" ng-show="project==2"> <!-- project-details -->
+            <div class="project-title"> <!-- project-title -->
+                <h3>• landscape</h3>
+                <h3 class="second-line">méxico</h3>
+            </div> <!-- ./project-title -->
+            <div class="project-content" style="overflow: hidden;"> <!-- project-content -->
+              <p>
+                Begin Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit
+              </p>
+              <a class="action-btn" href="http://landscapemexico.com.mx/">TAKE A LOOK</a>
+            </div> <!-- ./project-content -->
+        </div> <!-- ./project-details -->
+
+        <div class="project-details fade" ng-show="project==3"> <!-- project-details -->
+            <div class="project-title"> <!-- project-title -->
+                <h3>• Restaurante</h3>
+                <h3 class="second-line"> El Español</h3>
+            </div> <!-- ./project-title -->
+            <div class="project-content" style="overflow: hidden;"> <!-- project-content -->
+              <p>
+                Begin Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit
+              </p>
+              <a class="action-btn" href="https://espanolrestaurante.com/">TAKE A LOOK</a>
+            </div> <!-- ./project-content -->
+        </div> <!-- ./project-details -->
+
+        <div class="project-details fade" ng-show="project==4"> <!-- project-details -->
+            <div class="project-title"> <!-- project-title -->
+                <h3>• Etérea Art</h3>
+                <h3 class="second-line"> Productions</h3>
+            </div> <!-- ./project-title -->
+            <div class="project-content" style="overflow: hidden;"> <!-- project-content -->
+              <p>
+                Begin Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit
+              </p>
+              <a class="action-btn" href="http://etereaproductions.com/">TAKE A LOOK</a>
+            </div> <!-- ./project-content -->
+        </div> <!-- ./project-details -->
+
+  </div> <!-- ./Tabs Details --> 
+
+</div> <!-- ./portafolio__li -->
+
+<div class="portafolio-li-link"> <!-- portafolio-li-link -->
+  <a href="skype:leosolutio?call">• SKYPE</a>
+  <a href="https://api.whatsapp.com/send?phone=5216181179823" target="_blank"
+    >• WHATSAPP</a
+  >
+  <a href="mailto:iam@leonardogrinn.com">• E-MAIL</a>
+</div> <!-- ./portafolio-li-link -->

@@ -2428,67 +2428,160 @@ button {
       margin-top: -1.3rem; }
 
 .portafolio {
-  width: 100vw;
-  overflow-x: hidden;
-  height: 100vh;
-  overflow-y: none;
-  background-color: #000;
-  /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
-  .portafolio h1 {
-    color: #fff;
-    text-align: center;
-    padding-top: 1rem;
-    /*
-
-    @if $breakpoint == iphone-x {
-        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
-    }
-
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-
-    @if $breakpoint == md-desktop {
-        @media only screen and (max-width: 85.3em) { @content };    //1200px
-    }
-
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
-    */ }
+  background-color: #f5f4f0;
+  height: 100%;
+  /* L I N G U I S T I C */
+  /* N A T U R A L I S T I C */ }
+  .portafolio__li .tab-links {
+    position: fixed;
+    top: 12.5rem;
+    left: 2.5vw;
+    font-size: 1.5rem;
+    font-family: 'Helvetica Neue Thin', sans-serif;
+    overflow: hidden; }
+    .portafolio__li .tab-links h3 {
+      margin-bottom: 1.5rem; }
+    .portafolio__li .tab-links a {
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      padding: 1rem; }
+      .portafolio__li .tab-links a:hover, .portafolio__li .tab-links a.active {
+        background-color: #9a3324;
+        color: #f5f4f0; }
+  .portafolio__li .tab-details {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    overflow: hidden; }
+  .portafolio__li .project-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 15vw;
+    padding-right: 10vw;
+    position: fixed; }
+  .portafolio__li .project-title {
+    font-size: 4.5rem;
+    color: #2d2c2f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Avenir Roman';
+    font-weight: 600;
+    transform: translateY(-20rem);
+    position: fixed;
+    left: 15vw; }
+    .portafolio__li .project-title .second-line {
+      margin-left: 15rem;
+      margin-top: -2rem; }
+  .portafolio__li .project-content {
+    transform: translateY(-5rem);
+    position: fixed;
+    margin-right: 10vw; }
+    .portafolio__li .project-content p {
+      font-size: 2rem; }
+    .portafolio__li .project-content .action-btn {
+      color: #9a3324;
+      font-size: 1.8rem;
+      font-family: 'Avenir Roman', sans-serif;
+      float: right; }
+      .portafolio__li .project-content .action-btn:hover {
+        text-decoration: underline; }
+  .portafolio-li-link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    position: fixed;
+    right: 5vw;
+    bottom: 10rem; }
+    .portafolio-li-link a {
+      text-align: center;
+      text-decoration: none;
+      color: #f5f4f0;
+      background-color: #2d2c2f;
+      font-size: 2rem;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      min-width: 18rem; }
+      .portafolio-li-link a:hover {
+        background-color: #9a3324; }
+  .portafolio__na {
+    overflow: hidden;
+    height: 100%; }
+    .portafolio__na .tab-links {
+      display: grid;
+      transform: rotate(-90deg);
+      position: fixed;
+      bottom: 0rem;
+      left: 6vw;
+      z-index: 999; }
+      .portafolio__na .tab-links h3 {
+        transform: rotate(90deg);
+        margin-bottom: 3rem; }
+      .portafolio__na .tab-links a {
+        background-color: #2d2c2f;
+        color: #f5f4f0;
+        padding: 1rem;
+        /* Transitions */
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .portafolio__na .tab-links a:hover, .portafolio__na .tab-links a.active {
+          background-color: #9a3324; }
+    .portafolio__na .tab-details .project-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+    .portafolio__na .tab-details .project-title {
+      z-index: 888; }
+      .portafolio__na .tab-details .project-title img {
+        height: 90vh;
+        max-width: 50vw; }
+      .portafolio__na .tab-details .project-title h3 {
+        position: fixed;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        transform: translate(0, -100%);
+        color: #f5f4f0;
+        font-size: 4.5rem;
+        color: #2d2c2f;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Avenir Roman';
+        font-weight: 600;
+        color: #f5f4f0; }
+    .portafolio__na .tab-details .project-content {
+      padding-left: 5vw;
+      padding-right: 5vw;
+      margin-top: 25rem; }
+      .portafolio__na .tab-details .project-content p {
+        font-size: 2.2rem;
+        color: #2d2c2f;
+        line-height: 3rem;
+        position: fixed;
+        right: 5vw;
+        padding-left: 55vw;
+        top: 35rem; }
+      .portafolio__na .tab-details .project-content a {
+        color: #f5f4f0;
+        background-color: #9a3324;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+        bottom: 30vh;
+        /* float: right; */
+        position: fixed;
+        right: 5vw; }
+        .portafolio__na .tab-details .project-content a:hover {
+          text-decoration: underline; }
 
 .services {
   background-color: #f5f4f0;
@@ -2551,6 +2644,27 @@ button {
       .services__li .action-btn:hover {
         background-color: #9a3324;
         color: #f5f4f0; }
+  .services-li-link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    position: fixed;
+    right: 5vw;
+    bottom: 10rem; }
+    .services-li-link a {
+      text-align: center;
+      text-decoration: none;
+      color: #f5f4f0;
+      background-color: #2d2c2f;
+      font-size: 2rem;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      min-width: 18rem; }
+      .services-li-link a:hover {
+        background-color: #9a3324; }
 
 .fade.ng-hide {
   opacity: 0; }
@@ -2561,10 +2675,10 @@ button {
   /* or inline-block, as appropriate */ }
 
 .fade.ng-hide-remove {
-  transition: all linear 1000ms; }
+  transition: all ease 1000ms; }
 
 .fade.ng-hide-add {
-  transition: all linear 500ms;
+  transition: all ease 1000ms;
   height: 0; }
 
 .quiz {

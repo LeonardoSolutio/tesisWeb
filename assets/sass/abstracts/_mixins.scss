@@ -1,16 +1,16 @@
 @mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 @mixin absCenter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Logo Home */
@@ -33,17 +33,18 @@
     font-size: 2rem;
     line-height: 3rem;
 }
+
 /* Box shadow */
 @mixin boxShadow {
-    -webkit-box-shadow: -3px 3px 2px 1px rgba(45,44,47,0.4);
-    -moz-box-shadow: -3px 3px 2px 1px rgba(45,44,47,0.4);
-    box-shadow: -3px 3px 2px 1px rgba(45,44,47,0.4);
+    -webkit-box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
+    -moz-box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
+    box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
 }
 
 @mixin boxShadowDelete {
-    -webkit-box-shadow: -0px 0px 0px 0px rgba(45,44,47,0.4);
-    -moz-box-shadow: -0px 0px 0px 0px rgba(45,44,47,0.4);
-    box-shadow: -0px 0px 0px 0px rgba(45,44,47,0.4);
+    -webkit-box-shadow: -0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+    -moz-box-shadow: -0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+    box-shadow: -0px 0px 0px 0px rgba(45, 44, 47, 0.4);
 }
 
 @mixin transitions {
@@ -91,61 +92,131 @@
 
 }
 
+@mixin socialLinkLi {
+    text-align: center;
+    text-decoration: none;
+    color: $color-tertiary;
+    background-color: $color-secondary;
+    font-size: 2rem;
+
+    @include transitions;
+
+    &:hover {
+        background-color: $color-primary;
+    }
+}
+
 
 /*************** M E D I A  Q U E R I E S ****************/
 @mixin respond($breakpoint) {
 
-    @if $breakpoint == full-desktop {
-        @media only screen and (max-width: 120em) and (min-width: 120em) and (min-height: 67.5em) { @content };    //1920px
+    @if $breakpoint==full-desktop {
+        @media only screen and (max-width: 120em) and (min-width: 120em) and (min-height: 67.5em) {
+            @content
+        }
+
+        ; //1920px
     }
 
-    @if $breakpoint == macbook-pro-15 {
-        @media only screen and (max-width: 120em) and (min-width: 120em) and (min-height: 75em) { @content };    //1920px
+    @if $breakpoint==macbook-pro-15 {
+        @media only screen and (max-width: 120em) and (min-width: 120em) and (min-height: 75em) {
+            @content
+        }
+
+        ; //1920px
     }
 
-    @if $breakpoint == large-desktop {
-        @media only screen and (max-width: 85.375em) { @content };    //1366px * 768
+    @if $breakpoint==large-desktop {
+        @media only screen and (max-width: 85.375em) {
+            @content
+        }
+
+        ; //1366px * 768
     }
 
-    @if $breakpoint == medium-desktop {
-        @media only screen and (max-width: 81.25em) { @content };    //1300px 
+    @if $breakpoint==medium-desktop {
+        @media only screen and (max-width: 81.25em) {
+            @content
+        }
+
+        ; //1300px 
     }
 
-    @if $breakpoint == desktop {
-        @media only screen and (max-width: 73.75em) { @content };     //1180px * 780
+    @if $breakpoint==desktop {
+        @media only screen and (max-width: 73.75em) {
+            @content
+        }
+
+        ; //1180px * 780
     }
 
-    @if $breakpoint == ipad {
-        @media only screen and (max-width: 50em), only screen and (hover: none) { @content };    //800
+    @if $breakpoint==ipad {
+
+        @media only screen and (max-width: 50em),
+        only screen and (hover: none) {
+            @content
+        }
+
+        ; //800
     }
 
-    @if $breakpoint == ipad-pro {
-        @media only screen and (max-width: 64em) and (min-height: 85.375em) { @content };    //1024px
+    @if $breakpoint==ipad-pro {
+        @media only screen and (max-width: 64em) and (min-height: 85.375em) {
+            @content
+        }
+
+        ; //1024px
     }
 
-    @if $breakpoint == ipad-landscape {
-        @media only screen and (min-width: 64em) and (min-height: 48em) { @content };    //800
+    @if $breakpoint==ipad-landscape {
+        @media only screen and (min-width: 64em) and (min-height: 48em) {
+            @content
+        }
+
+        ; //800
     }
 
-    @if $breakpoint == ipad-pro-landscape {
-        @media only screen and (min-width: 85.375em) and (min-height: 64em) { @content };    //1024px
+    @if $breakpoint==ipad-pro-landscape {
+        @media only screen and (min-width: 85.375em) and (min-height: 64em) {
+            @content
+        }
+
+        ; //1024px
     }
 
-    @if $breakpoint == iphone-plus {
-        @media only screen and (max-width: 31.25em) { @content };    //500px
+    @if $breakpoint==iphone-plus {
+        @media only screen and (max-width: 31.25em) {
+            @content
+        }
+
+        ; //500px
     }
 
-    @if $breakpoint == iphone {
-        @media only screen and (max-width: 25em) { @content };    //400px
+    @if $breakpoint==iphone {
+        @media only screen and (max-width: 25em) {
+            @content
+        }
+
+        ; //400px
     }
 
-    @if $breakpoint == iphone-se {
-        @media only screen and (max-width: 20em) { @content };    //400px
+    @if $breakpoint==iphone-se {
+        @media only screen and (max-width: 20em) {
+            @content
+        }
+
+        ; //400px
     }
 
-    @if $breakpoint == iphone-x {
-    @media only screen and (max-width: 23.4375em) and  (min-height: 50.75em) { @content }; //375px
-  }/*
+    @if $breakpoint==iphone-x {
+        @media only screen and (max-width: 23.4375em) and (min-height: 50.75em) {
+            @content
+        }
+
+        ; //375px
+    }
+
+    /*
 
     @if $breakpoint == iphone-x {
         @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
