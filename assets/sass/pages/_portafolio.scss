@@ -112,8 +112,8 @@
                 transform: rotate(-90deg);
                 position: fixed;
                 bottom: 0rem;
-                left: 6vw;
-                z-index: 999;
+                left: 7vw;
+                z-index: 900;
 
                 h3 {
                     transform: rotate(90deg);
@@ -204,6 +204,27 @@
                     }
                 }
                 
+            }
+        }
+    }
+
+    &-na-link {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include iconSize;
+        position: fixed;
+        bottom: 0;
+        right: 10vw;
+
+        a {
+            @include iconSize;
+            text-decoration: none;  
+            background-color: $color-secondary;
+            cursor: pointer;
+            @include transitions;
+
+            &:hover {
+                background-color: $color-primary;
             }
         }
     }
