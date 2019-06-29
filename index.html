@@ -1,54 +1,101 @@
-<html ng-app='myApp'>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="author" content="Leonardo Grinn">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="Leonardo Grinn" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <!-- Google Font 
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
     <title>Leonardo Grinn | Official Website</title>
     <!--Loader bar 
     <link rel='stylesheet' href='build/loading-bar.min.css' type='text/css' media='all' />
     <script type='text/javascript' src='build/loading-bar.min.js'></script> -->
-    <base href="/" /> 
+    <base href="/" />
 
     <!-- Pre-loader Screen -->
     <script src="assets/js/pre-loader.js"></script>
 
     <!-- Cookies JS -->
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
     <!--  jQuery 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-</head>
+  </head>
 
+  <!-- P R E - L O A D I N G    S C R E E N -->
+  <div class="preloader-screen">
+    <div class="pong-loader"><p>LOADING</p></div>
+  </div>
+  <!-- ./pre-loader end -->
 
-<!-- P R E - L O A D I N G    S C R E E N -->
-<div class="preloader-screen">
-  <div class="pong-loader"><p>LOADING</p></div>
-</div>
-<!-- ./pre-loader end -->
-
-<body ng-controller='mainController as main'>
-
+  <body ng-controller="mainController as main">
     <!-- ========== Inicia Navbar ========== -->
-    <div class="navigation nav-invisible" ng-controller="navigationController" ng-include="navigationType()"></div> 
-    
+    <div
+      class="navigation nav-invisible"
+      ng-controller="navigationController"
+      ng-include="navigationType()"
+    ></div>
 
+    <!-- L I N G U I S T I C   N A V I G A T I O N -->
+    <div class="navigation nav-invisible li-case" style="display: none;">
+      <nav class="nav nav-vertical nav-right nav-s2" role="navigation">
+        <ul class="nav-li-container">
+          <li class="link li">
+            <a class="li-a active" href="#/"><span>•</span>Home</a>
+          </li>
+          <li class="link li">
+            <a class="li-a" href="#/about"><span>•</span>About</a>
+          </li>
+          <li class="link li">
+            <a class="li-a" href="#/portafolio"><span>•</span>Portafolio</a>
+          </li>
+          <li class="link li">
+            <a class="li-a" href="#/services"><span>•</span>Services</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-trigger active ">
+        <span class="li-btn activeOff">MENU</span
+        ><span class="li-btnOn">CLOSE</span>
+      </button>
+    </div>
+
+    <!-- N A T U R A L I S T I C  N A V I G A T I O N -->
+    <div class="navigation nav-invisible na-case">
+      <nav class="nav nav-vertical nav-right nav-s3" role="navigation" ng-init="linkactive=1">
+        <ul class="nav-li-container">
+          <li class="link na-a" ng-class="{active:linkactive==1}">
+            <a href="#/" ng-click="linkactive = 1"><span>•</span>Home</a>
+          </li>
+          <li class="link na-a" ng-class="{active:linkactive==2}">
+            <a href="#/about"  ng-click="linkactive = 2"><span>•</span>About</a>
+          </li>
+          <li class="link na-a" ng-class="{active:linkactive==3}">
+            <a href="#/portafolio" ng-click="linkactive = 3"><span>•</span>Portafolio</a>
+          </li>
+          <li class="link na-a" ng-class="{active:linkactive==4}">
+            <a href="#/services" ng-click="linkactive = 4"><span>•</span>Services</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-trigger3 active">
+        <span class="activeOff">&#8801;</span
+        ><span class="activeOn">&times;</span>
+      </button>
+    </div>
 
     <!-- ========== Inicia Contenedor ========== -->
     <div class="main">
       <div ng-view class="view-slide-in"></div>
-    </div> <!-- Termina Contenedor -->
-
-
-
+    </div>
+    <!-- Termina Contenedor -->
 
     <!-- ========== Librerias Angular JS ========== -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
@@ -58,18 +105,16 @@
 
     <!-- ========== Librerias Angular JS Locales ========== 
     <script  src="js/angular.js"></script>
-    <script  src="js/angular-route.js"></script> --> 
+    <script  src="js/angular-route.js"></script> -->
 
     <!-- JS -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 
-
     <!--<script type="text/javascript" src="assets/js/gallery.js"></script>-->
     <!-- Navigation -->
-    <!--<script type="text/javascript" src="assets/js/navigation.js"></script>-->
+    <!--<script type="text/javascript" src="assets/js/navigation.js"></script>
+    <script type="text/javascript" src="assets/js/classie.js"></script>-->
+    <!--Navigation -->
     <script type="text/javascript" src="assets/js/classie.js"></script>
-    
-</body>
-
+  </body>
 </html>
-

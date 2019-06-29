@@ -26,7 +26,8 @@ button {
         margin-left: -2rem;
     }
 
-    &.nav-trigger {
+    &.nav-trigger,
+    &.nav-trigger3 {
         position: fixed;
         background: none;
         border: none;

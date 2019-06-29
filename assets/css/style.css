@@ -1548,7 +1548,7 @@ button {
   button span.li-btnOn {
     font-size: 1.5rem;
     margin-left: -2rem; }
-  button.nav-trigger {
+  button.nav-trigger, button.nav-trigger3 {
     position: fixed;
     background: none;
     border: none;
@@ -1558,11 +1558,11 @@ button {
     bottom: 8vh;
     transform: translateX(-5rem);
     z-index: 999; }
-    button.nav-trigger span.activeOn {
+    button.nav-trigger span.activeOn, button.nav-trigger3 span.activeOn {
       display: block;
       bottom: 0rem !important;
       font-size: 3rem; }
-    button.nav-trigger span.activeOff {
+    button.nav-trigger span.activeOff, button.nav-trigger3 span.activeOff {
       display: none; }
   button.active {
     width: 5.8rem;
@@ -2702,7 +2702,7 @@ button {
       position: fixed;
       bottom: 4rem;
       left: 6vw;
-      z-index: 999; }
+      z-index: 890; }
       .services__na .tab-links h3 {
         margin-bottom: 5rem; }
       .services__na .tab-links a {
