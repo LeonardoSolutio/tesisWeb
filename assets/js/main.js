@@ -634,13 +634,13 @@ myApp.controller("servicesController", function($scope) {
       break;
 
     case 4:
-      $scope.aboutType = function() {
+      $scope.servicesType = function() {
         return "vistas/servicesTypes/services-ki.html";
       };
       break;
 
     case 5:
-      $scope.aboutType = function() {
+      $scope.servicesType = function() {
         return "vistas/servicesTypes/services-vs.html";
       };
       break;

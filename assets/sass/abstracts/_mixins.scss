@@ -41,6 +41,20 @@
     box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
 }
 
+@mixin boxShadowLighter {
+    -webkit-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+    -moz-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+    box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+}
+
+
+@mixin boxShadowKi {
+    -webkit-box-shadow: 0px 4px 1.5px 0px rgba(233, 233, 233, 0.4);
+    -moz-box-shadow: 0px 4px 1.5px 0px rgba(233, 233, 233, 0.4);
+    box-shadow: 0px 4px 1.5px 0px rgba(233, 233, 233, 0.4);
+}
+
+
 @mixin boxShadowDelete {
     -webkit-box-shadow: -0px 0px 0px 0px rgba(45, 44, 47, 0.4);
     -moz-box-shadow: -0px 0px 0px 0px rgba(45, 44, 47, 0.4);

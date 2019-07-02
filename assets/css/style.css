@@ -1217,6 +1217,23 @@ body {
 .icon-social {
   background-size: 50% !important; }
 
+/* Grey Color */
+/* Skype */
+.skype-icon-grey {
+  background-image: url(../../assets/img/Icons-social-media/skype-logo-grey.svg); }
+
+/* Mail */
+.mail-icon-grey {
+  background-image: url(../../assets/img/Icons-social-media/mail-grey.svg); }
+
+/* LinkedIn */
+.linkedin-icon-grey {
+  background-image: url(../../assets/img/Icons-social-media/linkedin-grey.svg); }
+
+/* LinkedIn */
+.whatsapp-icon-grey {
+  background-image: url(../../assets/img/Icons-social-media/whatsapp-grey.svg); }
+
 .preloader-screen {
   width: 100vw;
   height: 100vh;
@@ -2715,12 +2732,29 @@ button {
       .portafolio-lm-link a:hover {
         background-color: #9a3324; }
 
+/* Top page bar */
+.topBar {
+  position: fixed;
+  z-index: 900;
+  width: 100vw;
+  height: 6rem;
+  top: 0;
+  left: 0;
+  background-color: #2d2c2f; }
+
+/* Kinestetic title page label */
+.ki-pageTitle {
+  color: #2d2c2f; }
+  .ki-pageTitle span {
+    background-color: #f5f4f0; }
+
 .services {
   background-color: #f5f4f0;
   height: 100%;
   /* L I N G U I S T I C */
   /* N A T U R A L I S T I C */
-  /* L O G I C A L   M A T H E M A T H I C A L */ }
+  /* L O G I C A L   M A T H E M A T H I C A L */
+  /* K I N E S T H E T I C */ }
   .services__li {
     display: flex;
     display: flex;
@@ -2921,14 +2955,6 @@ button {
       transition: all 0.3s ease; }
       .services-na-link a:hover {
         background-color: #9a3324; }
-  .services .topBar {
-    position: fixed;
-    z-index: 900;
-    width: 100vw;
-    height: 6rem;
-    top: 0;
-    left: 0;
-    background-color: #2d2c2f; }
   .services__lm {
     overflow: hidden;
     height: 100%;
@@ -3051,6 +3077,181 @@ button {
       transition: all 0.3s ease; }
       .services-lm-link a:hover {
         background-color: #9a3324; }
+  .services__ki {
+    overflow: hidden;
+    height: 100%;
+    background-color: #2d2c2f; }
+    .services__ki .tab-links {
+      display: grid;
+      position: fixed;
+      right: 5vw;
+      top: 42.5vh;
+      z-index: 890; }
+      .services__ki .tab-links h3 {
+        margin-bottom: 5rem; }
+      .services__ki .tab-links a {
+        color: #9a3324;
+        overflow: hidden;
+        position: fixed;
+        width: 4rem;
+        height: 4rem;
+        background-color: #f5f4f0;
+        transition: all 0.3s ease-in;
+        padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+        letter-spacing: 0.3rem;
+        font-size: 1.5rem;
+        -webkit-box-shadow: 0px 4px 1.5px 0px rgba(233, 233, 233, 0.4);
+        -moz-box-shadow: 0px 4px 1.5px 0px rgba(233, 233, 233, 0.4);
+        box-shadow: 0px 4px 1.5px 0px rgba(233, 233, 233, 0.4); }
+        .services__ki .tab-links a:hover, .services__ki .tab-links a.active {
+          color: #f5f4f0;
+          background-color: #9a3324;
+          -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+          -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+          box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+          transform: translate(0px, 4px); }
+    .services__ki .tab-link {
+      position: fixed;
+      display: flex;
+      left: 55vw;
+      top: 37.5rem;
+      width: 35vw;
+      border-bottom: 1px solid #f5f4f0; }
+      .services__ki .tab-link a {
+        color: #f5f4f0;
+        font-size: 2rem;
+        padding: 0.5rem 1rem 0.5rem 1rem; }
+        .services__ki .tab-link a.active {
+          background-color: #9a3324; }
+    .services__ki .tab-details .services-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+    .services__ki .tab-details .services-cover {
+      z-index: 850; }
+      .services__ki .tab-details .services-cover img {
+        height: 95vh;
+        max-width: 50vw;
+        position: fixed;
+        padding-top: 6rem !important;
+        left: 0;
+        bottom: 6rem; }
+      .services__ki .tab-details .services-cover h3 {
+        position: fixed;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        transform: translate(0, -100%);
+        font-size: 4.5rem;
+        color: #2d2c2f;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Avenir Roman';
+        font-weight: 600;
+        font-size: 6rem;
+        color: #f5f4f0; }
+    .services__ki .tab-details .services-content {
+      padding-left: 5vw;
+      padding-right: 5vw;
+      margin-top: 25rem; }
+      .services__ki .tab-details .services-content .titleService-ki {
+        font-size: 4.5rem;
+        color: #2d2c2f;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Avenir Roman';
+        font-weight: 600;
+        color: #f5f4f0;
+        position: fixed;
+        top: 25rem;
+        left: 55vw; }
+      .services__ki .tab-details .services-content p {
+        font-size: 2.2rem;
+        color: #f5f4f0;
+        line-height: 3rem;
+        position: fixed;
+        right: 10vw;
+        padding-left: 55vw;
+        top: 45rem; }
+      .services__ki .tab-details .services-content .action-btn {
+        color: #f5f4f0;
+        background-color: #9a3324;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+        bottom: 20vh;
+        /* float: right; */
+        position: fixed;
+        right: 10vw;
+        /* Transitions */
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        -webkit-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+        -moz-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+        box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4); }
+        .services__ki .tab-details .services-content .action-btn:hover {
+          -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+          -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+          box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+          transform: translate(-3px, 3px); }
+  .services-ki-link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    width: 5.8rem;
+    height: 5.8rem;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    right: 13vw; }
+    .services-ki-link a {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      width: 4.8rem !important;
+      height: 4.8rem !important;
+      -webkit-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+      -moz-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+      box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+      text-decoration: none;
+      background-color: #f5f4f0;
+      cursor: pointer;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      /* Skype */
+      /* Mail */
+      /* LinkedIn */
+      /* Whats App */ }
+      .services-ki-link a:hover {
+        background-color: #9a3324;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+        box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+        transform: translate(-3px, 3px); }
+      .services-ki-link a.skype {
+        background-image: url(../../assets/img/Icons-social-media/skype-logo-grey.svg); }
+        .services-ki-link a.skype:hover {
+          background-image: url(../../assets/img/Icons-social-media/skype-logo.svg); }
+      .services-ki-link a.mail {
+        background-image: url(../../assets/img/Icons-social-media/mail-grey.svg); }
+        .services-ki-link a.mail:hover {
+          background-image: url(../../assets/img/Icons-social-media/mail.svg); }
+      .services-ki-link a.linkedin {
+        background-image: url(../../assets/img/Icons-social-media/linkedin-grey.svg); }
+        .services-ki-link a.linkedin:hover {
+          background-image: url(../../assets/img/Icons-social-media/linkedin.svg); }
+      .services-ki-link a.whatsapp {
+        background-image: url(../../assets/img/Icons-social-media/whatsapp-grey.svg); }
+        .services-ki-link a.whatsapp:hover {
+          background-image: url(../../assets/img/Icons-social-media/whatsapp.svg); }
 
 .fade.ng-hide {
   opacity: 0; }

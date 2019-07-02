@@ -1,1 +1,254 @@
-<h1>Services Kinestetic</h1>
+<p class="pageTitle ki-pageTitle">
+    <span> < S E R V I C E<span class="red-letter"> S </span>/ ></span>
+  </p>
+  <div class="topBar"></div>
+  <div class="services__ki" ng-init="services=1">
+    <!-- Tab Links-->
+    <div class="tab-links">
+      <h3 ng-class="{active:services==1}">
+        <!--  h3 -->
+        <a ng-class="{active:services==1}" ng-click="services = 1">C</a>
+      </h3>
+      <!--  ./h3 -->
+  
+      <h3 ng-class="{active:services==2}">
+        <!--  h3 -->
+        <a ng-class="{active:services==2}" ng-click="services = 2">W</a>
+      </h3>
+      <!--  ./h3 -->
+  
+      <h3 ng-class="{active:services==3}">
+        <a ng-class="{active:services==3}" ng-click="services = 3">M</a>
+      </h3>
+      <!--  ./h3 -->
+    </div>
+    <!-- ./Tab Links-->
+  
+    <!-- Tabs Details -->
+    <div class="tab-details">
+      <div class="services-details fade" ng-show="services==1">
+        <!-- project-details -->
+        <div class="services-cover">
+          <img src="assets/img/services/c-na.png" alt="Consultancy">
+        </div>
+        <!-- ./project-title -->
+        <div class="services-content" style="overflow: hidden;">
+            <!-- project-title -->
+          <h1 class="titleService-ki">CONSULTANCY</h1>
+          <!-- project-content -->
+          <div class="tab-container" ng-init="servicesC=1">
+              <div class="tab-link"> <!-- tab-links -->
+              
+                  <h3 ng-class="{active:servicesC==1}"> <!-- h3 -->
+                  <a ng-class="{active:servicesC==1}" ng-click="servicesC = 1"
+                    >IT BUSINESS</a
+                  > <!-- ./h3 -->
+                
+                
+                  <h3 ng-class="{active:servicesC==2}"> <!-- h3 -->
+                    <a ng-class="{active:servicesC==2}" ng-click="servicesC = 2"
+                      >LIFE COACHING</a
+                    >
+                  </h3> <!-- ./h3 -->
+                
+              </div> <!-- ./tab-links -->
+
+              <div class="tab-details"> <!-- tab-details -->
+                <div class="servicesC-content" ng-show="servicesC==1"> <!-- servicesC-content -->
+                  <div style="overflow: hidden;">
+                    <p>
+                      Begin Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                      aute irure dolor in reprehenderit
+                    </p>
+                    <a target="_blank" href="https://my.setmore.com/bookingpage/cffabdaf-f5c4-48d6-832d-92ae5a0907ff" class="action-btn">SHEDULE</a>
+                  </div>
+                </div> <!-- ./servicesC-content -->
+    
+                <div class="servicesC-content" ng-show="servicesC==2"> <!-- servicesC-content -->
+                  <div style="overflow: hidden;">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                      irure dolor in reprehenderit in voluptate velit esse cillum
+                      dolore eu fugiat nulla pariatur.
+                    </p>
+                    <a target="_blank" href="https://my.setmore.com/bookingpage/cffabdaf-f5c4-48d6-832d-92ae5a0907ff" class="action-btn">SHEDULE</a>
+                  </div>
+                </div> <!-- ./servicesC-content -->
+              </div> <!-- ./tab-details -->
+          </div>        
+        </div>
+        <!-- ./project-content -->
+      </div>
+      <!-- ./project-details -->
+  
+      <div class="services-details fade" ng-show="services==2">
+        <!-- project-details -->
+        <div class="services-cover">
+          <img src="assets/img/services/w-na.png" alt="Web development">
+        </div>
+        <!-- ./project-title -->
+        <div class="services-content" style="overflow: hidden;">
+          <!-- project-content -->
+          <div class="tab-container" ng-init="servicesW=1"> <!-- tab-container -->
+            <!-- project-title -->
+            <h1 class="titleService-ki">WEB DEVELOPMENT</h1>
+            <div class="tab-link"> <!-- tab-links -->
+              <h3 ng-class="{active:servicesW==1}"> <!-- h3 -->
+                <a ng-class="{active:servicesW==1}" ng-click="servicesW = 1"
+                  >PERSONALIZE</a
+                >
+              </h3> <!-- ./h3 -->
+  
+              <h3 ng-class="{active:servicesW==2}"> <!-- h3 -->
+                <a ng-class="{active:servicesW==2}" ng-click="servicesW = 2"
+                  >WEB COMPANY</a
+                >
+              </h3> <!-- ./h3 -->
+  
+              <h3 ng-class="{active:servicesW==3}"> <!-- h3 -->
+                <a ng-class="{active:servicesW==3}" ng-click="servicesW = 3"
+                  >E-COMMERCER</a
+                >
+              </h3> <!-- ./h3 -->
+  
+              <h3 ng-class="{active:servicesW==4}"> <!-- h3 -->
+                <a ng-class="{active:servicesW==4}" ng-click="servicesW = 4"
+                  >CRM</a
+                >
+              </h3> <!-- ./h3 -->
+            </div> <!-- ./tab-links -->
+  
+            <div class="tab-details"> <!-- tab-details -->
+              <div class="servicesC-content" ng-show="servicesW==1"> <!-- servicesC-content -->
+                <div style="overflow: hidden;">
+                  <p>
+                    PERSONALIZE Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit
+                  </p>
+                  <a href="mailto:development@leonardogrinn.com" class="action-btn">CONTACT</a>
+                </div>
+              </div> <!-- ./servicesC-content -->
+  
+              <div class="servicesC-content" ng-show="servicesW==2"> <!-- servicesC-content -->
+                <div style="overflow: hidden;">
+                  <p>
+                    WEB COMPANY Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit
+                  </p>
+                  <a href="mailto:development@leonardogrinn.com" class="action-btn">CONTACT</a>
+                </div>
+              </div> <!-- ./servicesC-content -->
+  
+              <div class="servicesC-content" ng-show="servicesW==3"> <!-- servicesC-content -->
+                <div style="overflow: hidden;">
+                  <p>
+                    E-COMMERCE Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit
+                  </p>
+                  <a href="mailto:development@leonardogrinn.com" class="action-btn">CONTACT</a>
+                </div>
+              </div> <!-- ./servicesC-content -->
+  
+              <div class="servicesC-content" ng-show="servicesW==4"> <!-- servicesC-content -->
+                <div style="overflow: hidden;">
+                  <p>
+                    CRM Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                  </p>
+                  <a href="mailto:development@leonardogrinn.com" class="action-btn">CONTACT</a>
+                </div>
+              </div> <!-- ./servicesC-content -->
+            </div> <!-- ./tab-details -->
+          </div> <!-- ./tab-container -->
+        </div>
+        <!-- ./project-content -->
+      </div>
+      <!-- ./project-details -->
+  
+      <div class="services-details fade" ng-show="services==3">
+        <!-- project-details -->
+        <div class="services-cover">
+          <img src="assets/img/services/m-na.png" alt="Mobile development">
+        </div>
+        <!-- ./project-title -->
+        <div class="services-content" style="overflow: hidden;">
+            <div class="tab-container" ng-init="servicesM=1"> <!-- tab-container -->
+                <!-- project-title -->
+                <h1 class="titleService-ki">MOBILE DEVELOPMENT</h1>
+              <div class="tab-link"> <!-- tab-links -->
+                <h3 ng-class="{active:servicesM==1}"> <!-- h3 -->
+                  <a ng-class="{active:servicesM==1}" ng-click="servicesM = 1"
+                    >IOS NATIVE APP</a
+                  >
+                </h3> <!-- ./h3 -->
+    
+                <h3 ng-class="{active:servicesM==2}"> <!-- h3 -->
+                  <a ng-class="{active:servicesM==2}" ng-click="servicesM = 2"
+                    >REACT NATIVE</a
+                  >
+                </h3> <!-- ./h3 -->
+              </div> <!-- ./tab-links -->
+    
+              <div class="tab-details"> <!-- tab-details -->
+                <div class="servicesC-content" ng-show="servicesM==1"> <!-- servicesC-content -->
+                  <div style="overflow: hidden;">
+                    <p>
+                      Begin Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                      aute irure dolor in reprehenderit
+                    </p>
+                    <a href="mailto:development@leonardogrinn.com" class="action-btn">CONTACT</a>
+                  </div>
+                </div> <!-- ./servicesC-content -->
+    
+                <div class="servicesC-content" ng-show="servicesM==2"> <!-- servicesC-content -->
+                  <div style="overflow: hidden;">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                      irure dolor in reprehenderit in voluptate velit esse cillum
+                      dolore eu fugiat nulla pariatur.
+                    </p>
+                    <a href="mailto:development@leonardogrinn.com" class="action-btn">CONTACT</a>
+                  </div>
+                </div> <!-- ./servicesC-content -->
+              </div> <!-- ./tab-details -->
+            </div> <!-- ./tab-container -->
+        </div>
+        <!-- ./project-content -->
+      </div>
+      <!-- ./project-details -->
+    </div>
+    <!-- ./Tabs Details -->
+  </div>
+  
+  
+  <div class="services-ki-link"> <!-- portafolio-na-link -->
+      <a class="icon-social linkedin" href="https://www.linkedin.com/in/leonardogrinn/?locale=en_US" target="_blank"></a>
+      <a class="icon-social whatsapp" href="https://api.whatsapp.com/send?phone=5213329197057" target="_blank"></a>
+      <a class="icon-social skype" href="skype:leosolutio?call"></a>
+      <a class="icon-social mail" href="mailto:iam@leonardogrinn.com"></a>
+    </div> <!-- ./portafolio-na-link -->
