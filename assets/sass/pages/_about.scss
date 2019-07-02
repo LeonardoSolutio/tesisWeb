@@ -159,6 +159,7 @@
           }
           .pic:hover{
             background-color: $color-primary;
+            transform: rotateZ(45deg) translate(-3px, 3px);
             @include boxShadowDelete;
           }
           .row-2 {

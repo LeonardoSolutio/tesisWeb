@@ -2391,6 +2391,7 @@ button {
         transform: rotate(-45deg); }
     .about__links-ki .pic:hover {
       background-color: #9a3324;
+      transform: rotateZ(45deg) translate(-3px, 3px);
       -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
       -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
       box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4); }
@@ -2450,7 +2451,8 @@ button {
   height: 100%;
   /* L I N G U I S T I C */
   /* N A T U R A L I S T I C */
-  /* L O G I C A L   M A T H E M A T H I C A L */ }
+  /* L O G I C A L   M A T H E M A T H I C A L */
+  /* K I N E S T H E T I C */ }
   .portafolio__li .tab-links {
     position: fixed;
     top: 12.5rem;
@@ -2731,6 +2733,168 @@ button {
       transition: all 0.3s ease; }
       .portafolio-lm-link a:hover {
         background-color: #9a3324; }
+  .portafolio__ki {
+    overflow: hidden;
+    height: 100%;
+    background-color: #2d2c2f; }
+    .portafolio__ki .tab-links {
+      display: grid;
+      position: fixed;
+      left: 40vw;
+      height: 100%;
+      padding-top: 15vh;
+      padding-bottom: 15vh;
+      z-index: 890; }
+      .portafolio__ki .tab-links h3 {
+        margin-bottom: 5rem; }
+      .portafolio__ki .tab-links a {
+        color: #2d2c2f;
+        overflow: hidden;
+        position: fixed;
+        width: 7vw;
+        height: 7vw;
+        background-color: #f5f4f0;
+        transition: all 0.3s ease-in;
+        padding: 2rem 1.3rem 0.8rem 1.3rem;
+        letter-spacing: 0.3rem;
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: center; }
+        .portafolio__ki .tab-links a:hover, .portafolio__ki .tab-links a.active {
+          color: #f5f4f0;
+          background-color: #9a3324;
+          -webkit-box-shadow: 1rem 1rem 0px 0px #f5f4f0;
+          -moz-box-shadow: 1rem 1rem 0px 0px #f5f4f0;
+          box-shadow: 1rem 1rem 0px 0px #f5f4f0; }
+    .portafolio__ki .tab-details .project-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+    .portafolio__ki .tab-details .project-cover {
+      z-index: 850; }
+      .portafolio__ki .tab-details .project-cover img {
+        height: 95vh;
+        max-width: 50vw;
+        position: fixed;
+        padding-top: 6rem !important;
+        left: 0;
+        bottom: 6rem; }
+      .portafolio__ki .tab-details .project-cover h3 {
+        position: fixed;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        transform: translate(0, -100%);
+        font-size: 4.5rem;
+        color: #2d2c2f;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Avenir Roman';
+        font-weight: 600;
+        font-size: 6rem;
+        color: #f5f4f0; }
+    .portafolio__ki .tab-details .project-content {
+      padding-left: 5vw;
+      padding-right: 5vw;
+      margin-top: 25rem; }
+      .portafolio__ki .tab-details .project-content .titleService-ki {
+        font-size: 4.5rem;
+        color: #2d2c2f;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Avenir Roman';
+        font-weight: 600;
+        color: #f5f4f0;
+        position: fixed;
+        top: 25rem;
+        left: 55vw; }
+      .portafolio__ki .tab-details .project-content p {
+        font-size: 2.2rem;
+        color: #f5f4f0;
+        line-height: 3rem;
+        position: fixed;
+        right: 5vw;
+        padding-left: 55vw;
+        top: 40rem; }
+      .portafolio__ki .tab-details .project-content .action-btn {
+        color: #f5f4f0;
+        background-color: #9a3324;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+        bottom: 25vh;
+        /* float: right; */
+        position: fixed;
+        right: 5vw;
+        /* Transitions */
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        -webkit-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+        -moz-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+        box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4); }
+        .portafolio__ki .tab-details .project-content .action-btn:hover {
+          -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+          -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+          box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+          transform: translate(-3px, 3px); }
+  .portafolio-ki-link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    width: 5.8rem;
+    height: 5.8rem;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    right: 10vw; }
+    .portafolio-ki-link a {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      width: 4.8rem !important;
+      height: 4.8rem !important;
+      -webkit-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+      -moz-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+      box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+      text-decoration: none;
+      background-color: #f5f4f0;
+      cursor: pointer;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      /* Skype */
+      /* Mail */
+      /* LinkedIn */
+      /* Whats App */ }
+      .portafolio-ki-link a:hover {
+        background-color: #9a3324;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+        box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+        transform: translate(-3px, 3px); }
+      .portafolio-ki-link a.skype {
+        background-image: url(../../assets/img/Icons-social-media/skype-logo-grey.svg); }
+        .portafolio-ki-link a.skype:hover {
+          background-image: url(../../assets/img/Icons-social-media/skype-logo.svg); }
+      .portafolio-ki-link a.mail {
+        background-image: url(../../assets/img/Icons-social-media/mail-grey.svg); }
+        .portafolio-ki-link a.mail:hover {
+          background-image: url(../../assets/img/Icons-social-media/mail.svg); }
+      .portafolio-ki-link a.linkedin {
+        background-image: url(../../assets/img/Icons-social-media/linkedin-grey.svg); }
+        .portafolio-ki-link a.linkedin:hover {
+          background-image: url(../../assets/img/Icons-social-media/linkedin.svg); }
+      .portafolio-ki-link a.whatsapp {
+        background-image: url(../../assets/img/Icons-social-media/whatsapp-grey.svg); }
+        .portafolio-ki-link a.whatsapp:hover {
+          background-image: url(../../assets/img/Icons-social-media/whatsapp.svg); }
 
 /* Top page bar */
 .topBar {
