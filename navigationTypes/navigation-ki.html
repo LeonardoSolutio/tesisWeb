@@ -1,15 +1,44 @@
-<nav class="navigation__kinesthetic" role="navigation"> 
+<nav class="navigation__kinesthetic" role="navigation" ng-init="linkactive=1">
+  <div class="navigation__kinesthetic-empty"></div>
 
-        <div class="navigation__kinesthetic-empty"></div>
+  <div class="navigation__kinesthetic-container">
+    <li class="icon-ki-menu" ng-class="{active:linkactive==1}">
+      <a href="#/" ng-click="linkactive = 1"
+        ><span class="li-ki-text">H</span
+        ><span class="li-ki-icon"
+          ><p>HOME</p>
+          <img src="assets/img/Icons-menu/home.svg" alt="home-icon"/></span
+      ></a>
+    </li>
+    <li class="icon-ki-menu" ng-class="{active:linkactive==2}">
+      <a href="#/about" ng-click="linkactive = 2"
+        ><span class="li-ki-text">A</span
+        ><span class="li-ki-icon"
+          ><p>ABOUT</p>
+          <img src="assets/img/Icons-menu/about.svg" alt="about-icon"/></span
+      ></a>
+    </li>
+    <li class="icon-ki-menu" ng-class="{active:linkactive==3}">
+      <a href="#/portafolio" ng-click="linkactive = 3"
+        ><span class="li-ki-text">P</span
+        ><span class="li-ki-icon"
+          ><p>PORTAFOLIO</p>
+          <img
+            src="assets/img/Icons-menu/portafolio.svg"
+            alt="portafolio-icon"/></span
+      ></a>
+    </li>
+    <li class="icon-ki-menu" ng-class="{active:linkactive==4}">
+      <a href="#/services" ng-click="linkactive = 4"
+        ><span class="li-ki-text">S</span
+        ><span class="li-ki-icon"
+          ><p>SERVICES</p>
+          <img
+            src="assets/img/Icons-menu/services.svg"
+            alt="services-icon"/></span
+      ></a>
+    </li>
+  </div>
 
-        <div class="navigation__kinesthetic-container"> 
-            <li class="icon-ki-menu active"><a href="#/"><span class="li-ki-text">H</span><span class="li-ki-icon"><p>HOME</p> <img src="assets/img/Icons-menu/home.svg" alt="home-icon"></span></a></li>
-            <li class="icon-ki-menu"><a href="#/about"><span class="li-ki-text">A</span><span class="li-ki-icon"><p>ABOUT</p> <img src="assets/img/Icons-menu/about.svg" alt="about-icon"></span></a></li>
-            <li class="icon-ki-menu"><a href="#/portafolio"><span class="li-ki-text">P</span><span class="li-ki-icon"><p>PORTAFOLIO</p> <img src="assets/img/Icons-menu/portafolio.svg" alt="portafolio-icon"></span></a></li>
-            <li class="icon-ki-menu"><a href="#/services"><span class="li-ki-text">S</span><span class="li-ki-icon"><p>SERVICES</p> <img src="assets/img/Icons-menu/services.svg" alt="services-icon"></span></a></li>
-        </div>
-
-        <div class="navigation__kinesthetic-empty"></div>
-</nav> 
-
-
+  <div class="navigation__kinesthetic-empty"></div>
+</nav>

@@ -1,10 +1,18 @@
-<nav class="navigation__viso-spatial">
-    <ul> 
-        <a class="icon-vs-menu icon-vs-home  active" href="#/"><!--<img src="assets/img/Icons-menu/home-red.svg" alt="home-icon">--></a>
-        <a class="icon-vs-menu icon-vs-about" href="#/about"><!--<img src="assets/img/Icons-menu/about-red.svg" alt="about-icon">--></a>
-        <a class="icon-vs-menu icon-vs-portafolio" href="#/portafolio"><!--<img src="assets/img/Icons-menu/portafolio-red.svg" alt="portafolio-icon">--></a>
-        <a class="icon-vs-menu icon-vs-services" href="#/services"><!--<img src="assets/img/Icons-menu/services-red.svg" alt="home-icon">--></a>
-    </ul>
+<nav class="navigation__viso-spatial" ng-init="linkactive=1">
+  <ul>
+    <a class="icon-vs-menu icon-vs-home" ng-class="{active:linkactive==1}" href="#/"
+      ><!--<img src="assets/img/Icons-menu/home-red.svg" alt="home-icon">--></a
+    >
+    <a class="icon-vs-menu icon-vs-about" ng-class="{active:linkactive==2}" ng-click="linkactive = 2" href="#/about"
+      ><!--<img src="assets/img/Icons-menu/about-red.svg" alt="about-icon">--></a
+    >
+    <a class="icon-vs-menu icon-vs-portafolio" ng-class="{active:linkactive==3}" ng-click="linkactive = 3" href="#/portafolio"
+      ><!--<img src="assets/img/Icons-menu/portafolio-red.svg" alt="portafolio-icon">--></a
+    >
+    <a class="icon-vs-menu icon-vs-services" ng-class="{active:linkactive==4}" ng-click="linkactive = 4" href="#/services"
+      ><!--<img src="assets/img/Icons-menu/services-red.svg" alt="home-icon">--></a
+    >
+  </ul>
 </nav>
 
 <!--

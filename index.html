@@ -67,7 +67,7 @@
     </div>
 
     <!-- N A T U R A L I S T I C  N A V I G A T I O N -->
-    <div class="navigation nav-invisible na-case">
+    <div class="navigation nav-invisible na-case" style="display: none;">
       <nav class="nav nav-vertical nav-right nav-s3" role="navigation" ng-init="linkactive=1">
         <ul class="nav-li-container">
           <li class="link na-a" ng-class="{active:linkactive==1}">
@@ -89,6 +89,21 @@
         <span class="activeOff">&#8801;</span
         ><span class="activeOn">&times;</span>
       </button>
+    </div>
+
+    <!-- L O G I C A L   N A V I G A T I O N -->
+    <div class="navigation nav-invisible lm-case" style="display: none;">
+        <div class="container" role="navigation">
+            <div class="progress">
+              <div class="percent"></div>
+            </div>
+            <div class="steps">
+              <a class="step selected" id="0" href="#/"><span class="link-label">HOME</span></a>
+              <a class="step" id="1" href="#/about"><span class="link-label">ABOUT</span></a>
+              <a class="step" id="2" href="#/portafolio"><span class="link-label">PORTAFOLIO</span></a>
+              <a class="step" id="3" href="#/services"><span class="link-label">SERVICES</span></a>
+            </div>
+        </div>
     </div>
 
     <!-- ========== Inicia Contenedor ========== -->

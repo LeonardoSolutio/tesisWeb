@@ -48,6 +48,7 @@ body {
   box-sizing: border-box; /* better practice */
   overflow: hidden;
   margin: 6rem 0 6rem 0; // in order to give space for the navbar
+
   @include respond(tab-port) { //Width < 900?
     padding: 0;
   }
@@ -72,7 +73,7 @@ section[back-img] {
   position: absolute;
   right: 5vw;
   margin-top: 3rem;
-
+  z-index: 950;
   color: $color-tertiary;
   span {
    

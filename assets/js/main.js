@@ -20,7 +20,7 @@ if (Cookies.get("uiCurrentState") > 0 && Cookies.get("quizState") === "true") {
 
 /* Set Navigation */
 function navigationController($scope, $window) {
-  $window.onload = function() {
+  window.onload = function() {
     /* L I N G U I S T I C   O R   N A T U R A L I S T I C */
     if (uiState == 1 || uiState == 2) {
       /* L I N G U I S T I C */
@@ -120,6 +120,9 @@ function navigationController($scope, $window) {
 
     /* L O G I C A L   M A T H E M A T H I C A L */
     if (uiState == 3) {
+      // Make visible the navigation
+      document.querySelector(".lm-case").style.display = "block";
+
       let els = document.getElementsByClassName("step");
       let steps = [];
       Array.prototype.forEach.call(els, e => {
@@ -357,7 +360,7 @@ myApp.config(function($routeProvider, $locationProvider) {
     })
     .when("/about", {
       templateUrl: "vistas/about.html",
-      controller: "aboutController"
+      controller: "aboutController",
     })
     .when("/portafolio", {
       templateUrl: "vistas/portafolio.html",

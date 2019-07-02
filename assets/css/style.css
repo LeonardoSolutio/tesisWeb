@@ -162,6 +162,7 @@ section[back-img] {
   position: absolute;
   right: 5vw;
   margin-top: 3rem;
+  z-index: 950;
   color: #f5f4f0;
   font-family: 'Helvetica Neue Thin', sans-serif;
   font-weight: 100;
@@ -2431,7 +2432,8 @@ button {
   background-color: #f5f4f0;
   height: 100%;
   /* L I N G U I S T I C */
-  /* N A T U R A L I S T I C */ }
+  /* N A T U R A L I S T I C */
+  /* L O G I C A L   M A T H E M A T H I C A L */ }
   .portafolio__li .tab-links {
     position: fixed;
     top: 12.5rem;
@@ -2608,12 +2610,117 @@ button {
       transition: all 0.3s ease; }
       .portafolio-na-link a:hover {
         background-color: #9a3324; }
+  .portafolio .topBar {
+    position: fixed;
+    z-index: 900;
+    width: 100vw;
+    height: 6rem;
+    top: 0;
+    left: 0;
+    background-color: #2d2c2f; }
+  .portafolio__lm {
+    overflow: hidden;
+    height: 100%;
+    background-color: #2d2c2f; }
+    .portafolio__lm .tab-links {
+      display: grid;
+      transform: rotate(-90deg);
+      position: fixed;
+      top: 6rem;
+      left: 7vw;
+      z-index: 900; }
+      .portafolio__lm .tab-links h3 {
+        transform: rotate(90deg);
+        margin-bottom: 3rem; }
+      .portafolio__lm .tab-links a {
+        background-color: #2d2c2f;
+        color: #f5f4f0;
+        padding: 1rem;
+        /* Transitions */
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .portafolio__lm .tab-links a:hover, .portafolio__lm .tab-links a.active {
+          background-color: #9a3324; }
+    .portafolio__lm .tab-details .project-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+    .portafolio__lm .tab-details .project-cover {
+      z-index: 850; }
+      .portafolio__lm .tab-details .project-cover img {
+        height: 100vh;
+        max-width: 50vw;
+        position: fixed;
+        padding-top: 6rem !important;
+        right: 0;
+        bottom: 6rem; }
+    .portafolio__lm .tab-details .project-content {
+      padding-left: 5vw;
+      padding-right: 5vw;
+      margin-top: 25rem;
+      color: #f5f4f0; }
+      .portafolio__lm .tab-details .project-content h3 {
+        font-size: 4.5rem;
+        color: #2d2c2f;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Avenir Roman';
+        font-weight: 600;
+        color: #f5f4f0;
+        position: fixed;
+        top: 35rem; }
+      .portafolio__lm .tab-details .project-content p {
+        font-size: 2.2rem;
+        line-height: 3rem;
+        position: fixed;
+        left: 5vw;
+        padding-right: 55vw;
+        top: 45rem; }
+      .portafolio__lm .tab-details .project-content .action-btn {
+        color: #f5f4f0;
+        background-color: #9a3324;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+        bottom: 20vh;
+        /* float: right; */
+        position: fixed;
+        left: 5vw; }
+        .portafolio__lm .tab-details .project-content .action-btn:hover {
+          text-decoration: underline; }
+  .portafolio-lm-link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 5.8rem;
+    height: 5.8rem;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    left: 2vw; }
+    .portafolio-lm-link a {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      text-decoration: none;
+      background-color: #2d2c2f;
+      cursor: pointer;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .portafolio-lm-link a:hover {
+        background-color: #9a3324; }
 
 .services {
   background-color: #f5f4f0;
   height: 100%;
   /* L I N G U I S T I C */
-  /* N A T U R A L I S T I C */ }
+  /* N A T U R A L I S T I C */
+  /* L O G I C A L   M A T H E M A T H I C A L */ }
   .services__li {
     display: flex;
     display: flex;
@@ -2732,7 +2839,7 @@ button {
       left: 55vw;
       top: 30rem;
       width: 40vw;
-      border-bottom: 1px solid #000; }
+      border-bottom: 1px solid #2d2c2f; }
       .services__na .tab-link a {
         color: #2d2c2f;
         font-size: 2rem;
@@ -2813,6 +2920,136 @@ button {
       -moz-transition: all 0.3s ease;
       transition: all 0.3s ease; }
       .services-na-link a:hover {
+        background-color: #9a3324; }
+  .services .topBar {
+    position: fixed;
+    z-index: 900;
+    width: 100vw;
+    height: 6rem;
+    top: 0;
+    left: 0;
+    background-color: #2d2c2f; }
+  .services__lm {
+    overflow: hidden;
+    height: 100%;
+    background-color: #2d2c2f; }
+    .services__lm .tab-links {
+      display: grid;
+      transform: rotate(90deg);
+      position: fixed;
+      top: -0rem;
+      left: 6vw;
+      z-index: 890; }
+      .services__lm .tab-links h3 {
+        margin-bottom: 5rem; }
+      .services__lm .tab-links a {
+        color: #f5f4f0;
+        overflow: hidden;
+        position: fixed;
+        width: 4rem;
+        height: 4rem;
+        background-color: #2d2c2f;
+        transition: all 0.3s ease-in;
+        padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+        letter-spacing: 0.3rem;
+        font-size: 1.5rem; }
+        .services__lm .tab-links a span.hover {
+          opacity: 0;
+          position: fixed;
+          overflow: hidden; }
+        .services__lm .tab-links a:hover, .services__lm .tab-links a.active {
+          background-color: #9a3324;
+          width: auto; }
+          .services__lm .tab-links a:hover span.hover, .services__lm .tab-links a.active span.hover {
+            opacity: 1;
+            position: relative; }
+    .services__lm .tab-link {
+      z-index: 1000;
+      position: fixed;
+      display: flex;
+      left: 5vw;
+      top: 40rem;
+      width: 40vw;
+      border-bottom: 1px solid #f5f4f0; }
+      .services__lm .tab-link a {
+        color: #f5f4f0;
+        font-size: 2rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        cursor: pointer; }
+        .services__lm .tab-link a.active {
+          background-color: #9a3324;
+          color: #f5f4f0; }
+    .services__lm .tab-details .services-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+    .services__lm .tab-details .services-cover {
+      z-index: 850; }
+      .services__lm .tab-details .services-cover img {
+        height: 95vh;
+        max-width: 50vw;
+        position: fixed;
+        padding-top: 6rem !important;
+        right: 0;
+        bottom: 6rem; }
+    .services__lm .tab-details .services-content {
+      padding-left: 5vw;
+      padding-right: 5vw;
+      margin-top: 25rem;
+      color: #f5f4f0; }
+      .services__lm .tab-details .services-content .titleService-lm {
+        font-size: 4.5rem;
+        color: #2d2c2f;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Avenir Roman';
+        font-weight: 600;
+        color: #f5f4f0;
+        position: fixed;
+        top: 25rem; }
+      .services__lm .tab-details .services-content p {
+        font-size: 2.2rem;
+        line-height: 3rem;
+        position: fixed;
+        left: 5vw;
+        padding-right: 55vw;
+        top: 45rem; }
+      .services__lm .tab-details .services-content .action-btn {
+        color: #f5f4f0;
+        background-color: #9a3324;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+        bottom: 20vh;
+        /* float: right; */
+        position: fixed;
+        left: 5vw; }
+        .services__lm .tab-details .services-content .action-btn:hover {
+          text-decoration: underline; }
+  .services-lm-link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 5.8rem;
+    height: 5.8rem;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    left: 2vw; }
+    .services-lm-link a {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      text-decoration: none;
+      background-color: #2d2c2f;
+      cursor: pointer;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .services-lm-link a:hover {
         background-color: #9a3324; }
 
 .fade.ng-hide {

@@ -228,5 +228,148 @@
             }
         }
     }
+
+
+    /* L O G I C A L   M A T H E M A T H I C A L */
+    .topBar {
+        position: fixed;
+        z-index: 900;
+        width: 100vw;
+        height: 6rem;
+        top: 0;
+        left: 0;
+        background-color: $color-secondary;
+    }
+
+    &__lm {
+        overflow: hidden;
+        height: 100%;
+        background-color: $color-secondary;
+
+        .tab{
+            &-links {
+                display: grid;
+                transform: rotate(-90deg);
+                position: fixed;
+                top: 6rem;
+                left: 7vw;
+                z-index: 900;
+
+                h3 {
+                    transform: rotate(90deg);
+                    margin-bottom: 3rem;
+                }
+
+                a {
+                    background-color: $color-secondary;
+                    color: $color-tertiary;
+                    padding: 1rem;
+                    @include transitions;
+
+
+                    &:hover,
+                    &.active {
+                        background-color: $color-primary;
+                    }
+                }
+            }
+
+            &-details {
+
+                .project {
+                    &-details {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    &-cover {
+                        z-index: 850;
+                        img {
+                            height: 100vh;
+                            max-width: 50vw;
+                            position: fixed;
+                            //top: 6rem;
+                            padding-top: 6rem !important;
+                            right: 0;
+                            bottom: 6rem;
+                        }
+                    }
+
+                    &-content {
+                        // display: flex;
+                        // align-items: center;
+                        // justify-content: center;
+
+                        padding-left: 5vw;
+                        padding-right: 5vw;
+                        margin-top: 25rem;
+                        color: $color-tertiary;
+                        h3 {
+                            
+                            @include titleLi;
+                            color: $color-tertiary;
+                            position: fixed;
+                            top: 35rem;
+                    
+                        }
+            
+                        p {
+                            font-size: 2.2rem;
+                            
+                            line-height: 3rem;
+
+
+                            position: fixed;
+                            left: 5vw;
+                            padding-right: 55vw;
+                            top: 45rem;
+                        }
+
+                        .action-btn {
+                            color: $color-tertiary;
+                            background-color: $color-primary;
+                            text-decoration: none;
+                            font-size: 1.6rem;
+                            padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+                            bottom: 20vh;
+                            //font-family: 'Helvetica Neue Thin', sans-serif;
+                            //float: right;
+                            /* float: right; */
+                            position: fixed;
+                            left: 5vw;
+
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+
+    }
+
+
+    &-lm-link {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include iconSize;
+        position: fixed;
+        bottom: 0;
+        left: 2vw;
+
+        a {
+            @include iconSize;
+            text-decoration: none;  
+            background-color: $color-secondary;
+            cursor: pointer;
+            @include transitions;
+
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+    }
 }
 
