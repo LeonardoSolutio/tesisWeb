@@ -584,5 +584,152 @@
             }
         }
     }
+
+    /* V I S U A L   S P A T I A L */
+    &__vs {
+
+        display: flex;
+        display: flex;
+        justify-content: left;
+        /* align horizontal */
+        align-items: center;
+        /* align vertical */
+        height: 100%;
+
+
+        .title-vs {
+            @include titleLi;
+            font-size: 5.5rem;
+            margin-bottom: 3rem;
+            color: $color-grey-dark;
+            @include transitions;
+
+            
+
+            &.active{
+                color: $color-secondary;
+                font-size: 8rem;
+            }
+        }
+
+        .vs-acc {
+            min-width: 40vw;
+            margin-left: 5vw;
+            
+            text-align: left;
+            //border-bottom: 1px solid $color-secondary;
+            margin-bottom: 3rem;
+            overflow: hidden !important;
+            height: auto;
+        }
+
+        .tab {
+
+            &-container {
+                //margin-left: 10vw;
+                display: grid;
+                grid-template-columns: 1fr;
+                overflow: hidden;
+                width: 40vw;
+                padding-top: 4rem;
+            }
+
+
+            &-links {
+                display: flex;
+
+                // width: 35vw;
+                border-bottom: 1px solid $color-secondary;
+
+                a {
+                    color: $color-grey-dark;
+                    font-family: 'Avenir Book', sans-serif;
+                    font-size: 2rem;
+                    padding: 0.5rem 1rem 0.5rem 1rem;
+                    font-weight: bold;
+                    &.active {
+                        color: $color-tertiary;
+                        background-color: $color-primary;
+                    }
+                }
+            }
+
+            &-details {
+                overflow: hidden;
+                max-width: 50vw;
+                right: 0;
+
+                p {
+                    font-size: 2rem;
+                }
+
+                margin-bottom: 3rem;
+            }
+        }
+
+        .action-btn {
+            color: $color-primary;
+            text-decoration: none;
+            font-size: 2.3rem;
+            font-weight: bolder;
+            font-family: 'Avenir Roman', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 2rem;
+            @include transitions;
+
+
+            &:hover {
+                background-color: $color-primary;
+                color: $color-tertiary;
+            }
+        }
+
+        .accordion-cover {
+            position: fixed;
+            right: 0;
+            bottom: 6rem;
+            z-index: 700;
+            width: 50vw;
+
+            h3 {
+                position: fixed;
+                height: 95vh;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50vw;
+                transform: translate(0,-100%);
+                color: $color-tertiary;
+                @include titleLi;
+                color: $color-tertiary;
+            }
+        }
+
+    }
+
+    &-vs-link {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @include iconSize;
+        position: fixed;
+        bottom: 0;
+        right: 52vw;
+
+        a {
+            @include iconSize;
+            text-decoration: none;
+            background-color: $color-secondary;
+            cursor: pointer;
+            @include transitions;
+
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+    }
 }
 

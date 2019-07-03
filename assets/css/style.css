@@ -2453,7 +2453,8 @@ button {
   /* L I N G U I S T I C */
   /* N A T U R A L I S T I C */
   /* L O G I C A L   M A T H E M A T H I C A L */
-  /* K I N E S T H E T I C */ }
+  /* K I N E S T H E T I C */
+  /* V I S U A L   S P A T I A L */ }
   .portafolio__li .tab-links {
     position: fixed;
     top: 12.5rem;
@@ -2896,6 +2897,128 @@ button {
         background-image: url(../../assets/img/Icons-social-media/whatsapp-grey.svg); }
         .portafolio-ki-link a.whatsapp:hover {
           background-image: url(../../assets/img/Icons-social-media/whatsapp.svg); }
+  .portafolio__vs {
+    display: flex;
+    display: flex;
+    justify-content: left;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    height: 100%; }
+    .portafolio__vs .title-vs {
+      font-size: 4.5rem;
+      color: #2d2c2f;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Avenir Roman';
+      font-weight: 600;
+      font-size: 5.5rem;
+      margin-bottom: 3rem;
+      color: #504e53;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .portafolio__vs .title-vs.active {
+        color: #2d2c2f;
+        font-size: 8rem; }
+    .portafolio__vs .vs-acc {
+      min-width: 40vw;
+      margin-left: 5vw;
+      text-align: left;
+      margin-bottom: 3rem;
+      overflow: hidden !important;
+      height: auto; }
+    .portafolio__vs .tab-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      overflow: hidden;
+      width: 40vw;
+      padding-top: 4rem; }
+    .portafolio__vs .tab-links {
+      display: flex;
+      border-bottom: 1px solid #2d2c2f; }
+      .portafolio__vs .tab-links a {
+        color: #504e53;
+        font-family: 'Avenir Book', sans-serif;
+        font-size: 2rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        font-weight: bold; }
+        .portafolio__vs .tab-links a.active {
+          color: #f5f4f0;
+          background-color: #9a3324; }
+    .portafolio__vs .tab-details {
+      overflow: hidden;
+      max-width: 50vw;
+      right: 0;
+      margin-bottom: 3rem; }
+      .portafolio__vs .tab-details p {
+        font-size: 2rem; }
+    .portafolio__vs .action-btn {
+      color: #9a3324;
+      text-decoration: none;
+      font-size: 2.3rem;
+      font-weight: bolder;
+      font-family: 'Avenir Roman', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .portafolio__vs .action-btn:hover {
+        background-color: #9a3324;
+        color: #f5f4f0; }
+    .portafolio__vs .accordion-cover {
+      position: fixed;
+      right: 0;
+      bottom: 6rem;
+      z-index: 700;
+      width: 50vw; }
+      .portafolio__vs .accordion-cover h3 {
+        position: fixed;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        transform: translate(0, -100%);
+        color: #f5f4f0;
+        font-size: 4.5rem;
+        color: #2d2c2f;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Avenir Roman';
+        font-weight: 600;
+        color: #f5f4f0; }
+  .portafolio-vs-link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 5.8rem;
+    height: 5.8rem;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    right: 52vw; }
+    .portafolio-vs-link a {
+      width: 5.8rem;
+      height: 5.8rem;
+      background-position: center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      text-decoration: none;
+      background-color: #2d2c2f;
+      cursor: pointer;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .portafolio-vs-link a:hover {
+        background-color: #9a3324; }
 
 /* Top page bar */
 .topBar {
