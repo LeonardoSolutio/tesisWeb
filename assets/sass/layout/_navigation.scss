@@ -288,7 +288,7 @@ button {
     background-color: $color-tertiary;
     position: absolute;
     @include transitions;
-
+    z-index: 999;
     &:hover, &.active {
         background-color: $color-primary;
     }
