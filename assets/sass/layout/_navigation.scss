@@ -24,6 +24,17 @@ button {
     span.li-btnOn {
         font-size: 1.5rem;
         margin-left: -2rem;
+
+        /* Medium Desktop 1300 */ 
+        @include respond(medium-desktop) {
+            margin-left: 4rem;
+        }
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            margin-left: 0;
+            font-size: 2rem;
+        }
     }
 
     &.nav-trigger,
@@ -39,6 +50,13 @@ button {
 
         z-index: 999;
 
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            left: 90vw;
+            bottom: 4vh;
+            width: 8rem;
+            height: 8rem;
+        }
         span.activeOn {
             display: block;
             bottom: 0rem !important;
@@ -123,15 +141,22 @@ button {
             margin-top: 10vh;
         }
 
-        @include respond(tab-port) {
-          margin-left: 6vw;
-          margin-bottom: 2rem;
+         /* iPad Pro */
+         @include respond(ipad-pro) {
+            &:first-child {
+                margin-top: 15vh;
+            }
         }
 
-        @include respond(phone) {
-            margin-left: 14vw;
+        // @include respond(tab-port) {
+        //   margin-left: 6vw;
+        //   margin-bottom: 2rem;
+        // }
+
+        // @include respond(phone) {
+        //     margin-left: 14vw;
             
-        }
+        // }
         
         .up, .down {
             font-size: 3rem;
@@ -165,20 +190,26 @@ button {
                  /* Transitions */
                  @include transitions;
              }
+
+             /* ¡¡¡ POR SI ROMPISTE ALGO !!! */
+             /* iPad Pro */
+            @include respond(ipad-pro) {
+                font-size: 3rem; 
+            }
              /* Transitions */
-             @include transitions;
+            //  @include transitions;
 
-             @include respond(md-desktop) {
-                font-size: 1.8em;
-             }
+            //  @include respond(md-desktop) {
+            //     font-size: 1.8em;
+            //  }
 
-             @include respond(tab-port) {
-                 font-size: 2.8rem;
-             }
+            //  @include respond(tab-port) {
+            //      font-size: 2rem;
+            //  }
 
-             @include respond(phone) {
-                 font-size: 2rem;
-             }
+            //  @include respond(phone) {
+            //      font-size: 2rem;
+            //  }
          }
          
          &:hover,
@@ -205,11 +236,11 @@ button {
     /*  L I N G U I S T I C */
     .li {
         a {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             &:hover,
             &.active {
                 color: $color-tertiary;
-                font-size: 2.5rem;
+                font-size: 2rem;
 
                 span {
                     opacity: 1;
@@ -218,6 +249,31 @@ button {
 
             span {
                 color: $color-tertiary;
+            }
+
+            /* Large Desktop 1366 * 768 */
+            @include respond(large-desktop) {
+                font-size: 1.3rem;
+
+                &:hover,
+                &.active {
+                    font-size: 1.7rem;
+                }
+            }
+
+            /* iPad Pro */
+            @include respond(ipad-pro) {
+                text-align: center;
+                font-size: 3rem;
+
+                &.active {
+                    color: $color-tertiary;
+                    font-size: 4.5rem;
+    
+                    span {
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
@@ -232,8 +288,16 @@ button {
     top: 0;
     z-index: 999;
 
-    @include respond(tab-port) {
-      width: 50vw;
+    /* Medium Desktop 1300 */ 
+    @include respond(medium-desktop) {
+        width: 25vw;  
+    }
+
+    
+
+    /* iPad */
+    @include respond(ipad-pro) {
+      width: 100vw;
     }
 
     @include respond(phone) {
@@ -247,8 +311,9 @@ button {
 .nav-right {
     left: -30vw;
 
-    @include respond(tab-port) {
-        
+    /* iPad */
+    @include respond(ipad-pro) {
+        left: -100vw;
     }
 
     @include respond(phone) {

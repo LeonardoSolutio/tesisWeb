@@ -32,6 +32,12 @@
 @mixin textSize {
     font-size: 2rem;
     line-height: 3rem;
+
+    /* Large Desktop 1366 * 768 */
+    @include respond(large-desktop) {
+        font-size: 1.5rem;
+        line-height: 2.5rem; 
+    }
 }
 
 /* Box shadow */
@@ -110,6 +116,16 @@
     font-family: 'Avenir Roman';
     font-weight: 600;
 
+    /* Large Desktop 1366 * 768 */
+    @include respond(large-desktop) {
+        font-size: 4rem;   
+    }
+
+    /* Medium Desktop 1300 */ 
+    @include respond(medium-desktop) {
+        font-size: 3.5rem;  
+    }
+
 }
 
 @mixin socialLinkLi {
@@ -123,6 +139,11 @@
 
     &:hover {
         background-color: $color-primary;
+    }
+
+     /* Large Desktop 1366 * 768 */
+     @include respond(large-desktop) {
+        font-size: 1.3rem;     
     }
 }
 
@@ -172,8 +193,7 @@
 
     @if $breakpoint==ipad {
 
-        @media only screen and (max-width: 50em),
-        only screen and (hover: none) {
+        @media only screen and (max-width: 50em)  and  (hover: none) {
             @content
         }
 
@@ -181,7 +201,7 @@
     }
 
     @if $breakpoint==ipad-pro {
-        @media only screen and (max-width: 64em) and (min-height: 85.375em) {
+        @media only screen and (max-width: 64em), (min-height: 85.375em) and  (hover: none) {
             @content
         }
 
@@ -189,7 +209,7 @@
     }
 
     @if $breakpoint==ipad-landscape {
-        @media only screen and (min-width: 64em) and (min-height: 48em) {
+        @media only screen and (min-width: 64em), (min-height: 48em) and  (hover: none)  {
             @content
         }
 
@@ -197,7 +217,7 @@
     }
 
     @if $breakpoint==ipad-pro-landscape {
-        @media only screen and (min-width: 85.375em) and (min-height: 64em) {
+        @media only screen and (min-width: 85.375em), (min-height: 64em) and (hover: none)  {
             @content
         }
 
@@ -205,7 +225,7 @@
     }
 
     @if $breakpoint==iphone-plus {
-        @media only screen and (max-width: 31.25em) {
+        @media only screen and (max-width: 31.25em) and  (hover: none)  {
             @content
         }
 
@@ -213,7 +233,7 @@
     }
 
     @if $breakpoint==iphone {
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 25em) and (hover: none) {
             @content
         }
 
@@ -221,7 +241,7 @@
     }
 
     @if $breakpoint==iphone-se {
-        @media only screen and (max-width: 20em) {
+        @media only screen and (max-width: 20em) and (hover: none) {
             @content
         }
 
@@ -229,7 +249,7 @@
     }
 
     @if $breakpoint==iphone-x {
-        @media only screen and (max-width: 23.4375em) and (min-height: 50.75em) {
+        @media only screen and (max-width: 23.4375em), (min-height: 50.75em) and  (hover: none)  {
             @content
         }
 
