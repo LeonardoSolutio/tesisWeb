@@ -49,6 +49,11 @@
             &:last-child {
                 border-bottom: 0px solid transparent;
             }
+
+            /* iPad Pro */
+            @include respond(ipad-pro) {
+                min-width: 95vw;
+            }
         }
 
         .tab {
@@ -62,6 +67,12 @@
                 /* Large Desktop 1366 * 768 */
                 @include respond(large-desktop) {
                     grid-template-columns: 1.6fr 3fr;
+                }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    grid-template-columns: 1.7fr 3fr;
+                    margin-left: 0vw;
                 }
             }
 
@@ -90,6 +101,13 @@
                 @include respond(medium-desktop) {
                     margin-left: -4rem; 
                 }
+
+                /* iPad */
+                @include respond(ipad) {
+                    a {
+                        font-size: 1.5rem;
+                    }
+                }
             }
 
             &-details {
@@ -109,6 +127,19 @@
                         font-size: 1.6rem;
                         line-height: 2.5rem;
                     }
+                }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    max-width: 60vw;  
+                }
+
+                /* iPad */
+                @include respond(ipad) {
+                    p {
+                        font-size: 1.4rem;
+                        line-height: 2.2rem;
+                    } 
                 }
             }
         }
@@ -164,6 +195,13 @@
         /* Medium Desktop 1300 */ 
         @include respond(medium-desktop) {
             min-width: 10rem; 
+        }
+
+        /* iPad */
+        @include respond(ipad) {
+            a {
+                min-width: 10rem;
+            }
         }
     }
 

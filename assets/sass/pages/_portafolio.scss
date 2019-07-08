@@ -56,6 +56,12 @@
                 padding-left: 15vw;
                 padding-right: 10vw;
                 position: fixed;
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    grid-template-columns: 1fr;
+                    padding-left: 0vw;
+                }
             }
 
             &-title {
@@ -75,6 +81,18 @@
                     .second-line {
                         margin-left: 10rem;
                     }
+                }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    transform: translateY(-40rem);
+                    left: 20vw;
+                }
+
+                /* iPad */
+                @include respond(ipad) {
+                    transform: translateY(-23rem);
+                    left: 15vw;
                 }
 
             }
@@ -115,6 +133,25 @@
                 /* Medium Desktop 1300 */ 
                 @include respond(medium-desktop) {
                     transform: translateY(-7rem);
+                }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    transform: translate(-40%, -15rem);
+                    width: 70vw;
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+
+                /* iPad Pro */
+                @include respond(ipad) {
+                    transform: translate(-40%, -5rem);
+                    width: 70vw;
+                    p {
+                        font-size: 1.5rem;
+                        line-height: 2.5rem;
+                    }
                 }
             }
         }

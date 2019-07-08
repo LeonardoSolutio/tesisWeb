@@ -18,13 +18,26 @@
             background-size: 45%;  
         }
 
-        @include respond(tab-port) {
-            //background: linear-gradient(to bottom, #F4EFDD, #F4EFDD, white)!important;
-        }
+         /* iPad Pro */
+         @include respond(ipad-pro) {  
+            background-size: 70vw;
+         }
     }
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    /* iPad Pro */
+    @include respond(ipad-pro) {
+        grid-template-columns: 1fr;   
+    }
+
+    &__empty {
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            display: none;
+        }    
+    }
 
 
     &__container {
@@ -33,6 +46,11 @@
         grid-template-rows: 1fr 0.5fr;
         padding-top: 20rem;
         padding-right: 5vw;
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            padding-top: 12rem;  
+        }
         
     }
 
@@ -50,6 +68,30 @@
             padding-right: 5vw;
             @include textSize;  
         } 
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            font-size: 2rem;
+            line-height: 3rem;
+            padding-left: 5vw;
+
+            &-lm {
+                font-size: 2rem;
+                line-height: 3rem;
+                padding-left: 5vw;
+            }
+        }
+
+        /* iPad */
+        @include respond(ipad) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+
+            &-lm {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
     }
 
     /* ---- L I N G U I S T I C ---- */
@@ -69,6 +111,23 @@
         @include respond(large-desktop) {
             grid-column-gap: 4rem;  
         }
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            grid-template-columns: 1fr;  
+            position: fixed;
+            min-width: 15rem;
+            right: 5vw;
+            bottom: 10rem;
+            padding-left: 0vw;
+        }
+
+        /* iPad */
+        @include respond(ipad) {
+            min-width: 12rem;
+        }
+
+        
     }
 
     /* ---- V I S O - S P A T I A L ---- */
