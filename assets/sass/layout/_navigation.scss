@@ -28,6 +28,10 @@ button {
         /* Medium Desktop 1300 */ 
         @include respond(medium-desktop) {
             margin-left: 4rem;
+
+            &-responsive {
+                display: none;
+            }
         }
 
         /* iPad Pro */
@@ -61,6 +65,41 @@ button {
             display: block;
             bottom: 0rem !important;
             font-size: 3rem;
+
+            /* Medium Desktop 1300 */ 
+            @include respond(medium-desktop) {
+
+                &-responsive {
+                   transform: translateX(6rem);
+                }
+            }
+
+            /* iPad Pro */ 
+            @include respond(ipad-pro) {
+
+                &-responsive {
+                   transform: translate(5rem, 2rem);
+                   font-size: 4rem;
+                }
+            }
+
+            /* iPad */ 
+            @include respond(ipad) {
+
+                &-responsive {
+                   transform: translate(4rem, 2rem);
+                   font-size: 4rem;
+                }
+            }
+
+            /* iPhone Plus */ 
+            @include respond(iphone-plus) {
+
+                &-responsive {
+                   transform: translate(1rem, 2rem);
+                   font-size: 3rem;
+                }
+            }
            
         }
 
@@ -95,13 +134,6 @@ button {
             transform: translateX(5rem);
         }
         
-        @include respond(tab-port) {
-
-        }
-
-        @include respond(phone) {
-            
-        }
     }
 
     &:hover {
@@ -198,9 +230,20 @@ button {
              }
 
              /* ¡¡¡ POR SI ROMPISTE ALGO !!! */
+
+              /* Large Desktop 1366 * 768 */
+            @include respond(large-desktop) {
+                font-size: 1.3rem; 
+            }
              /* iPad Pro */
             @include respond(ipad-pro) {
                 font-size: 3rem; 
+                text-align: center;
+            }
+
+             /* iPhone Plus */
+             @include respond(iphone-plus) {
+                font-size: 2rem; 
             }
              /* Transitions */
             //  @include transitions;

@@ -1629,7 +1629,9 @@ button {
     */ }
     @media only screen and (max-width: 81.25em) {
       button span.li-btnOn {
-        margin-left: 4rem; } }
+        margin-left: 4rem; }
+        button span.li-btnOn-responsive {
+          display: none; } }
     @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
       button span.li-btnOn {
         margin-left: 0;
@@ -1680,17 +1682,9 @@ button {
     button.nav-trigger span.activeOn, button.nav-trigger3 span.activeOn {
       display: block;
       bottom: 0rem !important;
-      font-size: 3rem; }
-    button.nav-trigger span.activeOff, button.nav-trigger3 span.activeOff {
-      display: none; }
-  button.active {
-    width: 5.8rem;
-    height: 5.8rem;
-    top: 0rem;
-    left: 0rem;
-    /* Linguistic */
-    /* Linguistic */
-    /*
+      font-size: 3rem;
+      /* Medium Desktop 1300 */
+      /*
 
     @if $breakpoint == iphone-x {
         @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
@@ -1716,7 +1710,62 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */
-    /*
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* iPad */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* iPhone Plus */
+      /*
 
     @if $breakpoint == iphone-x {
         @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
@@ -1742,6 +1791,30 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
+      @media only screen and (max-width: 81.25em) {
+        button.nav-trigger span.activeOn-responsive, button.nav-trigger3 span.activeOn-responsive {
+          transform: translateX(6rem); } }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        button.nav-trigger span.activeOn-responsive, button.nav-trigger3 span.activeOn-responsive {
+          transform: translate(5rem, 2rem);
+          font-size: 4rem; } }
+      @media only screen and (max-width: 50em) and (hover: none) {
+        button.nav-trigger span.activeOn-responsive, button.nav-trigger3 span.activeOn-responsive {
+          transform: translate(4rem, 2rem);
+          font-size: 4rem; } }
+      @media only screen and (max-width: 31.25em) and (hover: none) {
+        button.nav-trigger span.activeOn-responsive, button.nav-trigger3 span.activeOn-responsive {
+          transform: translate(1rem, 2rem);
+          font-size: 3rem; } }
+    button.nav-trigger span.activeOff, button.nav-trigger3 span.activeOff {
+      display: none; }
+  button.active {
+    width: 5.8rem;
+    height: 5.8rem;
+    top: 0rem;
+    left: 0rem;
+    /* Linguistic */
+    /* Linguistic */ }
     button.active span.li-btn {
       font-size: 1.5rem; }
     button.active span.li-btnOn {
@@ -1861,7 +1934,61 @@ button {
       /* All Li has the same width */
       width: 100%;
       /* ¡¡¡ POR SI ROMPISTE ALGO !!! */
+      /* Large Desktop 1366 * 768 */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
       /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* iPhone Plus */
       /*
 
     @if $breakpoint == iphone-x {
@@ -1897,9 +2024,16 @@ button {
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         transition: all 0.3s ease; }
+      @media only screen and (max-width: 85.375em) {
+        .nav li a {
+          font-size: 1.3rem; } }
       @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
         .nav li a {
-          font-size: 3rem; } }
+          font-size: 3rem;
+          text-align: center; } }
+      @media only screen and (max-width: 31.25em) and (hover: none) {
+        .nav li a {
+          font-size: 2rem; } }
     .nav li:hover .up, .nav li.active .up {
       opacity: 0; }
     .nav li:hover .down, .nav li.active .down {
@@ -2662,7 +2796,7 @@ button {
         background-size: 70vw; } }
     @media only screen and (max-width: 31.25em) and (hover: none) {
       .about[back-img] {
-        background-size: 0%; } }
+        background-size: 0vw; } }
   @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
     .about {
       grid-template-columns: 1fr; } }
