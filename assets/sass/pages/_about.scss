@@ -22,6 +22,11 @@
          @include respond(ipad-pro) {  
             background-size: 70vw;
          }
+
+         /* iPhone Plus */
+         @include respond(iphone-plus) {
+            background-size: 0%
+         }
     }
 
     display: grid;
@@ -31,6 +36,11 @@
     @include respond(ipad-pro) {
         grid-template-columns: 1fr;   
     }
+
+    /* iPhone Plus */
+    @include respond(iphone-plus) {
+        overflow-y: auto;
+     }
 
     &__empty {
         /* iPad Pro */
@@ -50,6 +60,12 @@
         /* iPad Pro */
         @include respond(ipad-pro) {
             padding-top: 12rem;  
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            grid-template-rows: 2fr 0.5fr;
+            padding-top: 4rem;
         }
         
     }
@@ -92,6 +108,19 @@
                 line-height: 2rem;
             }
         }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            margin-bottom: 3rem;
+            padding-left: 5vw;
+            padding-right: 0vw;
+
+            &-lm {
+                margin-bottom: 3rem;
+                padding-left: 5vw;
+                padding-right: 0vw;
+            }
+        }
     }
 
     /* ---- L I N G U I S T I C ---- */
@@ -125,6 +154,33 @@
         /* iPad */
         @include respond(ipad) {
             min-width: 12rem;
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            grid-template-columns: repeat(3, 1fr); 
+            grid-column-gap: 0.1rem;
+
+            min-width: 100vw;
+
+            bottom: 0;
+            right: 0;
+            // padding-left: 5vw;
+            // padding-right: 5vw;
+            // padding-bottom: 1rem;
+            // padding-top: 1rem;
+            padding: 1rem 5vw 1rem 5vw;
+            background-color: $color-secondary;
+            
+        
+            //position: initial;
+            // padding-left: 5vw;
+            // padding-right: 5vw;
+            // margin-bottom: 3rem;
+
+            //transform: translateY(100%);
+
+            //margin-top: 35vh;
         }
 
         
