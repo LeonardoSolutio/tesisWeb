@@ -16,6 +16,21 @@
 /* Logo Home */
 @mixin homeLogo {
     width: 25%;
+
+    /* iPad Pro */
+    @include respond(ipad-pro) {
+        width: 50%; 
+    }
+
+    /* iPhone Plus */
+    @include respond(iphone-plus) {
+        width: 70%; 
+    }
+
+    /* iPhone x */
+    @include respond(iphone-x) {
+        width: 70%; 
+    }
 }
 
 /* Icons Size */
@@ -86,9 +101,6 @@
     bottom: 0;
     transform: translate(8%, -30%);
 
-    @include respond(tab-port) {
-        width: 45%;
-    }
 
     @include respond(phone) {
         width: 55%;
