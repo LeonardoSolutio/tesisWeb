@@ -1,8 +1,9 @@
 .about {
-    
+
     overflow: hidden;
+
     &[back-img] {
-        
+
         /* fix the weird backgroun behavior*/
         height: 100%;
 
@@ -15,18 +16,18 @@
 
         /* Large Desktop 1366 * 768 */
         @include respond(large-desktop) {
-            background-size: 45%;  
+            background-size: 45%;
         }
 
-         /* iPad Pro */
-         @include respond(ipad-pro) {  
+        /* iPad Pro */
+        @include respond(ipad-pro) {
             background-size: 70vw;
-         }
+        }
 
-         /* iPhone Plus */
-         @include respond(iphone-plus) {
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
             background-size: 0vw;
-         }
+        }
     }
 
     display: grid;
@@ -34,24 +35,25 @@
 
     /* iPad Pro */
     @include respond(ipad-pro) {
-        grid-template-columns: 1fr;   
+        grid-template-columns: 1fr;
     }
 
     /* iPhone Plus */
     @include respond(iphone-plus) {
         overflow-y: auto;
-     }
+    }
 
     &__empty {
+
         /* iPad Pro */
         @include respond(ipad-pro) {
             display: none;
-        }    
+        }
     }
 
 
     &__container {
-        
+
         display: grid;
         grid-template-rows: 1fr 0.5fr;
         padding-top: 20rem;
@@ -59,7 +61,7 @@
 
         /* iPad Pro */
         @include respond(ipad-pro) {
-            padding-top: 12rem;  
+            padding-top: 12rem;
         }
 
         /* iPhone Plus */
@@ -67,7 +69,7 @@
             grid-template-rows: 2fr 0.5fr;
             padding-top: 4rem;
         }
-        
+
     }
 
     &__text {
@@ -82,8 +84,8 @@
             float: right;
             padding-left: 5vw;
             padding-right: 5vw;
-            @include textSize;  
-        } 
+            @include textSize;
+        }
 
         /* iPad Pro */
         @include respond(ipad-pro) {
@@ -138,12 +140,12 @@
 
         /* Large Desktop 1366 * 768 */
         @include respond(large-desktop) {
-            grid-column-gap: 4rem;  
+            grid-column-gap: 4rem;
         }
 
         /* iPad Pro */
         @include respond(ipad-pro) {
-            grid-template-columns: 1fr;  
+            grid-template-columns: 1fr;
             position: fixed;
             min-width: 15rem;
             right: 5vw;
@@ -158,7 +160,7 @@
 
         /* iPhone Plus */
         @include respond(iphone-plus) {
-            grid-template-columns: repeat(3, 1fr); 
+            grid-template-columns: repeat(3, 1fr);
             grid-column-gap: 0.1rem;
 
             min-width: 100vw;
@@ -171,8 +173,8 @@
             // padding-top: 1rem;
             padding: 1rem 5vw 1rem 5vw;
             background-color: $color-secondary;
-            
-        
+
+
             //position: initial;
             // padding-left: 5vw;
             // padding-right: 5vw;
@@ -183,7 +185,7 @@
             //margin-top: 35vh;
         }
 
-        
+
     }
 
     /* ---- V I S O - S P A T I A L ---- */
@@ -198,7 +200,7 @@
 
         a {
             @include iconSize;
-            text-decoration: none;  
+            text-decoration: none;
             background-color: $color-secondary;
             cursor: pointer;
             @include transitions;
@@ -213,12 +215,31 @@
     &__links-na {
 
         display: grid;
-        grid-template-columns:  1fr 35rem;
-        
+        grid-template-columns: 1fr 35rem;
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            grid-template-columns: 1fr 40rem;
+        }
+
+        /* iPad */
+        @include respond(ipad) {
+            grid-template-columns: 1fr 35rem;
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            grid-template-columns: 1fr;
+
+            &-empty {
+                display: none;
+            }
+        }
+
 
         a {
             @include iconSize;
-            text-decoration: none;  
+            text-decoration: none;
             //transform: rotate(45deg);
             cursor: pointer;
             @include transitions;
@@ -226,9 +247,9 @@
 
         .pic {
             @include iconSize;
-        
-            background-color:$color-secondary;
-            display:inline-block;
+
+            background-color: $color-secondary;
+            display: inline-block;
             margin-left: 3rem;
             transform: rotateZ(45deg);
             @include transitions;
@@ -240,13 +261,21 @@
                 margin-left: 1.3rem;
                 transform: rotate(-45deg);
             }
-          }
-          .pic:hover{
+
+            /* iPhone Plus */
+            @include respond(iphone-plus) {
+                display: none;
+            }
+        }
+
+        .pic:hover {
             background-color: $color-primary;
-          }
-          .row-2 {
+        }
+
+        .row-2 {
             margin-left: 4.6rem;
             margin-top: -1.3rem;
+
         }
     }
 
@@ -254,12 +283,12 @@
     &__links-ki {
 
         display: grid;
-        grid-template-columns:  1fr 25rem;
-        
+        grid-template-columns: 1fr 25rem;
+
 
         a {
             @include iconSize;
-            text-decoration: none;  
+            text-decoration: none;
             //transform: rotate(45deg);
             cursor: pointer;
             @include transitions;
@@ -267,9 +296,9 @@
 
         .pic {
             @include iconSize;
-        
-            background-color:$color-secondary;
-            display:inline-block;
+
+            background-color: $color-secondary;
+            display: inline-block;
             margin-left: 3rem;
             transform: rotateZ(45deg);
             @include transitions;
@@ -282,20 +311,22 @@
                 margin-left: 1.3rem;
                 transform: rotate(-45deg);
             }
-          }
-          .pic:hover{
+        }
+
+        .pic:hover {
             background-color: $color-primary;
             transform: rotateZ(45deg) translate(-3px, 3px);
             @include boxShadowDelete;
-          }
-          .row-2 {
+        }
+
+        .row-2 {
             margin-left: 4.6rem;
             margin-top: -1rem;
-          }
+        }
 
-          .row-3{
+        .row-3 {
             margin-top: -1rem;
-          }
+        }
     }
 
     /* ---- L O G I C A L   M A T H E M A T I C A L ---- */
@@ -313,7 +344,7 @@
 
         a {
             @include iconSize;
-            text-decoration: none;  
+            text-decoration: none;
             //transform: rotate(45deg);
             cursor: pointer;
             @include transitions;
@@ -321,9 +352,9 @@
 
         .pic {
             @include iconSize;
-        
-            background-color:$color-secondary;
-            display:inline-block;
+
+            background-color: $color-secondary;
+            display: inline-block;
             margin-left: 3rem;
             transform: rotateZ(45deg);
             @include transitions;
@@ -335,16 +366,41 @@
                 margin-left: 1.3rem;
                 transform: rotate(-135deg) scale(-1, 1);
             }
-          }
-          .pic:hover{
+        }
+
+        .pic:hover {
             background-color: $color-primary
-          }
-          .row-2 {
+        }
+
+        .row-2 {
             margin-left: 4.6rem;
             margin-top: -1.3rem;
         }
     }
+
+    /* Responsive general social links */
+    &__social-responsive {
+        display: none;
+
+        @include respond(iphone-plus) {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            @include iconSize;
+            position: fixed;
+            bottom: 0;
+            left: 2.5vw;
+
+            a {
+                @include iconSize;
+                text-decoration: none;
+                background-color: $color-secondary;
+                cursor: pointer;
+                @include transitions;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
 }
-
-
-  
