@@ -429,6 +429,11 @@ button {
     &:hover, &.active {
         background-image: url(../../assets/img/Icons-menu/home.svg);
     }
+
+    /* iPhone Plus */
+    @include respond(iphone-plus) {
+        left: 3.5rem; 
+    }
 }
 
 .icon-vs-about {
@@ -438,6 +443,17 @@ button {
 
     &:hover, &.active {
         background-image: url(../../assets/img/Icons-menu/about.svg);
+    }
+
+    /* iPad Pro */
+    @include respond(ipad-pro) {
+        top: 0;
+        left: 6.5rem;  
+    }
+
+    /* iPhone Plus */
+    @include respond(iphone-plus) { 
+        left: 11.5rem;
     }
 }
 
@@ -449,6 +465,17 @@ button {
     &:hover, &.active {
         background-image: url(../../assets/img/Icons-menu/services.svg);
     }
+
+    /* iPad Pro */
+    @include respond(ipad-pro) {
+        top: 0;
+        left: 13rem;  
+    }
+
+    /* iPhone Plus */
+    @include respond(iphone-plus) { 
+        left: 19.5rem;
+    }
 }
 
 .icon-vs-portafolio {
@@ -458,6 +485,17 @@ button {
 
     &:hover, &.active {
         background-image: url(../../assets/img/Icons-menu/portafolio.svg);
+    }
+
+    /* iPad Pro */
+    @include respond(ipad-pro) {
+        top: 0;
+        left: 19.5rem;  
+    }
+
+    /* iPhone Plus */
+    @include respond(iphone-plus) { 
+        left: 27.5rem;
     }
 }
 
@@ -582,6 +620,23 @@ button {
     /*transform: translate(-50%, -50%);*/
     transform: rotate(90deg) translate(0%, -850%);
     z-index: 999;
+
+    /* iPad Pro */
+    @include respond(ipad-pro) {
+        position: fixed;
+        top: 2rem;
+        transform: rotate(0deg) translate(-35%, 0%);
+    }
+
+    /* iPhone Plus */
+    @include respond(iphone-plus) {
+        transform: rotate(0deg) translate(4vw, 3.2rem);
+        width: 100vw;
+
+    }
+
+
+   
   }
   .steps {
     position: relative;
@@ -629,6 +684,11 @@ button {
     &:hover {
         span.link-label {
             opacity: 1;
+
+            /* Desktop 1180 */
+            @include respond(ipad-pro) {
+                opacity: 0;
+            }
         } 
     }
   }

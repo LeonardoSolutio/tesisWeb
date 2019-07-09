@@ -95,6 +95,10 @@ section[back-img] {
     transform: translateY(-5rem);
     font-size: 2.2rem;
 
+    &-resposive {
+      transform: translateY(1rem);
+    }
+
   }
 }
 

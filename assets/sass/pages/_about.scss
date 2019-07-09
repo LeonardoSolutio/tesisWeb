@@ -59,6 +59,11 @@
         padding-top: 20rem;
         padding-right: 5vw;
 
+         /* iPad Pro */
+         @include respond(large-desktop) {
+            padding-top: 15rem;
+         }
+
         /* iPad Pro */
         @include respond(ipad-pro) {
             padding-top: 12rem;
@@ -67,7 +72,7 @@
         /* iPhone Plus */
         @include respond(iphone-plus) {
             grid-template-rows: 2fr 0.5fr;
-            padding-top: 4rem;
+            padding-top: 6rem;
         }
 
     }
@@ -209,6 +214,18 @@
                 background-color: $color-primary;
             }
         }
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            display: none;
+        }
     }
 
     /* ---- N A T U R A L I S T I C ---- */
@@ -333,6 +350,11 @@
     &__empty-lm {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+                display: none;
+        }
     }
 
     &__links-lm {
@@ -342,12 +364,29 @@
         left: -2vw;
         z-index: 999;
 
+        /* Large Desktop 1366 * 768 */
+        @include respond(large-desktop) {
+            left: -4vw;  
+        }
+
+        /* Desktop 1180 */
+        @include respond(desktop) {
+            bottom: 18rem;
+        }
+
+        /* iPad Pro */
+        @include respond(ipad-pro)  {
+
+        }
+
         a {
             @include iconSize;
             text-decoration: none;
             //transform: rotate(45deg);
             cursor: pointer;
             @include transitions;
+
+            
         }
 
         .pic {
@@ -358,13 +397,36 @@
             margin-left: 3rem;
             transform: rotateZ(45deg);
             @include transitions;
-
+            
 
             img {
                 width: 50%;
                 margin-top: 1.3rem;
                 margin-left: 1.3rem;
                 transform: rotate(-135deg) scale(-1, 1);
+            }
+
+            /* Large Desktop 1366 * 768 */
+            @include respond(large-desktop) {
+                width: 4.5rem !important;
+                height: 4.5rem !important;
+
+                margin-left: 2rem;
+
+                img {
+                    width: 45%;
+                }
+            }
+
+            /* Desktop 1180 */
+            @include respond(desktop) {
+                width: 4rem !important;
+                height: 4rem !important; 
+
+                img {
+                    margin-top: 1.12rem;
+                    margin-left: 1.12rem;
+                }
             }
         }
 
@@ -375,6 +437,18 @@
         .row-2 {
             margin-left: 4.6rem;
             margin-top: -1.3rem;
+
+            /* Large Desktop 1366 * 768 */
+            @include respond(large-desktop) {
+                margin-left: 3.5rem;
+                margin-top: -0.6rem; 
+            }
+
+            /* Desktop 1180 */
+            @include respond(desktop) {
+                margin-left: 3.2rem;
+                margin-top: -0.8rem; 
+            }
         }
     }
 
@@ -401,6 +475,43 @@
                     background-color: $color-primary;
                 }
             }
+        }
+    }
+
+    /* Responsive lm social links */
+    &__social-responsive-lm {
+        display: none;
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            @include iconSize;
+            position: fixed;
+            bottom: 0;
+            right: 30vw;
+
+            a {
+                @include iconSize;
+                text-decoration: none;
+                background-color: $color-secondary;
+                cursor: pointer;
+                @include transitions;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
+
+        /* iPad Pro */
+        @include respond(ipad) {
+            right: 40vw; 
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            left: 2.5vw;
         }
     }
 }

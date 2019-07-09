@@ -204,7 +204,9 @@ section[back-img] {
     .pageTitle {
       margin-top: 0;
       transform: translateY(-5rem);
-      font-size: 2.2rem; } }
+      font-size: 2.2rem; }
+      .pageTitle-resposive {
+        transform: translateY(1rem); } }
 
 .title-lm {
   right: 10vw; }
@@ -2339,30 +2341,243 @@ button {
 .icon-vs-home {
   top: 0;
   left: 0;
-  background-image: url(../../assets/img/Icons-menu/home-red.svg); }
+  background-image: url(../../assets/img/Icons-menu/home-red.svg);
+  /* iPhone Plus */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
   .icon-vs-home:hover, .icon-vs-home.active {
     background-image: url(../../assets/img/Icons-menu/home.svg); }
+  @media only screen and (max-width: 31.25em) and (hover: none) {
+    .icon-vs-home {
+      left: 3.5rem; } }
 
 .icon-vs-about {
   bottom: 0;
   left: 0;
-  background-image: url(../../assets/img/Icons-menu/about-red.svg); }
+  background-image: url(../../assets/img/Icons-menu/about-red.svg);
+  /* iPad Pro */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+  /* iPhone Plus */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
   .icon-vs-about:hover, .icon-vs-about.active {
     background-image: url(../../assets/img/Icons-menu/about.svg); }
+  @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+    .icon-vs-about {
+      top: 0;
+      left: 6.5rem; } }
+  @media only screen and (max-width: 31.25em) and (hover: none) {
+    .icon-vs-about {
+      left: 11.5rem; } }
 
 .icon-vs-services {
   bottom: 0;
   right: 0;
-  background-image: url(../../assets/img/Icons-menu/services-red.svg); }
+  background-image: url(../../assets/img/Icons-menu/services-red.svg);
+  /* iPad Pro */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+  /* iPhone Plus */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
   .icon-vs-services:hover, .icon-vs-services.active {
     background-image: url(../../assets/img/Icons-menu/services.svg); }
+  @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+    .icon-vs-services {
+      top: 0;
+      left: 13rem; } }
+  @media only screen and (max-width: 31.25em) and (hover: none) {
+    .icon-vs-services {
+      left: 19.5rem; } }
 
 .icon-vs-portafolio {
   top: 0;
   right: 0;
-  background-image: url(../../assets/img/Icons-menu/portafolio-red.svg); }
+  background-image: url(../../assets/img/Icons-menu/portafolio-red.svg);
+  /* iPad Pro */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+  /* iPhone Plus */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
   .icon-vs-portafolio:hover, .icon-vs-portafolio.active {
     background-image: url(../../assets/img/Icons-menu/portafolio.svg); }
+  @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+    .icon-vs-portafolio {
+      top: 0;
+      left: 19.5rem; } }
+  @media only screen and (max-width: 31.25em) and (hover: none) {
+    .icon-vs-portafolio {
+      left: 27.5rem; } }
 
 /* ==============================
 ***** K I N E S T H E T I C *****
@@ -2475,7 +2690,70 @@ button {
   right: 1rem;
   /*transform: translate(-50%, -50%);*/
   transform: rotate(90deg) translate(0%, -850%);
-  z-index: 999; }
+  z-index: 999;
+  /* iPad Pro */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+  /* iPhone Plus */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+  @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+    .container {
+      position: fixed;
+      top: 2rem;
+      transform: rotate(0deg) translate(-35%, 0%); } }
+  @media only screen and (max-width: 31.25em) and (hover: none) {
+    .container {
+      transform: rotate(0deg) translate(4vw, 3.2rem);
+      width: 100vw; } }
 
 .steps {
   position: relative;
@@ -2518,7 +2796,37 @@ button {
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease; }
   .step:hover span.link-label {
-    opacity: 1; }
+    opacity: 1;
+    /* Desktop 1180 */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .step:hover span.link-label {
+        opacity: 0; } }
 
 .progress {
   position: absolute;
@@ -2700,7 +3008,8 @@ button {
   /* ---- N A T U R A L I S T I C ---- */
   /* ---- K I N E S T H E T I C ---- */
   /* ---- L O G I C A L   M A T H E M A T I C A L ---- */
-  /* Responsive general social links */ }
+  /* Responsive general social links */
+  /* Responsive lm social links */ }
   .about[back-img] {
     /* fix the weird backgroun behavior*/
     height: 100%;
@@ -2867,6 +3176,33 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */
+    /* iPad Pro */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
     /* iPhone Plus */
     /*
 
@@ -2894,13 +3230,16 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
+    @media only screen and (max-width: 85.375em) {
+      .about__container {
+        padding-top: 15rem; } }
     @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
       .about__container {
         padding-top: 12rem; } }
     @media only screen and (max-width: 31.25em) and (hover: none) {
       .about__container {
         grid-template-rows: 2fr 0.5fr;
-        padding-top: 4rem; } }
+        padding-top: 6rem; } }
   .about__text {
     display: block;
     float: right;
@@ -3267,7 +3606,61 @@ button {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(6, 1fr);
     padding-left: 10vw;
-    padding-right: 10vw; }
+    padding-right: 10vw;
+    /* iPad Pro */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+    /* iPhone Plus */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
     .about__links-vs a {
       width: 5.8rem;
       height: 5.8rem;
@@ -3283,6 +3676,14 @@ button {
       transition: all 0.3s ease; }
       .about__links-vs a:hover {
         background-color: #9a3324; }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .about__links-vs {
+        position: fixed;
+        bottom: 0;
+        right: 0; } }
+    @media only screen and (max-width: 31.25em) and (hover: none) {
+      .about__links-vs {
+        display: none; } }
   .about__links-na {
     display: grid;
     grid-template-columns: 1fr 35rem;
@@ -3494,13 +3895,130 @@ button {
       margin-top: -1rem; }
   .about__empty-lm {
     display: grid;
-    grid-template-rows: repeat(2, 1fr); }
+    grid-template-rows: repeat(2, 1fr);
+    /* iPad Pro */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .about__empty-lm {
+        display: none; } }
   .about__links-lm {
     transform: rotate(90deg) scale(1, -1);
     position: fixed;
     bottom: 25rem;
     left: -2vw;
-    z-index: 999; }
+    z-index: 999;
+    /* Large Desktop 1366 * 768 */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+    /* Desktop 1180 */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+    /* iPad Pro */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 85.375em) {
+      .about__links-lm {
+        left: -4vw; } }
+    @media only screen and (max-width: 73.75em) {
+      .about__links-lm {
+        bottom: 18rem; } }
     .about__links-lm a {
       width: 5.8rem;
       height: 5.8rem;
@@ -3526,17 +4044,147 @@ button {
       /* Transitions */
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      /* Large Desktop 1366 * 768 */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* Desktop 1180 */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .about__links-lm .pic img {
         width: 50%;
         margin-top: 1.3rem;
         margin-left: 1.3rem;
         transform: rotate(-135deg) scale(-1, 1); }
+      @media only screen and (max-width: 85.375em) {
+        .about__links-lm .pic {
+          width: 4.5rem !important;
+          height: 4.5rem !important;
+          margin-left: 2rem; }
+          .about__links-lm .pic img {
+            width: 45%; } }
+      @media only screen and (max-width: 73.75em) {
+        .about__links-lm .pic {
+          width: 4rem !important;
+          height: 4rem !important; }
+          .about__links-lm .pic img {
+            margin-top: 1.12rem;
+            margin-left: 1.12rem; } }
     .about__links-lm .pic:hover {
       background-color: #9a3324; }
     .about__links-lm .row-2 {
       margin-left: 4.6rem;
-      margin-top: -1.3rem; }
+      margin-top: -1.3rem;
+      /* Large Desktop 1366 * 768 */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* Desktop 1180 */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 85.375em) {
+        .about__links-lm .row-2 {
+          margin-left: 3.5rem;
+          margin-top: -0.6rem; } }
+      @media only screen and (max-width: 73.75em) {
+        .about__links-lm .row-2 {
+          margin-left: 3.2rem;
+          margin-top: -0.8rem; } }
   .about__social-responsive {
     display: none;
     /*
@@ -3592,6 +4240,122 @@ button {
           transition: all 0.3s ease; }
           .about__social-responsive a:hover {
             background-color: #9a3324; } }
+  .about__social-responsive-lm {
+    display: none;
+    /* iPad Pro */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+    /* iPad Pro */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+    /* iPhone Plus */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .about__social-responsive-lm {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        width: 5.8rem;
+        height: 5.8rem;
+        background-position: center;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 0;
+        right: 30vw; }
+        .about__social-responsive-lm a {
+          width: 5.8rem;
+          height: 5.8rem;
+          background-position: center;
+          background-size: 70%;
+          background-repeat: no-repeat;
+          text-decoration: none;
+          background-color: #2d2c2f;
+          cursor: pointer;
+          /* Transitions */
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+          .about__social-responsive-lm a:hover {
+            background-color: #9a3324; } }
+    @media only screen and (max-width: 50em) and (hover: none) {
+      .about__social-responsive-lm {
+        right: 40vw; } }
+    @media only screen and (max-width: 31.25em) and (hover: none) {
+      .about__social-responsive-lm {
+        left: 2.5vw; } }
 
 .portafolio {
   background-color: #f5f4f0;
@@ -7448,6 +8212,9 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
+      @media only screen and (max-width: 31.25em) and (hover: none) {
+        .quiz__answers img.icon-quiz {
+          width: 30%; } }
     @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
       .quiz__answers p {
         padding-top: 2.5rem;
