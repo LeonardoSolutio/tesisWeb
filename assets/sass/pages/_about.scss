@@ -302,6 +302,11 @@
         display: grid;
         grid-template-columns: 1fr 25rem;
 
+        /* iPhone Plus */
+        @include respond(ipad-pro) {
+            display: none;
+        }
+
 
         a {
             @include iconSize;
@@ -507,6 +512,48 @@
         /* iPad Pro */
         @include respond(ipad) {
             right: 40vw; 
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            left: 2.5vw;
+        }
+    }
+
+    /* Responsive ki social links */
+    &__social-responsive-ki {
+        display: none;
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-gap: 1rem;
+            @include iconSize;
+            position: fixed;
+            bottom: 0;
+            right: 35vw;
+            
+
+            a {
+                @include iconSize;
+                text-decoration: none;
+                background-color: $color-secondary;
+                cursor: pointer;
+                @include transitions;
+                @include boxShadowLighter;
+                width: 5rem;
+                height: 5rem;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
+
+        /* iPad Pro */
+        @include respond(ipad) {
+            right: 45vw; 
         }
 
         /* iPhone Plus */

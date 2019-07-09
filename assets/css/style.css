@@ -2587,110 +2587,61 @@ button {
   position: absolute;
   left: 5rem;
   display: grid;
-  grid-template-rows: 4fr 4fr 4fr; }
-  .navigation__kinesthetic a {
-    color: #f5f4f0;
-    text-decoration: none; }
-  .navigation__kinesthetic .icon-ki-menu {
-    background-color: #2d2c2f;
-    text-align: center;
-    color: #f5f4f0;
-    /* Transitions */
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    margin-bottom: 2rem;
-    /* Box shadow */
-    -webkit-box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
-    -moz-box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
-    box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
-    list-style: none;
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    width: 5.8rem;
-    height: 5.8rem;
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    overflow: hidden; }
-    .navigation__kinesthetic .icon-ki-menu .li-ki-text {
-      text-align: center;
-      font-weight: lighter;
-      font-size: 3rem;
-      max-width: 5.8rem;
-      display: block;
-      opacity: 1;
-      /* Transitions */
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-    .navigation__kinesthetic .icon-ki-menu li:last-child {
-      transform: translateX(-4rem); }
-    .navigation__kinesthetic .icon-ki-menu .li-ki-icon {
-      transform: translateX(6rem);
-      opacity: 0;
-      /* Transitions */
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-      .navigation__kinesthetic .icon-ki-menu .li-ki-icon img {
-        width: 4rem;
-        float: right;
-        margin-top: 1.5rem;
-        margin-right: 1rem;
-        opacity: 0;
-        transform: translateX(6rem);
-        /* Transitions */
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        transition: all 0.3s ease; }
-      .navigation__kinesthetic .icon-ki-menu .li-ki-icon p {
-        font-size: 1.5rem;
-        opacity: 0;
-        transform: translateX(1.2rem);
-        /* Transitions */
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-        text-align: left;
-        margin-left: 4rem; }
-    .navigation__kinesthetic .icon-ki-menu:hover {
-      background-color: #9a3324;
-      width: 18rem;
-      /* Box shadow */
-      -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
-      -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
-      box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
-      transform: translate(-3px, 3px); }
-      .navigation__kinesthetic .icon-ki-menu:hover .li-ki-text {
-        transform: translate(-4rem, -6rem);
-        opacity: 0; }
-      .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon {
-        transform: translateX(-6rem);
-        opacity: 1; }
-        .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon img {
-          opacity: 1;
-          transform: translateY(-8rem); }
-        .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon p {
-          transform: translate(-2.2rem, -3.5rem);
-          opacity: 1; }
-    .navigation__kinesthetic .icon-ki-menu.active {
-      /* Box shadow */
-      -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
-      -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
-      box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
-      background-color: #9a3324; }
+  grid-template-rows: 4fr 4fr 4fr;
+  /* Large Desktop */
+  /*
 
-/* ================================================
-***** L O G I C A L   M A T H E M A T I C A L *****
-================================================ */
-.container {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  /*transform: translate(-50%, -50%);*/
-  transform: rotate(90deg) translate(0%, -850%);
-  z-index: 999;
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+  /* Desktop */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
   /* iPad Pro */
   /*
 
@@ -2745,6 +2696,342 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
+  .navigation__kinesthetic a {
+    color: #f5f4f0;
+    text-decoration: none; }
+  @media only screen and (max-width: 85.375em) {
+    .navigation__kinesthetic {
+      grid-template-rows: 2.5fr 4fr 2fr;
+      left: 2.5rem; } }
+  @media only screen and (max-width: 73.75em) {
+    .navigation__kinesthetic {
+      grid-template-rows: 2fr 4fr 2fr; } }
+  @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+    .navigation__kinesthetic {
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 1rem; }
+      .navigation__kinesthetic-empty {
+        display: none; }
+      .navigation__kinesthetic-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1.2rem; } }
+  @media only screen and (max-width: 31.25em) and (hover: none) {
+    .navigation__kinesthetic {
+      left: 15vw; }
+      .navigation__kinesthetic-container {
+        grid-gap: 2rem; } }
+  .navigation__kinesthetic .icon-ki-menu {
+    background-color: #2d2c2f;
+    text-align: center;
+    color: #f5f4f0;
+    /* Transitions */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    /* Box shadow */
+    -webkit-box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
+    -moz-box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
+    box-shadow: -3px 3px 2px 1px rgba(45, 44, 47, 0.4);
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    width: 5.8rem;
+    height: 5.8rem;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* iPad Pro */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .navigation__kinesthetic .icon-ki-menu {
+        width: 5.5rem;
+        height: 5.5rem;
+        -webkit-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+        -moz-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+        box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4); } }
+    .navigation__kinesthetic .icon-ki-menu .li-ki-text {
+      text-align: center;
+      font-weight: lighter;
+      font-size: 3rem;
+      max-width: 5.8rem;
+      display: block;
+      opacity: 1;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .navigation__kinesthetic .icon-ki-menu li:last-child {
+      transform: translateX(-4rem); }
+    .navigation__kinesthetic .icon-ki-menu .li-ki-icon {
+      transform: translateX(6rem);
+      opacity: 0;
+      /* Transitions */
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .navigation__kinesthetic .icon-ki-menu .li-ki-icon img {
+        width: 4rem;
+        float: right;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+        opacity: 0;
+        transform: translateX(6rem);
+        /* Transitions */
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .navigation__kinesthetic .icon-ki-menu .li-ki-icon p {
+        font-size: 1.5rem;
+        opacity: 0;
+        transform: translateX(1.2rem);
+        /* Transitions */
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        text-align: left;
+        margin-left: 4rem; }
+    .navigation__kinesthetic .icon-ki-menu:hover {
+      background-color: #9a3324;
+      width: 18rem;
+      /* Box shadow */
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      transform: translate(-3px, 3px);
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .navigation__kinesthetic .icon-ki-menu:hover {
+          width: 5.5rem; } }
+      .navigation__kinesthetic .icon-ki-menu:hover .li-ki-text {
+        transform: translate(-4rem, -6rem);
+        opacity: 0;
+        /* iPad Pro */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+        @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+          .navigation__kinesthetic .icon-ki-menu:hover .li-ki-text {
+            transform: translate(0rem, 0rem);
+            opacity: 1; } }
+      .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon {
+        transform: translateX(-6rem);
+        opacity: 1;
+        /* iPad Pro */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+        .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon img {
+          opacity: 1;
+          transform: translateY(-8rem); }
+        .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon p {
+          transform: translate(-2.2rem, -3.5rem);
+          opacity: 1; }
+        @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+          .navigation__kinesthetic .icon-ki-menu:hover .li-ki-icon {
+            display: none; } }
+    .navigation__kinesthetic .icon-ki-menu.active {
+      /* Box shadow */
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
+      background-color: #9a3324; }
+
+/* ================================================
+***** L O G I C A L   M A T H E M A T I C A L *****
+================================================ */
+.container {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  /*transform: translate(-50%, -50%);*/
+  transform: rotate(90deg) translate(0%, -850%);
+  z-index: 999;
+  /* Large Desktop */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+  /* iPad Pro */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+  /* iPhone Plus */
+  /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+  @media only screen and (max-width: 85.375em) {
+    .container {
+      right: 2rem; } }
   @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
     .container {
       position: fixed;
@@ -3009,7 +3296,8 @@ button {
   /* ---- K I N E S T H E T I C ---- */
   /* ---- L O G I C A L   M A T H E M A T I C A L ---- */
   /* Responsive general social links */
-  /* Responsive lm social links */ }
+  /* Responsive lm social links */
+  /* Responsive ki social links */ }
   .about[back-img] {
     /* fix the weird backgroun behavior*/
     height: 100%;
@@ -3847,7 +4135,37 @@ button {
       margin-top: -1.3rem; }
   .about__links-ki {
     display: grid;
-    grid-template-columns: 1fr 25rem; }
+    grid-template-columns: 1fr 25rem;
+    /* iPhone Plus */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .about__links-ki {
+        display: none; } }
     .about__links-ki a {
       width: 5.8rem;
       height: 5.8rem;
@@ -4355,6 +4673,128 @@ button {
         right: 40vw; } }
     @media only screen and (max-width: 31.25em) and (hover: none) {
       .about__social-responsive-lm {
+        left: 2.5vw; } }
+  .about__social-responsive-ki {
+    display: none;
+    /* iPad Pro */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+    /* iPad Pro */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+    /* iPhone Plus */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .about__social-responsive-ki {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 1rem;
+        width: 5.8rem;
+        height: 5.8rem;
+        background-position: center;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 0;
+        right: 35vw; }
+        .about__social-responsive-ki a {
+          width: 5.8rem;
+          height: 5.8rem;
+          background-position: center;
+          background-size: 70%;
+          background-repeat: no-repeat;
+          text-decoration: none;
+          background-color: #2d2c2f;
+          cursor: pointer;
+          /* Transitions */
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          -webkit-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+          -moz-box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+          box-shadow: -3px 3px 1.5px 1px rgba(233, 233, 233, 0.4);
+          width: 5rem;
+          height: 5rem; }
+          .about__social-responsive-ki a:hover {
+            background-color: #9a3324; } }
+    @media only screen and (max-width: 50em) and (hover: none) {
+      .about__social-responsive-ki {
+        right: 45vw; } }
+    @media only screen and (max-width: 31.25em) and (hover: none) {
+      .about__social-responsive-ki {
         left: 2.5vw; } }
 
 .portafolio {

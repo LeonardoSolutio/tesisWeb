@@ -514,9 +514,42 @@ button {
         text-decoration: none;
     }
 
-    // &-container {
-        
-    // }
+    /* Large Desktop */
+    @include respond(large-desktop) {
+        grid-template-rows: 2.5fr 4fr 2fr;  
+        left: 2.5rem;  
+    }
+
+    /* Desktop */
+    @include respond(desktop) {
+        grid-template-rows: 2fr 4fr 2fr; 
+    }
+
+    /* iPad Pro */
+    @include respond(ipad-pro) {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 1rem;
+
+        &-empty {
+            display: none;
+        }
+
+        &-container {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 1.2rem;
+        }
+    }
+
+    /* iPhone Plus */
+    @include respond(iphone-plus) {
+        left: 15vw;
+        &-container {
+            grid-gap: 2rem;
+        }
+    }
 
     .icon-ki-menu {
         background-color: $color-secondary;
@@ -534,6 +567,14 @@ button {
         grid-template-rows: repeat(4, 1fr);
         @include iconSize;
         overflow: hidden;
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            width: 5.5rem;
+            height: 5.5rem;
+            @include boxShadowLighter;
+    
+        }
 
         .li-ki-text {
             text-align: center; 
@@ -581,9 +622,20 @@ button {
             @include boxShadowDelete;
             transform: translate(-3px, 3px);
 
+            /* iPad Pro */
+            @include respond(ipad-pro) {
+                width: 5.5rem;
+            }
+
             .li-ki-text {
                 transform: translate(-4rem, -6rem);
                 opacity: 0;
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    transform: translate(0rem, 0rem);
+                    opacity: 1;
+                }
             }
 
             .li-ki-icon {
@@ -598,6 +650,11 @@ button {
                 p {
                     transform: translate(-2.2rem, -3.5rem);
                     opacity: 1;
+                }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    display: none;
                 }
             }
         } 
@@ -620,6 +677,11 @@ button {
     /*transform: translate(-50%, -50%);*/
     transform: rotate(90deg) translate(0%, -850%);
     z-index: 999;
+
+    /* Large Desktop */
+    @include respond(large-desktop) {
+        right: 2rem;
+    }
 
     /* iPad Pro */
     @include respond(ipad-pro) {
