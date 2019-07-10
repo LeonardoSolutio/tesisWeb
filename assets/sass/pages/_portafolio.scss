@@ -389,6 +389,24 @@
                         background-color: $color-primary;
                     }
                 }
+
+                /* Large Desktop */
+                @include respond(large-desktop) {
+                    top: -3rem;
+                    left: 10vw;
+
+                    a {
+                        padding: 0.8rem;
+                    }
+                }
+
+                /* Desktop */
+                @include respond(desktop) {
+
+                    a {
+                        padding: 0.5rem;
+                    }
+                }
             }
 
             &-details {
@@ -426,6 +444,11 @@
                             color: $color-tertiary;
                             position: fixed;
                             top: 35rem;
+
+                            /* Large Desktop */
+                            @include respond(large-desktop) {
+                                top: 15rem;
+                            }
                     
                         }
             
@@ -439,6 +462,14 @@
                             left: 5vw;
                             padding-right: 55vw;
                             top: 45rem;
+
+                            /* Large Desktop */
+                            @include respond(large-desktop) {
+                                top: 24rem;
+                                font-size: 1.5rem;
+                                line-height: 2.5rem;
+                                padding-right: 50vw;
+                            }
                         }
 
                         .action-btn {
@@ -457,6 +488,11 @@
 
                             &:hover {
                                 text-decoration: underline;
+                            }
+
+                            /* Large Desktop */
+                            @include respond(large-desktop) {
+                                font-size: 1.5rem;
                             }
                         }
                     }

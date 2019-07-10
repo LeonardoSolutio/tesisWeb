@@ -5777,7 +5777,61 @@ button {
       position: fixed;
       top: 6rem;
       left: 7vw;
-      z-index: 900; }
+      z-index: 900;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .portafolio__lm .tab-links h3 {
         transform: rotate(90deg);
         margin-bottom: 3rem; }
@@ -5791,6 +5845,15 @@ button {
         transition: all 0.3s ease; }
         .portafolio__lm .tab-links a:hover, .portafolio__lm .tab-links a.active {
           background-color: #9a3324; }
+      @media only screen and (max-width: 85.375em) {
+        .portafolio__lm .tab-links {
+          top: -3rem;
+          left: 10vw; }
+          .portafolio__lm .tab-links a {
+            padding: 0.8rem; } }
+      @media only screen and (max-width: 73.75em) {
+        .portafolio__lm .tab-links a {
+          padding: 0.5rem; } }
     .portafolio__lm .tab-details .project-details {
       display: grid;
       grid-template-columns: repeat(2, 1fr); }
@@ -5925,7 +5988,34 @@ button {
     */
         color: #f5f4f0;
         position: fixed;
-        top: 35rem; }
+        top: 35rem;
+        /* Large Desktop */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
         @media only screen and (max-width: 85.375em) {
           .portafolio__lm .tab-details .project-content h3 {
             font-size: 4rem; } }
@@ -5938,13 +6028,49 @@ button {
         @media only screen and (max-width: 50em) and (hover: none) {
           .portafolio__lm .tab-details .project-content h3 {
             font-size: 3.5rem; } }
+        @media only screen and (max-width: 85.375em) {
+          .portafolio__lm .tab-details .project-content h3 {
+            top: 15rem; } }
       .portafolio__lm .tab-details .project-content p {
         font-size: 2.2rem;
         line-height: 3rem;
         position: fixed;
         left: 5vw;
         padding-right: 55vw;
-        top: 45rem; }
+        top: 45rem;
+        /* Large Desktop */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+        @media only screen and (max-width: 85.375em) {
+          .portafolio__lm .tab-details .project-content p {
+            top: 24rem;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            padding-right: 50vw; } }
       .portafolio__lm .tab-details .project-content .action-btn {
         color: #f5f4f0;
         background-color: #9a3324;
@@ -5954,9 +6080,39 @@ button {
         bottom: 20vh;
         /* float: right; */
         position: fixed;
-        left: 5vw; }
+        left: 5vw;
+        /* Large Desktop */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
         .portafolio__lm .tab-details .project-content .action-btn:hover {
           text-decoration: underline; }
+        @media only screen and (max-width: 85.375em) {
+          .portafolio__lm .tab-details .project-content .action-btn {
+            font-size: 1.5rem; } }
   .portafolio-lm-link {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -7812,7 +7968,34 @@ button {
       position: fixed;
       top: -0rem;
       left: 6vw;
-      z-index: 890; }
+      z-index: 890;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .services__lm .tab-links h3 {
         margin-bottom: 5rem; }
       .services__lm .tab-links a {
@@ -7836,6 +8019,16 @@ button {
           .services__lm .tab-links a:hover span.hover, .services__lm .tab-links a.active span.hover {
             opacity: 1;
             position: relative; }
+      @media only screen and (max-width: 85.375em) {
+        .services__lm .tab-links {
+          left: 5vw; }
+          .services__lm .tab-links h3 {
+            margin-bottom: 4rem; }
+          .services__lm .tab-links a {
+            font-size: 1rem;
+            width: 3rem;
+            height: 3rem;
+            padding: 0.8rem 1rem 0.8rem 1rem; } }
     .services__lm .tab-link {
       z-index: 1000;
       position: fixed;
@@ -7843,7 +8036,34 @@ button {
       left: 5vw;
       top: 40rem;
       width: 40vw;
-      border-bottom: 1px solid #f5f4f0; }
+      border-bottom: 1px solid #f5f4f0;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .services__lm .tab-link a {
         color: #f5f4f0;
         font-size: 2rem;
@@ -7852,6 +8072,13 @@ button {
         .services__lm .tab-link a.active {
           background-color: #9a3324;
           color: #f5f4f0; }
+      @media only screen and (max-width: 85.375em) {
+        .services__lm .tab-link {
+          top: 25rem;
+          left: 10vw;
+          width: 45vw; }
+          .services__lm .tab-link a {
+            font-size: 1.5rem; } }
     .services__lm .tab-details .services-details {
       display: grid;
       grid-template-columns: repeat(2, 1fr); }
@@ -7986,7 +8213,34 @@ button {
     */
         color: #f5f4f0;
         position: fixed;
-        top: 25rem; }
+        top: 25rem;
+        /* Large Desktop */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
         @media only screen and (max-width: 85.375em) {
           .services__lm .tab-details .services-content .titleService-lm {
             font-size: 4rem; } }
@@ -7999,13 +8253,51 @@ button {
         @media only screen and (max-width: 50em) and (hover: none) {
           .services__lm .tab-details .services-content .titleService-lm {
             font-size: 3.5rem; } }
+        @media only screen and (max-width: 85.375em) {
+          .services__lm .tab-details .services-content .titleService-lm {
+            top: 15rem;
+            left: 10vw; } }
       .services__lm .tab-details .services-content p {
         font-size: 2.2rem;
         line-height: 3rem;
         position: fixed;
         left: 5vw;
         padding-right: 55vw;
-        top: 45rem; }
+        top: 45rem;
+        /* Large Desktop */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+        @media only screen and (max-width: 85.375em) {
+          .services__lm .tab-details .services-content p {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            left: 10vw;
+            top: 30rem;
+            padding-right: 45vw; } }
       .services__lm .tab-details .services-content .action-btn {
         color: #f5f4f0;
         background-color: #9a3324;
@@ -8015,9 +8307,40 @@ button {
         bottom: 20vh;
         /* float: right; */
         position: fixed;
-        left: 5vw; }
+        left: 5vw;
+        /* Large Desktop */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
         .services__lm .tab-details .services-content .action-btn:hover {
           text-decoration: underline; }
+        @media only screen and (max-width: 85.375em) {
+          .services__lm .tab-details .services-content .action-btn {
+            left: 10vw;
+            font-size: 1.5rem; } }
   .services-lm-link {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
