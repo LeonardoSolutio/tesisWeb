@@ -5,6 +5,11 @@
     /* L I N G U I S T I C */
     &__li {
 
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            overflow-y: auto;
+        }
+
         .tab {
             &-links {
                 position: fixed;

@@ -33,9 +33,19 @@
         /* align vertical */
         height: 100%;
 
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            overflow-y: auto;
+            padding-top: 30vw;
+        }
 
         .title-li {
             @include titleLi;
+
+            /* iPhone Plus */
+            @include respond(iphone-plus) {
+                font-size: 2.2rem !important;
+            }
         }
 
         .li-acc {
@@ -73,6 +83,11 @@
                 @include respond(ipad-pro) {
                     grid-template-columns: 1.7fr 3fr;
                     margin-left: 0vw;
+                }
+
+                /* iPhone Plus */
+                @include respond(iphone-plus) {
+                    grid-template-columns: 1fr;   
                 }
             }
 
@@ -141,6 +156,15 @@
                         line-height: 2.2rem;
                     } 
                 }
+
+                /* iPhone Plus */
+                @include respond(iphone-plus) {
+                    max-width: 95vw;
+                    
+                    p {
+                        margin-top: 2rem;
+                    }
+                }
             }
         }
 
@@ -201,6 +225,18 @@
         @include respond(ipad) {
             a {
                 min-width: 10rem;
+            }
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            bottom: 2rem;
+            width: 100vw;
+            left: 0.5vw;
+
+            a {
+                min-width: 8rem;
+                font-size: 1rem;
             }
         }
     }
