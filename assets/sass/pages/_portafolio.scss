@@ -37,6 +37,16 @@
                         padding: 0.7rem; 
                     }
                 }
+
+                /* iPhone Plus */
+                @include respond(iphone-plus) {
+                    top: 15rem;  
+                }
+
+                /* iPhone Plus */
+                @include respond(iphone) {
+                    top: 20rem;  
+                }
             }
 
             &-details {
@@ -93,6 +103,17 @@
                 @include respond(ipad) {
                     transform: translateY(-23rem);
                     left: 15vw;
+                }
+
+                /* iPhone Plus */
+                @include respond(iphone-plus) {
+                    left: 7vw;
+                    font-size: 2.5rem !important;
+                }
+
+                /* iPhone */
+                @include respond(iphone) {
+                    transform: translateY(-19rem);
                 }
 
             }
@@ -178,6 +199,12 @@
             a {
                 min-width: 12rem;
             }
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            bottom: 2rem;
+            width: 100vw;
         }
     }
 
