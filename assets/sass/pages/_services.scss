@@ -968,6 +968,34 @@
                 color: $color-secondary;
                 font-size: 6rem;
             }
+
+            /* Large Desktop */
+            @include respond(large-desktop) {
+                font-size: 2rem;
+
+                &.active {
+                    font-size: 5rem;
+                }
+            }
+
+
+            /* Large Desktop */
+            @include respond(medium-desktop) {
+                font-size: 2.5rem;
+
+                &.active {
+                    font-size: 4.5rem;
+                }
+            }
+
+            /* Desktop */
+            @include respond(desktop) {
+                font-size: 2rem;
+
+                &.active {
+                    font-size: 3.5rem;
+                }
+            }
         }
 
         .vs-acc {
@@ -979,6 +1007,10 @@
             margin-bottom: 3rem;
             overflow: hidden !important;
             height: auto;
+
+            @include respond(large-desktop) {
+                margin-bottom: 0rem;
+            }
         }
 
         .tab {
@@ -990,6 +1022,11 @@
                 overflow: hidden;
                 width: 40vw;
                 padding-top: 4rem;
+
+                /* Large Desktop */
+                @include respond(large-desktop) {
+                    padding-top: 0;
+                }
             }
 
 
@@ -1010,6 +1047,20 @@
                         background-color: $color-primary;
                     }
                 }
+
+                /* Large Desktop */
+                @include respond(large-desktop) {
+                   a {
+                        font-size: 1.5rem;
+                   } 
+                }
+
+                /* Desktop */
+                @include respond(desktop) {
+                    a {
+                         font-size: 1.2rem;
+                    } 
+                 }
             }
 
             &-details {
@@ -1022,6 +1073,17 @@
                 }
 
                 margin-bottom: 3rem;
+
+                /* Large Desktop */
+                @include respond(large-desktop) {
+                    p {
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                        margin-top: 1rem;
+                    }  
+                    
+                    margin-bottom: 2rem;
+                }
             }
         }
 
@@ -1042,6 +1104,11 @@
             &:hover {
                 background-color: $color-primary;
                 color: $color-tertiary;
+            }
+
+            /* Large Desktop */
+            @include respond(large-desktop) {
+                font-size: 1.5rem;
             }
         }
 

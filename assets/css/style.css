@@ -6929,7 +6929,34 @@ button {
       /* Transitions */
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       @media only screen and (max-width: 85.375em) {
         .portafolio__vs .title-vs {
           font-size: 4rem; } }
@@ -6945,38 +6972,123 @@ button {
       .portafolio__vs .title-vs.active {
         color: #2d2c2f;
         font-size: 8rem; }
+      @media only screen and (max-width: 85.375em) {
+        .portafolio__vs .title-vs {
+          font-size: 4.5rem; }
+          .portafolio__vs .title-vs.active {
+            font-size: 7rem; } }
     .portafolio__vs .vs-acc {
       min-width: 40vw;
       margin-left: 5vw;
       text-align: left;
       margin-bottom: 3rem;
       overflow: hidden !important;
-      height: auto; }
+      height: auto;
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 85.375em) {
+        .portafolio__vs .vs-acc {
+          margin-bottom: 0rem; } }
     .portafolio__vs .tab-container {
       display: grid;
       grid-template-columns: 1fr;
       overflow: hidden;
       width: 40vw;
-      padding-top: 4rem; }
-    .portafolio__vs .tab-links {
-      display: flex;
-      border-bottom: 1px solid #2d2c2f; }
-      .portafolio__vs .tab-links a {
-        color: #504e53;
-        font-family: 'Avenir Book', sans-serif;
-        font-size: 2rem;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-        font-weight: bold; }
-        .portafolio__vs .tab-links a.active {
-          color: #f5f4f0;
-          background-color: #9a3324; }
+      padding-top: 4rem;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 85.375em) {
+        .portafolio__vs .tab-container {
+          padding-top: 0; } }
     .portafolio__vs .tab-details {
       overflow: hidden;
       max-width: 50vw;
       right: 0;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .portafolio__vs .tab-details p {
         font-size: 2rem; }
+      @media only screen and (max-width: 85.375em) {
+        .portafolio__vs .tab-details {
+          margin-bottom: 2rem; }
+          .portafolio__vs .tab-details p {
+            font-size: 1.5rem;
+            line-height: 2rem; } }
     .portafolio__vs .action-btn {
       color: #9a3324;
       text-decoration: none;
@@ -6990,10 +7102,40 @@ button {
       /* Transitions */
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .portafolio__vs .action-btn:hover {
         background-color: #9a3324;
         color: #f5f4f0; }
+      @media only screen and (max-width: 85.375em) {
+        .portafolio__vs .action-btn {
+          font-size: 1.5rem; } }
     .portafolio__vs .accordion-cover {
       position: fixed;
       right: 0;
@@ -7007,7 +7149,7 @@ button {
         align-items: center;
         justify-content: center;
         width: 50vw;
-        transform: translate(0, -100%);
+        transform: translate(0, -95%);
         color: #f5f4f0;
         font-size: 4.5rem;
         color: #2d2c2f;
@@ -9422,7 +9564,88 @@ button {
       /* Transitions */
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       @media only screen and (max-width: 85.375em) {
         .services__vs .title-vs {
           font-size: 4rem; } }
@@ -9438,22 +9661,150 @@ button {
       .services__vs .title-vs.active {
         color: #2d2c2f;
         font-size: 6rem; }
+      @media only screen and (max-width: 85.375em) {
+        .services__vs .title-vs {
+          font-size: 2rem; }
+          .services__vs .title-vs.active {
+            font-size: 5rem; } }
+      @media only screen and (max-width: 81.25em) {
+        .services__vs .title-vs {
+          font-size: 2.5rem; }
+          .services__vs .title-vs.active {
+            font-size: 4.5rem; } }
+      @media only screen and (max-width: 73.75em) {
+        .services__vs .title-vs {
+          font-size: 2rem; }
+          .services__vs .title-vs.active {
+            font-size: 3.5rem; } }
     .services__vs .vs-acc {
       min-width: 40vw;
       margin-left: 5vw;
       text-align: left;
       margin-bottom: 3rem;
       overflow: hidden !important;
-      height: auto; }
+      height: auto;
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 85.375em) {
+        .services__vs .vs-acc {
+          margin-bottom: 0rem; } }
     .services__vs .tab-container {
       display: grid;
       grid-template-columns: 1fr;
       overflow: hidden;
       width: 40vw;
-      padding-top: 4rem; }
+      padding-top: 4rem;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 85.375em) {
+        .services__vs .tab-container {
+          padding-top: 0; } }
     .services__vs .tab-links {
       display: flex;
-      border-bottom: 1px solid #2d2c2f; }
+      border-bottom: 1px solid #2d2c2f;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .services__vs .tab-links a {
         color: #504e53;
         font-family: 'Avenir Book', sans-serif;
@@ -9463,13 +9814,53 @@ button {
         .services__vs .tab-links a.active {
           color: #f5f4f0;
           background-color: #9a3324; }
+      @media only screen and (max-width: 85.375em) {
+        .services__vs .tab-links a {
+          font-size: 1.5rem; } }
+      @media only screen and (max-width: 73.75em) {
+        .services__vs .tab-links a {
+          font-size: 1.2rem; } }
     .services__vs .tab-details {
       overflow: hidden;
       max-width: 50vw;
       right: 0;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .services__vs .tab-details p {
         font-size: 2rem; }
+      @media only screen and (max-width: 85.375em) {
+        .services__vs .tab-details {
+          margin-bottom: 2rem; }
+          .services__vs .tab-details p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            margin-top: 1rem; } }
     .services__vs .action-btn {
       color: #9a3324;
       text-decoration: none;
@@ -9483,10 +9874,40 @@ button {
       /* Transitions */
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      /* Large Desktop */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .services__vs .action-btn:hover {
         background-color: #9a3324;
         color: #f5f4f0; }
+      @media only screen and (max-width: 85.375em) {
+        .services__vs .action-btn {
+          font-size: 1.5rem; } }
     .services__vs .accordion-cover {
       position: fixed;
       right: 0;

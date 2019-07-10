@@ -804,6 +804,7 @@
         height: 100%;
 
 
+
         .title-vs {
             @include titleLi;
             font-size: 5.5rem;
@@ -817,6 +818,15 @@
                 color: $color-secondary;
                 font-size: 8rem;
             }
+
+            /* Large Desktop */
+            @include respond(large-desktop) {
+                font-size: 4.5rem;
+
+                &.active {
+                    font-size: 7rem;
+                }
+            }
         }
 
         .vs-acc {
@@ -828,6 +838,10 @@
             margin-bottom: 3rem;
             overflow: hidden !important;
             height: auto;
+
+            @include respond(large-desktop) {
+                margin-bottom: 0rem;
+            }
         }
 
         .tab {
@@ -839,28 +853,15 @@
                 overflow: hidden;
                 width: 40vw;
                 padding-top: 4rem;
-            }
 
-
-            &-links {
-                display: flex;
-
-                // width: 35vw;
-                border-bottom: 1px solid $color-secondary;
-
-                a {
-                    color: $color-grey-dark;
-                    font-family: 'Avenir Book', sans-serif;
-                    font-size: 2rem;
-                    padding: 0.5rem 1rem 0.5rem 1rem;
-                    font-weight: bold;
-                    &.active {
-                        color: $color-tertiary;
-                        background-color: $color-primary;
-                    }
+                /* Large Desktop */
+                @include respond(large-desktop) {
+                    padding-top: 0;
                 }
             }
 
+
+        
             &-details {
                 overflow: hidden;
                 max-width: 50vw;
@@ -871,6 +872,17 @@
                 }
 
                 margin-bottom: 3rem;
+
+                /* Large Desktop */
+                @include respond(large-desktop) {
+                    p {
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                        
+                    }  
+                    
+                    margin-bottom: 2rem;
+                }
             }
         }
 
@@ -892,6 +904,11 @@
                 background-color: $color-primary;
                 color: $color-tertiary;
             }
+
+            /* Large Desktop */
+            @include respond(large-desktop) {
+                font-size: 1.5rem;
+            }
         }
 
         .accordion-cover {
@@ -909,7 +926,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 50vw;
-                transform: translate(0,-100%);
+                transform: translate(0,-95%);
                 color: $color-tertiary;
                 @include titleLi;
                 color: $color-tertiary;
