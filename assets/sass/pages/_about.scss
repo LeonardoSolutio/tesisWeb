@@ -333,6 +333,16 @@
                 margin-left: 1.3rem;
                 transform: rotate(-45deg);
             }
+
+            /* Large Desktop */
+            @include respond(large-desktop) {
+                width: 5rem !important;
+                height: 5rem !important;
+
+                img {
+                    width: 45%;
+                }
+            }
         }
 
         .pic:hover {
@@ -344,10 +354,21 @@
         .row-2 {
             margin-left: 4.6rem;
             margin-top: -1rem;
+
+            /* Large Desktop */
+            @include respond(large-desktop) {
+                margin-left: 4.2rem;
+                margin-top: -0.8rem;   
+            }
         }
 
         .row-3 {
             margin-top: -1rem;
+
+            /* Large Desktop */
+            @include respond(large-desktop) {
+                margin-top: -0.8rem;   
+            }
         }
     }
 

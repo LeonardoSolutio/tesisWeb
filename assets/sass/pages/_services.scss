@@ -702,6 +702,23 @@
                         
                     }
                 }
+
+                /* Large Desktop */
+                @include respond(large-desktop) {
+                    right: 4vw;
+
+                    a {
+                        width: 3rem;
+                        height: 3rem; 
+                        
+                        padding: 0.4rem 1.5rem 0.4rem 0.8rem;
+
+                        &:hover,
+                        &.active {
+                            transform: translate(0px, 3px);
+                        }
+                    }
+                }
             }
 
             &-link {
@@ -720,6 +737,16 @@
 
                     &.active {
                         background-color: $color-primary;
+                    }
+                }
+
+                /* Large Desktop */
+                @include respond(large-desktop) {
+                    top: 27rem; 
+                    width: 37vw;
+                    
+                    a {
+                        font-size: 1.5rem;
                     }
                 }
             }
@@ -776,6 +803,11 @@
                             position: fixed;
                             top: 25rem;
                             left: 55vw;
+
+                            /* Large Desktop */
+                            @include respond(large-desktop) {
+                                top: 18rem;
+                            }
                         }
 
                         p {
@@ -788,6 +820,14 @@
                             right: 10vw;
                             padding-left: 55vw;
                             top: 45rem;
+
+                            /* Large Desktop */
+                            @include respond(large-desktop) {
+                                top: 32rem;
+                                font-size: 1.5rem;
+                                line-height: 2.5rem;
+                                right: 8vw;
+                            }
                         }
 
                         .action-btn {
@@ -811,6 +851,12 @@
                                 @include boxShadowDelete;
                                 transform: translate(-3px, 3px);
                             }
+
+                            /* Large Desktop */
+                            @include respond(large-desktop) {
+                                font-size: 1.5rem;
+                                right: 8vw;
+                            }
                         }
                     }
                 }
@@ -828,6 +874,21 @@
         position: fixed;
         bottom: 0;
         right: 13vw;
+
+        /* Large Desktop */
+        @include respond(large-desktop) {
+            right: 15vw;  
+        }
+
+        /* Medium Desktop */
+        @include respond(medium-desktop) {
+            right: 16vw;  
+        }
+
+        /* Desktop */
+        @include respond(desktop) {
+            right: 17vw;  
+        }
 
         a {
             @include iconSize;

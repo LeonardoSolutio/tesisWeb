@@ -516,14 +516,11 @@ button {
 
     /* Large Desktop */
     @include respond(large-desktop) {
-        grid-template-rows: 2.5fr 4fr 2fr;  
+        grid-template-rows: 2fr 4fr 2fr;  
         left: 2.5rem;  
     }
 
-    /* Desktop */
-    @include respond(desktop) {
-        grid-template-rows: 2fr 4fr 2fr; 
-    }
+    
 
     /* iPad Pro */
     @include respond(ipad-pro) {
