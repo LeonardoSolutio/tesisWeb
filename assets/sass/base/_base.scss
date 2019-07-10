@@ -89,6 +89,22 @@ section[back-img] {
   font-size: 3rem;
   letter-spacing: -0.05rem;
 
+  /* Large Desktop */
+  @include respond(large-desktop) {
+    font-size: 2.5rem;
+  }
+
+  /* Desktop */
+  @include respond(desktop) {
+    font-size: 2.2rem;
+  }
+
+  /* Desktop */
+  @include respond(ipad-pro) {
+    font-size: 3rem;
+  }
+
+
   /* iPhone Plus */
   @include respond(iphone-plus) {
     margin-top: 0;

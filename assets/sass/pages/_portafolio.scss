@@ -212,6 +212,20 @@
                         background-color: $color-primary;
                     }
                 }
+
+                /* Large Desktop */
+                @include respond(large-desktop) {
+                    bottom: 2rem;
+                    a {
+                        padding: 0.8rem;
+                    
+                    }
+
+                    h3 {
+                        margin-bottom: 2rem;
+                    }
+                }
+
             }
 
             &-details {
@@ -279,6 +293,29 @@
 
                             &:hover {
                                 text-decoration: underline;
+                            }
+                        }
+
+
+                        /* Large Desktop */
+                        @include respond(large-desktop) {
+                            p {
+                                top: 20rem;
+                                font-size: 1.5rem;
+                                line-height: 2.5rem;   
+                            }
+
+                            a {
+                                bottom: 16rem;
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        /* Desktop */
+                        @include respond(desktop) {
+                            a {
+                                font-size: 1.2rem;
+                                bottom: 12rem;
                             }
                         }
                     }
