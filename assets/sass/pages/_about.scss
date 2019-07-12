@@ -213,6 +213,18 @@
             &:hover {
                 background-color: $color-primary;
             }
+
+            /* Large Desktop */
+            @include respond(large-desktop) {
+                width: 5rem !important;
+                height: 5rem !important;
+
+                img {
+                    width: 45%;
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                }
+            }
         }
 
         /* iPad Pro */
@@ -279,8 +291,20 @@
                 transform: rotate(-45deg);
             }
 
+            /* Large Desktop */
+            @include respond(large-desktop) {
+                width: 4rem !important;
+                height: 4rem !important;
+
+                img {
+                    width: 45%;
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                }
+            }
+
             /* iPhone Plus */
-            @include respond(iphone-plus) {
+            @include respond(ipad-pro) {
                 display: none;
             }
         }
@@ -292,6 +316,12 @@
         .row-2 {
             margin-left: 4.6rem;
             margin-top: -1.3rem;
+
+            /* Large Desktop */
+            @include respond(large-desktop) {
+                margin-left: 3.6rem;
+                margin-top: -0.7rem;
+            }
 
         }
     }
@@ -336,11 +366,13 @@
 
             /* Large Desktop */
             @include respond(large-desktop) {
-                width: 5rem !important;
-                height: 5rem !important;
+                width: 4rem !important;
+                height: 4rem !important;
 
                 img {
                     width: 45%;
+                    margin-top: 1rem;
+                    margin-left: 1rem;
                 }
             }
         }
@@ -357,8 +389,8 @@
 
             /* Large Desktop */
             @include respond(large-desktop) {
-                margin-left: 4.2rem;
-                margin-top: -0.8rem;   
+                margin-left: 3.7rem;
+                margin-top: -0.5rem;   
             }
         }
 
@@ -482,12 +514,35 @@
     &__social-responsive {
         display: none;
 
-        @include respond(iphone-plus) {
+        /* iPad Pro */
+        @include respond(ipad-pro) {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
             @include iconSize;
             position: fixed;
             bottom: 0;
+            right: 33vw;
+
+            a {
+                @include iconSize;
+                text-decoration: none;
+                background-color: $color-secondary;
+                cursor: pointer;
+                @include transitions;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
+
+        /* iPad Pro */
+        @include respond(ipad) {
+            right: 40vw;  
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
             left: 2.5vw;
 
             a {
