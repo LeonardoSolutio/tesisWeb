@@ -32,14 +32,46 @@
   </div>
   <!-- ./Tab Links-->
 
+  <div class="tab-links-responsive">
+
+      <h3 ng-class="{active:services==1}">
+          <!--  h3 -->
+          <a ng-class="{active:services==1}" ng-click="services = 1"
+            >C</a
+          >
+        </h3>
+        <!--  ./h3 -->    
+  
+      <h3 ng-class="{active:services==2}">
+        <!--  h3 -->
+        <a ng-class="{active:services==2}" ng-click="services = 2"
+          >W</a
+        >
+      </h3>
+      <!--  ./h3 -->
+
+      <h3 ng-class="{active:services==3}">
+          <a ng-class="{active:services==3}" ng-click="services = 3"
+            >M</a
+          >
+        </h3>
+        <!--  ./h3 -->
+    </div>
+
   <!-- Tabs Details -->
   <div class="tab-details">
     <div class="services-details fade" ng-show="services==1">
       <!-- project-details -->
       
+      <div class="services-cover-responsive">
+          <img src="assets/img/services/c-na.png" alt="Consultancy"> 
+          <!-- project-title -->
+          <h3>CONSULTANCY</h3>
+      </div>
+
       <div class="services-content" style="overflow: hidden;">
         <!-- project-title -->
-        <h1 class="titleService-lm">CONSULTANCY</h2>
+        <h2 class="titleService-lm">CONSULTANCY</h2>
         <!-- project-content -->
         <div class="tab-container" ng-init="servicesC=1">
             <div class="tab-link"> <!-- tab-links -->
@@ -99,6 +131,11 @@
 
     <div class="services-details fade" ng-show="services==2">
       <!-- project-details -->
+
+      <div class="services-cover-responsive">
+          <img src="assets/img/services/w-na.png" alt="Web development">
+          <h3>WEB DEVELOPMENT</h3>
+      </div>
       
       <div class="services-content" style="overflow: hidden;">
         <!-- project-title -->
@@ -197,6 +234,11 @@
 
     <div class="services-details fade" ng-show="services==3">
       <!-- project-details -->
+
+      <div class="services-cover-responsive">
+          <img src="assets/img/services/m-na.png" alt="espanol restaurante">
+          <h3>MOBILE DEVELOPMENT</h3>
+      </div>
       
       <div class="services-content" style="overflow: hidden;">
         <!-- project-title -->
