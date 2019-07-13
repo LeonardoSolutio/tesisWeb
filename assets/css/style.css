@@ -6692,7 +6692,36 @@ button {
   .portafolio__lm {
     overflow: hidden;
     height: 100%;
-    background-color: #2d2c2f; }
+    background-color: #2d2c2f;
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .portafolio__lm {
+        overflow-y: auto; } }
     .portafolio__lm .tab-links {
       display: grid;
       transform: rotate(-90deg);
@@ -6753,6 +6782,33 @@ button {
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
+    */
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
     */ }
       .portafolio__lm .tab-links h3 {
         transform: rotate(90deg);
@@ -6776,11 +6832,152 @@ button {
       @media only screen and (max-width: 73.75em) {
         .portafolio__lm .tab-links a {
           padding: 0.5rem; } }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .portafolio__lm .tab-links {
+          display: none; } }
+    .portafolio__lm .tab-links-responsive {
+      display: none;
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* iPhone Plus */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .portafolio__lm .tab-links-responsive {
+          display: grid;
+          transform: rotate(-90deg);
+          position: fixed;
+          bottom: -5rem;
+          right: 10vw;
+          z-index: 900; }
+          .portafolio__lm .tab-links-responsive h3 {
+            transform: rotate(90deg);
+            margin-bottom: 2rem; }
+          .portafolio__lm .tab-links-responsive a {
+            background-color: #2d2c2f;
+            color: #f5f4f0;
+            padding: 1rem;
+            /* Transitions */
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
+            .portafolio__lm .tab-links-responsive a:hover, .portafolio__lm .tab-links-responsive a.active {
+              background-color: #9a3324; } }
+      @media only screen and (max-width: 31.25em) and (hover: none) {
+        .portafolio__lm .tab-links-responsive {
+          right: 15vw; } }
     .portafolio__lm .tab-details .project-details {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); }
+      grid-template-columns: repeat(2, 1fr);
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .portafolio__lm .tab-details .project-details {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr; } }
     .portafolio__lm .tab-details .project-cover {
-      z-index: 850; }
+      z-index: 850;
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .portafolio__lm .tab-details .project-cover img {
         height: 100vh;
         max-width: 50vw;
@@ -6788,11 +6985,304 @@ button {
         padding-top: 6rem !important;
         right: 0;
         bottom: 6rem; }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .portafolio__lm .tab-details .project-cover {
+          display: none; } }
+    .portafolio__lm .tab-details .project-responsive-img {
+      display: none;
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* iPhone Plus */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .portafolio__lm .tab-details .project-responsive-img {
+          display: block;
+          position: relative;
+          width: 100vw;
+          max-width: 100vw;
+          height: 70vh; }
+          .portafolio__lm .tab-details .project-responsive-img h3 {
+            height: 50vh;
+            z-index: 855;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            position: relative;
+            transform: translate(0, -125%);
+            color: #f5f4f0;
+            font-size: 4.5rem;
+            color: #2d2c2f;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Avenir Roman';
+            font-weight: 600;
+            /* Large Desktop 1366 * 768 */
+            /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+            /* Medium Desktop 1300 */
+            /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+            /* iPad Pro */
+            /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+            /* iPad Pro */
+            /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+            color: #f5f4f0; } }
+    @media only screen and (max-width: 64em) and (max-width: 85.375em), only screen and (min-height: 85.375em) and (hover: none) and (max-width: 85.375em) {
+      .portafolio__lm .tab-details .project-responsive-img h3 {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 64em) and (max-width: 81.25em), only screen and (min-height: 85.375em) and (hover: none) and (max-width: 81.25em) {
+      .portafolio__lm .tab-details .project-responsive-img h3 {
+        font-size: 3.5rem; } }
+    @media only screen and (max-width: 64em) and (max-width: 64em), only screen and (min-height: 85.375em) and (hover: none) and (max-width: 64em), only screen and (max-width: 64em) and (min-height: 85.375em) and (hover: none), (min-height: 85.375em) and (hover: none) and (min-height: 85.375em) and (hover: none) {
+      .portafolio__lm .tab-details .project-responsive-img h3 {
+        font-size: 4.5rem; } }
+    @media only screen and (max-width: 64em) and (max-width: 50em) and (hover: none), only screen and (min-height: 85.375em) and (hover: none) and (max-width: 50em) and (hover: none) {
+      .portafolio__lm .tab-details .project-responsive-img h3 {
+        font-size: 3.5rem; } }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+          .portafolio__lm .tab-details .project-responsive-img img {
+            width: 100vw;
+            max-width: 100vw;
+            height: auto; } }
+      @media only screen and (max-width: 31.25em) and (hover: none) {
+        .portafolio__lm .tab-details .project-responsive-img h3 {
+          font-size: 2rem;
+          transform: translate(0, -108%); } }
     .portafolio__lm .tab-details .project-content {
       padding-left: 5vw;
       padding-right: 5vw;
       margin-top: 25rem;
-      color: #f5f4f0; }
+      color: #f5f4f0;
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* iPad */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* iPad */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
       .portafolio__lm .tab-details .project-content h3 {
         font-size: 4.5rem;
         color: #2d2c2f;
@@ -6937,6 +7427,33 @@ button {
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
+    */
+        /* iPad Pro */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
     */ }
         @media only screen and (max-width: 85.375em) {
           .portafolio__lm .tab-details .project-content h3 {
@@ -6953,6 +7470,9 @@ button {
         @media only screen and (max-width: 85.375em) {
           .portafolio__lm .tab-details .project-content h3 {
             top: 15rem; } }
+        @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+          .portafolio__lm .tab-details .project-content h3 {
+            display: none; } }
       .portafolio__lm .tab-details .project-content p {
         font-size: 2.2rem;
         line-height: 3rem;
@@ -6986,6 +7506,60 @@ button {
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
+    */
+        /* iPad Pro */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+        /* iPad */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
     */ }
         @media only screen and (max-width: 85.375em) {
           .portafolio__lm .tab-details .project-content p {
@@ -6993,6 +7567,19 @@ button {
             font-size: 1.5rem;
             line-height: 2.5rem;
             padding-right: 50vw; } }
+        @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+          .portafolio__lm .tab-details .project-content p {
+            padding-right: 0vw;
+            position: initial;
+            margin-top: 15rem;
+            margin-bottom: 10rem;
+            font-size: 2.4rem;
+            line-height: 3rem; } }
+        @media only screen and (max-width: 31.25em) and (hover: none) {
+          .portafolio__lm .tab-details .project-content p {
+            margin-top: 0rem;
+            font-size: 1.5rem;
+            line-height: 2.5rem; } }
       .portafolio__lm .tab-details .project-content .action-btn {
         color: #f5f4f0;
         background-color: #9a3324;
@@ -7029,12 +7616,114 @@ button {
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
+    */
+        /*  iPad Pro */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+        /*  iPad Pro */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+        /*  iPad Pro */
+        /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
     */ }
         .portafolio__lm .tab-details .project-content .action-btn:hover {
           text-decoration: underline; }
         @media only screen and (max-width: 85.375em) {
           .portafolio__lm .tab-details .project-content .action-btn {
             font-size: 1.5rem; } }
+        @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+          .portafolio__lm .tab-details .project-content .action-btn {
+            position: relative;
+            float: right;
+            transform: translate(-5vw, 20vh); } }
+        @media only screen and (max-width: 50em) and (hover: none) {
+          .portafolio__lm .tab-details .project-content .action-btn {
+            transform: translate(-5vw, 30vh); } }
+        @media only screen and (max-width: 50em) and (hover: none) {
+          .portafolio__lm .tab-details .project-content .action-btn {
+            transform: translate(-5vw, 10vh); } }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .portafolio__lm .tab-details .project-content {
+          margin-top: 0rem;
+          margin-bottom: 5rem; } }
+      @media only screen and (max-width: 50em) and (hover: none) {
+        .portafolio__lm .tab-details .project-content {
+          margin-bottom: 5rem; } }
+      @media only screen and (max-width: 31.25em) and (hover: none) {
+        .portafolio__lm .tab-details .project-content {
+          margin-top: -5rem; } }
   .portafolio-lm-link {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

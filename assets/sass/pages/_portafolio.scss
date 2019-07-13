@@ -295,7 +295,7 @@
                         @include respond(ipad-pro) {
                             max-height: 50vh;
                         }
-                        
+
                         img {
                             height: 90vh;
                             max-width: 50vw;
@@ -418,12 +418,12 @@
                             
                             p {
                                 padding-left: 5vw;
-                            position: initial;
-                            margin-top: 15rem;
-                           margin-bottom: 10rem;
+                                position: initial;
+                                margin-top: 15rem;
+                                margin-bottom: 10rem;
 
-                            font-size: 2.4rem;
-                            line-height: 3rem;
+                                font-size: 2.4rem;
+                                line-height: 3rem;
                             }
                         }
 
@@ -506,14 +506,22 @@
         height: 100%;
         background-color: $color-secondary;
 
+        @include respond(ipad-pro) {
+            overflow-y: auto;
+        }
+
         .tab{
             &-links {
+
                 display: grid;
                 transform: rotate(-90deg);
                 position: fixed;
                 top: 6rem;
                 left: 7vw;
                 z-index: 900;
+
+                
+
 
                 h3 {
                     transform: rotate(90deg);
@@ -550,15 +558,70 @@
                         padding: 0.5rem;
                     }
                 }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    display: none;
+                 }
+                
+                
+            }
+
+            &-links-responsive {
+                display: none;
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    display: grid;
+                    transform: rotate(-90deg);
+                    position: fixed;
+                    bottom: -5rem;
+                    right: 10vw;
+                    z-index: 900;
+
+                    h3 {
+                        transform: rotate(90deg);
+                        margin-bottom: 2rem;
+                    }
+
+                    a {
+                        background-color: $color-secondary;
+                        color: $color-tertiary;
+                        padding: 1rem;
+                        @include transitions;
+
+
+                        &:hover,
+                        &.active {
+                            background-color: $color-primary;
+                        }
+                    }
+                }
+
+                /* iPhone Plus */
+                @include respond(iphone-plus) {
+                    right: 15vw;
+                }
             }
 
             &-details {
 
                 .project {
+
+                    
+
+
                     &-details {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 1fr;
+                        }
                     }
+
                     &-cover {
                         z-index: 850;
                         img {
@@ -570,6 +633,54 @@
                             right: 0;
                             bottom: 6rem;
                         }
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+                                display: none;
+                        }
+                    }
+
+                    &-responsive-img {
+                        display: none;
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+                            display: block;
+                            position: relative;
+                            width: 100vw;
+                            max-width: 100vw;
+                            height: 70vh;
+
+                            h3 {
+                                height: 50vh;
+                                z-index: 855;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100vw;
+                                position: relative;
+                                transform: translate(0,-125%);
+                                color: $color-tertiary;
+                                @include titleLi;
+                                color: $color-tertiary;
+                            }
+
+                            img {
+                                width: 100vw;
+                                max-width: 100vw;
+                                height: auto;
+                            
+                            }
+                        }    
+
+                        /* iPhone Plus */
+                        @include respond(iphone-plus) {
+                            h3 {
+                                font-size: 2rem;
+                                transform: translate(0,-108%);
+                            }
+                        }
+                        
                     }
 
                     &-content {
@@ -592,6 +703,11 @@
                             @include respond(large-desktop) {
                                 top: 15rem;
                             }
+
+                            /* iPad Pro */
+                            @include respond(ipad-pro) {
+                                display: none;    
+                            }
                     
                         }
             
@@ -612,6 +728,25 @@
                                 font-size: 1.5rem;
                                 line-height: 2.5rem;
                                 padding-right: 50vw;
+                            }
+
+                            /* iPad Pro */
+                            @include respond(ipad-pro) {        
+                                
+                                padding-right: 0vw;
+                                position: initial;
+                                margin-top: 15rem;
+                                margin-bottom: 10rem;
+
+                                font-size: 2.4rem;
+                                line-height: 3rem;
+                            }
+                            
+                            /* iPad */ 
+                            @include  respond(iphone-plus) {
+                                margin-top: 0rem;
+                                font-size: 1.5rem;
+                                line-height: 2.5rem;
                             }
                         }
 
@@ -637,6 +772,43 @@
                             @include respond(large-desktop) {
                                 font-size: 1.5rem;
                             }
+
+                            /*  iPad Pro */
+                            @include respond(ipad-pro) {
+                                position: relative;
+                                float: right;
+                                transform: translate(-5vw, 20vh);
+                            }
+
+                            /*  iPad Pro */
+                            @include respond(ipad) {
+                                transform: translate(-5vw, 30vh); 
+                            }
+
+
+                            /*  iPad Pro */
+                            @include respond(ipad) {
+                                transform: translate(-5vw, 10vh); 
+                            }
+
+
+                            
+                        }
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+                            margin-top: 0rem;
+                            margin-bottom: 5rem;  
+                        }
+
+                        /* iPad */
+                        @include respond(ipad) {
+                            margin-bottom: 5rem;  
+                        }
+
+                        /* iPad */
+                        @include respond(iphone-plus) {
+                            margin-top: -5rem;  
                         }
                     }
                 }
