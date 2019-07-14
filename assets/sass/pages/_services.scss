@@ -706,11 +706,6 @@
                 left: 6vw;
                 z-index: 890;
 
-                /* iPad Pro */
-                @include respond(ipad-pro) {
-                    display: none;
-                }
-
                 h3 {
                     //transform: rotate(90deg);
                     margin-bottom: 5rem;
@@ -762,6 +757,11 @@
                         height: 3rem;
                         padding: 0.8rem 1rem 0.8rem 1rem;
                     }
+                }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    display: none;
                 }
             }
 
@@ -1072,6 +1072,12 @@
         height: 100%;
         background-color: $color-secondary;
 
+
+        /* iPad  */
+        @include respond(ipad-pro) {
+            overflow-y: auto;
+        }
+
         .tab {
             &-links {
                 display: grid;
@@ -1128,6 +1134,68 @@
                         }
                     }
                 }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    display: none;
+                }
+            }
+
+            &-links-responsive {
+                
+                display: none;
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    position: fixed;
+                    //bottom: 4rem;
+                    left: 0vw;
+                    bottom: 4.5rem;
+                    z-index: 890;
+    
+                    h3 {
+                        //transform: rotate(90deg);
+                        margin-left: 5rem;
+                    }
+    
+                    a {
+                        color: $color-primary;
+    
+                        overflow: hidden;
+                        position: fixed;
+                        width: 3rem;
+                        height: 3rem;
+                        background-color: $color-tertiary;
+                        transition: all 0.3s ease-in;
+                        padding: 0.4rem 1.5rem 0.4rem 0.8rem;
+                        letter-spacing: 0.3rem;
+                        font-size: 1.5rem;
+                        @include boxShadowKi;
+    
+                        &:hover,
+                        &.active {
+                            color: $color-tertiary;
+                            background-color: $color-primary;
+                        
+                            @include boxShadowDelete;
+                            transform: translate(0px, 3px);
+    
+                            
+                        }
+                    } 
+                }
+
+                /* iPhone Plus */
+                @include respond(iphone-plus) {
+                    transform: translateX(-2.5rem);
+                    h3 {
+                        //transform: rotate(90deg);
+                        margin-left: 4rem;
+                    }
+                }
+                
             }
 
             &-link {
@@ -1158,6 +1226,33 @@
                         font-size: 1.5rem;
                     }
                 }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    position: initial;
+                    width: 90vw;
+                    margin-top: 10rem;
+
+                    a {
+                        font-size: 2rem;
+                        
+                    }
+                }
+
+                /* iPad */
+                @include respond(ipad) {
+                    margin-top: 5rem; 
+                }
+
+                /* iPhone Plus */
+                @include respond(iphone-plus) {
+                    display: inline-block;
+
+                    a {
+                        font-size: 1.5rem;
+                    }
+                    
+                }
             }
 
             &-details {
@@ -1166,6 +1261,11 @@
                     &-details {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+                            grid-template-columns: 1fr;
+                        }
                     }
 
                     &-cover {
@@ -1194,6 +1294,62 @@
                             font-size: 6rem;
                             color: $color-tertiary;
                         }
+
+                        /* iPad */
+                        @include respond(ipad-pro) {
+                            display: none;
+                        }
+                    }
+
+                    &-cover-responsive {
+                        display: none;
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+                            display: block;
+                            max-height: 50vh;
+                        }
+
+                        /* iPhone Plus */
+                        @include respond(iphone-plus) {
+                            max-height: 56.5vh;
+                        }
+
+                        img {
+                            /* iPad Pro */
+                            @include respond(ipad-pro) {
+                                width: 100vw;
+                                max-width: 100vw;
+                                height: auto;
+                            }
+                        }
+
+                        h3 {
+                            position: fixed;
+                            height: 95vh;
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 50vw;
+                            transform: translate(0,-100%);
+                            color: $color-tertiary;
+                            @include titleLi;
+                            color: $color-tertiary;
+
+                            /* iPad Pro */
+                            @include respond(ipad-pro) {
+                                width: 100vw;
+                                position: relative;
+                                transform: translate(0,-90%);
+                            }
+
+                            /* iPhone Plus */
+                            @include respond(iphone-plus) {
+                                font-size: 2rem;
+                                transform: translate(0,-78%);
+                            }
+                        }
                     }
 
                     &-content {
@@ -1216,6 +1372,11 @@
                             /* Large Desktop */
                             @include respond(large-desktop) {
                                 top: 18rem;
+                            }
+
+                            /* iPad Pro */
+                            @include respond(ipad-pro) {
+                                display: none;
                             }
                         }
 
@@ -1267,6 +1428,54 @@
                                 right: 8vw;
                             }
                         }
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+
+                            margin-top: 30rem;
+                            
+                            p {
+                                padding-left: 5vw;
+                                position: initial;
+                                margin-top: 5rem;
+                                margin-bottom: 10rem;
+
+                                font-size: 2.7rem;
+                                line-height: 3rem;
+                            }
+
+                            .action-btn {
+                                position: relative;
+                                float: right;
+                                margin-top: 20rem;
+                                transform: translateX(5vw);
+                            }
+                        }
+
+                        /* iPad */
+                        @include respond(ipad) {
+                            margin-top:25rem;
+                            p {
+                               font-size: 2.5rem;
+                               margin-top: 5rem;
+                               margin-bottom: 15rem; 
+                            }
+
+                            .action-btn {
+                                margin-top: 10rem;  
+                            }
+                        }
+
+                        /* iPhone Plus */
+                        @include respond(iphone-plus) {
+                            margin-top: 0rem;
+
+                            p {
+                                font-size: 1.5rem;
+                                line-height: 2.5rem;
+                             }
+                        }
+
                     }
                 }
 
@@ -1299,6 +1508,32 @@
             right: 17vw;  
         }
 
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            right: 22vw;  
+        }
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            right: 22vw;  
+        }
+
+        /* iPad */
+        @include respond(ipad) {
+            right: 26vw;  
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            right: 42vw;  
+            grid-gap: 1.2rem;
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone) {
+            right: 45vw;  
+        }
+
         a {
             @include iconSize;
             width: 4.8rem !important;
@@ -1313,6 +1548,12 @@
                 background-color: $color-primary;
                 @include boxShadowDelete;
                 transform: translate(-3px,3px);
+            }
+
+            /* iPhone Plus */
+            @include respond(iphone-plus) {
+                width: 4.5rem !important;
+                height: 4.5rem !important;   
             }
 
             /* Skype */
