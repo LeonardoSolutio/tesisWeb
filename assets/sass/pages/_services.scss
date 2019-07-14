@@ -1598,12 +1598,34 @@
     &__vs {
 
         display: flex;
-        display: flex;
         justify-content: left;
         /* align horizontal */
         align-items: center;
         /* align vertical */
         height: 100%;
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            overflow-y: auto;
+        }
+
+        &-content {
+
+            /* iPad Pro */
+            @include respond(ipad-pro) {
+                margin-top: 20rem;
+            }
+
+            /* iPad */
+            @include respond(ipad) {
+                margin-top: 30rem;
+            }
+
+            /* iPhone Plus */
+            @include respond(iphone-plus) {
+                margin-top: 40rem;
+            }
+        }
 
 
         .title-vs {
@@ -1646,6 +1668,15 @@
                     font-size: 3.5rem;
                 }
             }
+
+            /* iPad */
+            @include respond(iphone-plus) {
+                font-size: 1.5rem;
+
+                &.active {
+                    font-size: 2.5rem;
+                }
+            }
         }
 
         .vs-acc {
@@ -1660,6 +1691,14 @@
 
             @include respond(large-desktop) {
                 margin-bottom: 0rem;
+            }
+
+            /* iPad Pro */
+            @include respond(ipad-pro) {
+                min-width: 100vw;
+                padding-left: 5vw;
+                padding-right: 5vw;  
+                margin-left: 0;
             }
         }
 
@@ -1676,6 +1715,11 @@
                 /* Large Desktop */
                 @include respond(large-desktop) {
                     padding-top: 0;
+                }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    width: 90vw;
                 }
             }
 
@@ -1711,6 +1755,11 @@
                          font-size: 1.2rem;
                     } 
                  }
+
+                /* iPhone Plus */
+                @include respond(iphone-plus) {
+                    display: inline-block;
+                }
             }
 
             &-details {
@@ -1733,6 +1782,11 @@
                     }  
                     
                     margin-bottom: 2rem;
+                }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    max-width: 90vw;
                 }
             }
         }
@@ -1768,6 +1822,18 @@
             bottom: 6rem;
             z-index: 700;
             width: 50vw;
+
+            /* iPad Pro */
+            @include respond(ipad-pro) {
+                position: relative; 
+                
+                img {
+                    width: 100vw;
+                    padding-right: 15vw;
+                    padding-left: 5vw;
+                    padding-top: 10rem;
+                }
+            }
         }
 
     }

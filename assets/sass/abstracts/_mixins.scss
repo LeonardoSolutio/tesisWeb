@@ -197,7 +197,7 @@
     }
 
     @if $breakpoint==large-desktop {
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
             @content
         }
 

@@ -281,7 +281,7 @@ section[back-img] {
     background-color: #2d2c2f; }
     .pageTitle span.red-letter {
       color: #9a3324; }
-  @media only screen and (max-width: 85.375em) {
+  @media only screen and (max-width: 90em) {
     .pageTitle {
       font-size: 2.5rem; } }
   @media only screen and (max-width: 73.75em) {
@@ -2116,7 +2116,7 @@ button {
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         transition: all 0.3s ease; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .nav li a {
           font-size: 1.3rem; } }
       @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -2226,7 +2226,7 @@ button {
         opacity: 1; }
     .nav .li a span {
       color: #f5f4f0; }
-    @media only screen and (max-width: 85.375em) {
+    @media only screen and (max-width: 90em) {
       .nav .li a {
         font-size: 1.3rem; }
         .nav .li a:hover, .nav .li a.active {
@@ -2762,7 +2762,7 @@ button {
   .navigation__kinesthetic a {
     color: #f5f4f0;
     text-decoration: none; }
-  @media only screen and (max-width: 85.375em) {
+  @media only screen and (max-width: 90em) {
     .navigation__kinesthetic {
       grid-template-rows: 2fr 4fr 2fr;
       left: 2.5rem; } }
@@ -3089,7 +3089,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-  @media only screen and (max-width: 85.375em) {
+  @media only screen and (max-width: 90em) {
     .container {
       right: 2rem; } }
   @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -3446,7 +3446,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-    @media only screen and (max-width: 85.375em) {
+    @media only screen and (max-width: 90em) {
       .about[back-img] {
         background-size: 45%; } }
     @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -3578,7 +3578,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-    @media only screen and (max-width: 85.375em) {
+    @media only screen and (max-width: 90em) {
       .about__container {
         padding-top: 15rem; } }
     @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -3703,7 +3703,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-    @media only screen and (max-width: 85.375em) {
+    @media only screen and (max-width: 90em) {
       .about__text {
         font-size: 1.5rem;
         line-height: 2.5rem; } }
@@ -3741,7 +3741,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .about__text-lm {
           font-size: 1.5rem;
           line-height: 2.5rem; } }
@@ -3923,10 +3923,10 @@ button {
     */ }
       .about__links-li a:hover {
         background-color: #9a3324; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .about__links-li a {
           font-size: 1.3rem; } }
-    @media only screen and (max-width: 85.375em) {
+    @media only screen and (max-width: 90em) {
       .about__links-li {
         grid-column-gap: 4rem; } }
     @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -4051,7 +4051,7 @@ button {
     */ }
       .about__links-vs a:hover {
         background-color: #9a3324; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .about__links-vs a {
           width: 5rem !important;
           height: 5rem !important; }
@@ -4247,7 +4247,7 @@ button {
         margin-top: 1.3rem;
         margin-left: 1.3rem;
         transform: rotate(-45deg); }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .about__links-na .pic {
           width: 4rem !important;
           height: 4rem !important; }
@@ -4290,7 +4290,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .about__links-na .row-2 {
           margin-left: 3.6rem;
           margin-top: -0.7rem; } }
@@ -4388,7 +4388,7 @@ button {
         margin-top: 1.3rem;
         margin-left: 1.3rem;
         transform: rotate(-45deg); }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .about__links-ki .pic {
           width: 4rem !important;
           height: 4rem !important; }
@@ -4432,7 +4432,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .about__links-ki .row-2 {
           margin-left: 3.7rem;
           margin-top: -0.5rem; } }
@@ -4465,7 +4465,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .about__links-ki .row-3 {
           margin-top: -0.8rem; } }
   .about__empty-lm {
@@ -4588,7 +4588,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-    @media only screen and (max-width: 85.375em) {
+    @media only screen and (max-width: 90em) {
       .about__links-lm {
         left: -4vw; } }
     @media only screen and (max-width: 73.75em) {
@@ -4679,7 +4679,7 @@ button {
         margin-top: 1.3rem;
         margin-left: 1.3rem;
         transform: rotate(-135deg) scale(-1, 1); }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .about__links-lm .pic {
           width: 4.5rem !important;
           height: 4.5rem !important;
@@ -4752,7 +4752,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .about__links-lm .row-2 {
           margin-left: 3.5rem;
           margin-top: -0.6rem; } }
@@ -5268,7 +5268,7 @@ button {
         .portafolio__li .tab-links a:hover, .portafolio__li .tab-links a.active {
           background-color: #9a3324;
           color: #f5f4f0; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__li .tab-links {
           font-size: 1.3rem;
           left: 2.2vw; }
@@ -5578,7 +5578,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__li .project-title {
           font-size: 4rem; } }
       @media only screen and (max-width: 81.25em) {
@@ -5593,7 +5593,7 @@ button {
       .portafolio__li .project-title .second-line {
         margin-left: 15rem;
         margin-top: -2rem; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__li .project-title {
           left: 10vw; }
           .portafolio__li .project-title .second-line {
@@ -5734,7 +5734,7 @@ button {
         float: right; }
         .portafolio__li .project-content .action-btn:hover {
           text-decoration: underline; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__li .project-content p {
           font-size: 1.5rem; }
         .portafolio__li .project-content .action-btn {
@@ -5858,10 +5858,10 @@ button {
       min-width: 18rem; }
       .portafolio-li-link a:hover {
         background-color: #9a3324; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio-li-link a {
           font-size: 1.3rem; } }
-    @media only screen and (max-width: 85.375em) {
+    @media only screen and (max-width: 90em) {
       .portafolio-li-link a {
         min-width: 12rem; } }
     @media only screen and (max-width: 31.25em) and (hover: none) {
@@ -6002,7 +6002,7 @@ button {
         transition: all 0.3s ease; }
         .portafolio__na .tab-links a:hover, .portafolio__na .tab-links a.active {
           background-color: #9a3324; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__na .tab-links {
           bottom: 2rem; }
           .portafolio__na .tab-links a {
@@ -6294,7 +6294,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__na .tab-details .project-title h3 {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -6536,7 +6536,7 @@ button {
         @media only screen and (max-width: 31.25em) and (hover: none) {
           .portafolio__na .tab-details .project-content a {
             margin-top: 8rem; } }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__na .tab-details .project-content p {
           top: 20rem;
           font-size: 1.5rem;
@@ -6823,7 +6823,7 @@ button {
         transition: all 0.3s ease; }
         .portafolio__lm .tab-links a:hover, .portafolio__lm .tab-links a.active {
           background-color: #9a3324; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__lm .tab-links {
           top: -3rem;
           left: 10vw; }
@@ -7176,7 +7176,7 @@ button {
     }
     */
             color: #f5f4f0; } }
-    @media only screen and (max-width: 64em) and (max-width: 85.375em), only screen and (min-height: 85.375em) and (hover: none) and (max-width: 85.375em) {
+    @media only screen and (max-width: 64em) and (max-width: 90em), only screen and (min-height: 85.375em) and (hover: none) and (max-width: 90em) {
       .portafolio__lm .tab-details .project-responsive-img h3 {
         font-size: 4rem; } }
     @media only screen and (max-width: 64em) and (max-width: 81.25em), only screen and (min-height: 85.375em) and (hover: none) and (max-width: 81.25em) {
@@ -7455,7 +7455,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__lm .tab-details .project-content h3 {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -7467,7 +7467,7 @@ button {
         @media only screen and (max-width: 50em) and (hover: none) {
           .portafolio__lm .tab-details .project-content h3 {
             font-size: 3.5rem; } }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__lm .tab-details .project-content h3 {
             top: 15rem; } }
         @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -7561,7 +7561,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__lm .tab-details .project-content p {
             top: 24rem;
             font-size: 1.5rem;
@@ -7700,7 +7700,7 @@ button {
     */ }
         .portafolio__lm .tab-details .project-content .action-btn:hover {
           text-decoration: underline; }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__lm .tab-details .project-content .action-btn {
             font-size: 1.5rem; } }
         @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -8009,7 +8009,7 @@ button {
               -webkit-box-shadow: 0.5rem 0.5rem 0px 0px #f5f4f0;
               -moz-box-shadow: 0.5rem 0.5rem 0px 0px #f5f4f0;
               box-shadow: 0.5rem 0.5rem 0px 0px #f5f4f0; } }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__ki .tab-links {
           padding-bottom: 20vh;
           left: 41vw; }
@@ -8283,7 +8283,7 @@ button {
     }
     */
             color: #f5f4f0; } }
-    @media only screen and (max-width: 64em) and (max-width: 85.375em), only screen and (min-height: 85.375em) and (hover: none) and (max-width: 85.375em) {
+    @media only screen and (max-width: 64em) and (max-width: 90em), only screen and (min-height: 85.375em) and (hover: none) and (max-width: 90em) {
       .portafolio__ki .tab-details .project-responsive-img h3 {
         font-size: 4rem; } }
     @media only screen and (max-width: 64em) and (max-width: 81.25em), only screen and (min-height: 85.375em) and (hover: none) and (max-width: 81.25em) {
@@ -8494,7 +8494,7 @@ button {
     */
         font-size: 6rem;
         color: #f5f4f0; }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__ki .tab-details .project-cover h3 {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -8767,7 +8767,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__ki .tab-details .project-content .titleService-ki {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -8779,7 +8779,7 @@ button {
         @media only screen and (max-width: 50em) and (hover: none) {
           .portafolio__ki .tab-details .project-content .titleService-ki {
             font-size: 3.5rem; } }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__ki .tab-details .project-content .titleService-ki {
             top: 20rem; } }
         @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -8874,7 +8874,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__ki .tab-details .project-content p {
             top: 28rem;
             font-size: 1.5rem;
@@ -9022,7 +9022,7 @@ button {
           -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
           box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
           transform: translate(-3px, 3px); }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__ki .tab-details .project-content .action-btn {
             font-size: 1.5rem; } }
         @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -9412,7 +9412,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__vs .title-vs {
           font-size: 4rem; } }
       @media only screen and (max-width: 81.25em) {
@@ -9427,7 +9427,7 @@ button {
       .portafolio__vs .title-vs.active {
         color: #2d2c2f;
         font-size: 8rem; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__vs .title-vs {
           font-size: 4.5rem; }
           .portafolio__vs .title-vs.active {
@@ -9465,7 +9465,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__vs .vs-acc {
           margin-bottom: 0rem; } }
     .portafolio__vs .tab-container {
@@ -9501,7 +9501,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__vs .tab-container {
           padding-top: 0; } }
     .portafolio__vs .tab-details {
@@ -9538,7 +9538,7 @@ button {
     */ }
       .portafolio__vs .tab-details p {
         font-size: 2rem; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__vs .tab-details {
           margin-bottom: 2rem; }
           .portafolio__vs .tab-details p {
@@ -9588,7 +9588,7 @@ button {
       .portafolio__vs .action-btn:hover {
         background-color: #9a3324;
         color: #f5f4f0; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .portafolio__vs .action-btn {
           font-size: 1.5rem; } }
     .portafolio__vs .accordion-cover {
@@ -9721,7 +9721,7 @@ button {
     }
     */
         color: #f5f4f0; }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .portafolio__vs .accordion-cover h3 {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -9965,7 +9965,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__li .title-li {
           font-size: 4rem; } }
       @media only screen and (max-width: 81.25em) {
@@ -10105,7 +10105,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__li .tab-container {
           grid-template-columns: 1.6fr 3fr; } }
       @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -10204,7 +10204,7 @@ button {
         font-weight: 600; }
         .services__li .tab-links a.active {
           color: #9a3324; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__li .tab-links a {
           font-size: 2rem;
           margin-left: 8rem; } }
@@ -10329,7 +10329,7 @@ button {
     */ }
       .services__li .tab-details p {
         font-size: 2.5rem; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__li .tab-details p {
           font-size: 1.6rem;
           line-height: 2.5rem; } }
@@ -10387,7 +10387,7 @@ button {
       .services__li .action-btn:hover {
         background-color: #9a3324;
         color: #f5f4f0; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__li .action-btn {
           font-size: 1.5rem; } }
   .services-li-link {
@@ -10546,10 +10546,10 @@ button {
       min-width: 18rem; }
       .services-li-link a:hover {
         background-color: #9a3324; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services-li-link a {
           font-size: 1.3rem; } }
-    @media only screen and (max-width: 85.375em) {
+    @media only screen and (max-width: 90em) {
       .services-li-link a {
         min-width: 12rem; } }
     @media only screen and (max-width: 81.25em) {
@@ -10710,7 +10710,7 @@ button {
           .services__na .tab-links a:hover span.hover, .services__na .tab-links a.active span.hover {
             opacity: 1;
             position: relative; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__na .tab-links {
           bottom: 3rem;
           left: 5.5vw; }
@@ -10831,7 +10831,7 @@ button {
         .services__na .tab-link a.active {
           background-color: #9a3324;
           color: #f5f4f0; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__na .tab-link {
           top: 20rem; }
           .services__na .tab-link a {
@@ -11181,7 +11181,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__na .tab-details .services-title h3 {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -11338,7 +11338,7 @@ button {
         right: 5vw; }
         .services__na .tab-details .services-content .action-btn:hover {
           text-decoration: underline; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__na .tab-details .services-content p {
           font-size: 1.5rem;
           line-height: 2.5rem;
@@ -11563,7 +11563,7 @@ button {
       transition: all 0.3s ease; }
       .services-na-link a:hover {
         background-color: #9a3324; }
-    @media only screen and (max-width: 85.375em) {
+    @media only screen and (max-width: 90em) {
       .services-na-link {
         right: 15vw; } }
     @media only screen and (max-width: 73.75em) {
@@ -11822,7 +11822,7 @@ button {
           .services__lm .tab-links a:hover span.hover, .services__lm .tab-links a.active span.hover {
             opacity: 1;
             position: relative; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__lm .tab-links {
           left: 5vw; }
           .services__lm .tab-links h3 {
@@ -11959,7 +11959,7 @@ button {
         .services__lm .tab-link a.active {
           background-color: #9a3324;
           color: #f5f4f0; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__lm .tab-link {
           top: 25rem;
           left: 10vw;
@@ -12327,7 +12327,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__lm .tab-details .services-cover-responsive h3 {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -12606,7 +12606,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__lm .tab-details .services-content .titleService-lm {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -12618,7 +12618,7 @@ button {
         @media only screen and (max-width: 50em) and (hover: none) {
           .services__lm .tab-details .services-content .titleService-lm {
             font-size: 3.5rem; } }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__lm .tab-details .services-content .titleService-lm {
             top: 15rem;
             left: 10vw; } }
@@ -12659,7 +12659,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__lm .tab-details .services-content p {
             font-size: 1.5rem;
             line-height: 2.5rem;
@@ -12705,7 +12705,7 @@ button {
     */ }
         .services__lm .tab-details .services-content .action-btn:hover {
           text-decoration: underline; }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__lm .tab-details .services-content .action-btn {
             left: 10vw;
             font-size: 1.5rem; } }
@@ -12882,7 +12882,7 @@ button {
           -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
           box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
           transform: translate(0px, 4px); }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__ki .tab-links {
           right: 4vw; }
           .services__ki .tab-links a {
@@ -13107,7 +13107,7 @@ button {
         padding: 0.5rem 1rem 0.5rem 1rem; }
         .services__ki .tab-link a.active {
           background-color: #9a3324; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__ki .tab-link {
           top: 27rem;
           width: 37vw; }
@@ -13321,7 +13321,7 @@ button {
     */
         font-size: 6rem;
         color: #f5f4f0; }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__ki .tab-details .services-cover h3 {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -13610,7 +13610,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__ki .tab-details .services-cover-responsive h3 {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -13889,7 +13889,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__ki .tab-details .services-content .titleService-ki {
             font-size: 4rem; } }
         @media only screen and (max-width: 81.25em) {
@@ -13901,7 +13901,7 @@ button {
         @media only screen and (max-width: 50em) and (hover: none) {
           .services__ki .tab-details .services-content .titleService-ki {
             font-size: 3.5rem; } }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__ki .tab-details .services-content .titleService-ki {
             top: 18rem; } }
         @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
@@ -13942,7 +13942,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__ki .tab-details .services-content p {
             top: 32rem;
             font-size: 1.5rem;
@@ -13997,7 +13997,7 @@ button {
           -moz-box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
           box-shadow: 0px 0px 0px 0px rgba(45, 44, 47, 0.4);
           transform: translate(-3px, 3px); }
-        @media only screen and (max-width: 85.375em) {
+        @media only screen and (max-width: 90em) {
           .services__ki .tab-details .services-content .action-btn {
             font-size: 1.5rem;
             right: 8vw; } }
@@ -14259,7 +14259,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-    @media only screen and (max-width: 85.375em) {
+    @media only screen and (max-width: 90em) {
       .services-ki-link {
         right: 15vw; } }
     @media only screen and (max-width: 81.25em) {
@@ -14361,12 +14361,132 @@ button {
           background-image: url(../../assets/img/Icons-social-media/whatsapp.svg); }
   .services__vs {
     display: flex;
-    display: flex;
     justify-content: left;
     /* align horizontal */
     align-items: center;
     /* align vertical */
-    height: 100%; }
+    height: 100%;
+    /* iPad Pro */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .services__vs {
+        overflow-y: auto; } }
+    .services__vs-content {
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* iPad */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+      /* iPhone Plus */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .services__vs-content {
+          margin-top: 20rem; } }
+      @media only screen and (max-width: 50em) and (hover: none) {
+        .services__vs-content {
+          margin-top: 30rem; } }
+      @media only screen and (max-width: 31.25em) and (hover: none) {
+        .services__vs-content {
+          margin-top: 40rem; } }
     .services__vs .title-vs {
       font-size: 4.5rem;
       color: #2d2c2f;
@@ -14568,8 +14688,35 @@ button {
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
+    */
+      /* iPad */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__vs .title-vs {
           font-size: 4rem; } }
       @media only screen and (max-width: 81.25em) {
@@ -14584,7 +14731,7 @@ button {
       .services__vs .title-vs.active {
         color: #2d2c2f;
         font-size: 6rem; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__vs .title-vs {
           font-size: 2rem; }
           .services__vs .title-vs.active {
@@ -14599,6 +14746,11 @@ button {
           font-size: 2rem; }
           .services__vs .title-vs.active {
             font-size: 3.5rem; } }
+      @media only screen and (max-width: 31.25em) and (hover: none) {
+        .services__vs .title-vs {
+          font-size: 1.5rem; }
+          .services__vs .title-vs.active {
+            font-size: 2.5rem; } }
     .services__vs .vs-acc {
       min-width: 40vw;
       margin-left: 5vw;
@@ -14631,10 +14783,43 @@ button {
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
+    */
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__vs .vs-acc {
           margin-bottom: 0rem; } }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .services__vs .vs-acc {
+          min-width: 100vw;
+          padding-left: 5vw;
+          padding-right: 5vw;
+          margin-left: 0; } }
     .services__vs .tab-container {
       display: grid;
       grid-template-columns: 1fr;
@@ -14667,10 +14852,40 @@ button {
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
+    */
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
     */ }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__vs .tab-container {
           padding-top: 0; } }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .services__vs .tab-container {
+          width: 90vw; } }
     .services__vs .tab-links {
       display: flex;
       border-bottom: 1px solid #2d2c2f;
@@ -14727,6 +14942,33 @@ button {
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
+    */
+      /* iPhone Plus */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
     */ }
       .services__vs .tab-links a {
         color: #504e53;
@@ -14737,12 +14979,15 @@ button {
         .services__vs .tab-links a.active {
           color: #f5f4f0;
           background-color: #9a3324; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__vs .tab-links a {
           font-size: 1.5rem; } }
       @media only screen and (max-width: 73.75em) {
         .services__vs .tab-links a {
           font-size: 1.2rem; } }
+      @media only screen and (max-width: 31.25em) and (hover: none) {
+        .services__vs .tab-links {
+          display: inline-block; } }
     .services__vs .tab-details {
       overflow: hidden;
       max-width: 50vw;
@@ -14774,16 +15019,46 @@ button {
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
+    */
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
     */ }
       .services__vs .tab-details p {
         font-size: 2rem; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__vs .tab-details {
           margin-bottom: 2rem; }
           .services__vs .tab-details p {
             font-size: 1.5rem;
             line-height: 2rem;
             margin-top: 1rem; } }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .services__vs .tab-details {
+          max-width: 90vw; } }
     .services__vs .action-btn {
       color: #9a3324;
       text-decoration: none;
@@ -14828,7 +15103,7 @@ button {
       .services__vs .action-btn:hover {
         background-color: #9a3324;
         color: #f5f4f0; }
-      @media only screen and (max-width: 85.375em) {
+      @media only screen and (max-width: 90em) {
         .services__vs .action-btn {
           font-size: 1.5rem; } }
     .services__vs .accordion-cover {
@@ -14836,7 +15111,42 @@ button {
       right: 0;
       bottom: 6rem;
       z-index: 700;
-      width: 50vw; }
+      width: 50vw;
+      /* iPad Pro */
+      /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+      @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+        .services__vs .accordion-cover {
+          position: relative; }
+          .services__vs .accordion-cover img {
+            width: 100vw;
+            padding-right: 15vw;
+            padding-left: 5vw;
+            padding-top: 10rem; } }
   .services-vs-link {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -14928,7 +15238,7 @@ button {
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
     */ }
-  @media only screen and (max-width: 85.375em) {
+  @media only screen and (max-width: 90em) {
     .quiz {
       grid-template-columns: 0.5fr 5fr 0.5fr; } }
   .quiz__container {
