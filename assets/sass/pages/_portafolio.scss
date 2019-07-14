@@ -790,8 +790,8 @@
 
 
                             /*  iPad Pro */
-                            @include respond(ipad) {
-                                transform: translate(-5vw, 10vh); 
+                            @include respond(iphone-plus) {
+                                transform: translate(-5vw, 20vh); 
                             }
 
 
@@ -848,6 +848,11 @@
         overflow: hidden;
         height: 100%;
         background-color: $color-secondary;
+
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            overflow-y: auto;
+        }
 
         .tab {
             &-links {
@@ -925,6 +930,62 @@
                     }
                 }
 
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    height: 6rem;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    left: 0vw;
+                    bottom: 0;
+
+                    h3 {
+                        margin-left: 7rem;
+                    }
+
+                    a {
+                        width: 4.7vw;
+                        height: 4.7vw;
+                        font-size: 2rem;
+                        // padding: 0.5rem 1.3rem 0.8rem 1.3rem;
+                    }
+                }
+
+                /* iPad */
+                @include respond(ipad) {
+                    a {
+                        width: 5vw;
+                        height: 5vw;
+                        font-size: 1.5rem;
+                        padding: 0.5rem 1rem 0.8rem 1rem;
+                    }   
+                } 
+
+                /* iPhone Plus */
+                @include respond(iphone-plus) {
+
+                    h3 {
+                        margin-left: 4.5rem;
+                        transform: translate(-2rem, 1rem);
+                    }
+
+                    a {
+                        width: 8.5vw;
+                        height: 8.5vw;
+                        font-size: 1.5rem;
+                        padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+                    }   
+                }
+
+                /* iPhone */
+                @include respond(iphone) {
+                    h3 {
+                        transform: translate(-2.5rem, 1rem);
+                    }
+                }
+
             }
 
 
@@ -934,7 +995,57 @@
                     &-details {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 1fr;
+                        }
                     }
+
+                    &-responsive-img {
+                        display: none;
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+                            display: block;
+                            position: relative;
+                            width: 100vw;
+                            max-width: 100vw;
+                            height: 70vh;
+
+                            h3 {
+                                height: 50vh;
+                                z-index: 855;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100vw;
+                                position: relative;
+                                transform: translate(0,-125%);
+                                color: $color-tertiary;
+                                @include titleLi;
+                                color: $color-tertiary;
+                            }
+
+                            img {
+                                width: 100vw;
+                                max-width: 100vw;
+                                height: auto;
+                            
+                            }
+                        }    
+
+                        /* iPhone Plus */
+                        @include respond(iphone-plus) {
+                            h3 {
+                                font-size: 2rem;
+                                transform: translate(0,-108%);
+                            }
+                        }
+                        
+                    }
+
 
                     &-cover {
                         z-index: 850;
@@ -967,6 +1078,11 @@
                             font-size: 6rem;
                             color: $color-tertiary;
                         }
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+                            display: none;
+                        }
                     }
 
                     &-content {
@@ -991,6 +1107,11 @@
                             @include respond(large-desktop) {
                                 top: 20rem;
                             }
+
+                            /* iPad Pro */
+                            @include respond(ipad-pro) {
+                                display: none;
+                            }
                         }
 
                         p {
@@ -1007,6 +1128,25 @@
                             /* Large Desktop */
                             @include respond(large-desktop) {
                                 top: 28rem;
+                                font-size: 1.5rem;
+                                line-height: 2.5rem;
+                            }
+
+                            /* iPad Pro */
+                            @include respond(ipad-pro) {        
+                                
+                                padding-left: 0vw;
+                                position: initial;
+                                margin-top: 15rem;
+                                margin-bottom: 15rem;
+
+                                font-size: 2.4rem;
+                                line-height: 3rem;
+                            }
+                            
+                            /* iPad */ 
+                            @include  respond(iphone-plus) {
+                                margin-top: 0rem;
                                 font-size: 1.5rem;
                                 line-height: 2.5rem;
                             }
@@ -1038,6 +1178,42 @@
                             @include respond(large-desktop) {
                                 font-size: 1.5rem;
                             }
+
+                            /*  iPad Pro */
+                            @include respond(ipad-pro) {
+                                position: relative;
+                                float: right;
+                                transform: translate(-5vw, 20vh);
+                                margin-bottom: 6rem;
+
+                            }
+
+                            /*  iPad Pro */
+                            @include respond(ipad) { 
+                                margin-bottom: 2rem;
+                            }
+
+
+                            /*  iPad Pro */
+                            @include respond(iphone-plus) {
+                                transform: translate(-5vw, 20vh); 
+                            }
+                        }
+
+                        /* iPad Pro */
+                        @include respond(ipad-pro) {
+                            margin-top: 0rem;
+                            margin-bottom: 5rem;  
+                        }
+
+                        /* iPad */
+                        @include respond(ipad) {
+                            margin-bottom: 5rem;  
+                        }
+
+                        /* iPad */
+                        @include respond(iphone-plus) {
+                            margin-top: -5rem;  
                         }
                     }
                 }
@@ -1056,6 +1232,28 @@
         bottom: 0;
         right: 10vw;
 
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            right: 15vw;    
+        }
+
+        /* iPad */
+        @include respond(ipad) {
+            right: 18vw;    
+        }
+
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            right: 30vw; 
+            grid-gap: 1.2rem;   
+        }
+
+        /* iPhone */
+        @include respond(iphone) {
+            right: 31vw;    
+        }
+
         a {
             @include iconSize;
             width: 4.8rem !important;
@@ -1070,6 +1268,12 @@
                 background-color: $color-primary;
                 @include boxShadowDelete;
                 transform: translate(-3px,3px);
+            }
+
+            /* iPhone Plus */
+            @include respond(iphone-plus) {
+                width: 4.5rem !important;
+                height: 4.5rem !important;
             }
 
             /* Skype */

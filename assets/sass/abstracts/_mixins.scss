@@ -80,6 +80,13 @@
     -webkit-box-shadow: 1rem 1rem 0px 0px $color-tertiary;
     -moz-box-shadow: 1rem 1rem 0px 0px $color-tertiary;
     box-shadow: 1rem 1rem 0px 0px $color-tertiary;
+
+    /* iPad Pro */
+    @include respond(ipad-pro) {
+        -webkit-box-shadow: 0.5rem 0.5rem 0px 0px $color-tertiary;
+        -moz-box-shadow: 0.5rem 0.5rem 0px 0px $color-tertiary;
+        box-shadow: 0.5rem 0.5rem 0px 0px $color-tertiary;  
+    }
 }
 
 @mixin boxShadowDelete {

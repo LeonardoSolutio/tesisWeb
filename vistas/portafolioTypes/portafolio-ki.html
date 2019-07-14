@@ -1,9 +1,9 @@
-<p class="pageTitle ki-pageTitle">
-    <span> < P O R T F O L I<span class="red-letter"> O </span>/ ></span>
-  </p>
-  <div class="topBar"></div>
-  <div class="portafolio__ki" ng-init="project=1">
-    <!-- Tab Links-->
+<p class="pageTitle ki-pageTitle pageTitle-resposive">
+  <span> < P O R T F O L I<span class="red-letter"> O </span>/ ></span>
+</p>
+<div class="topBar"></div>
+<div class="portafolio__ki" ng-init="project=1">
+  <!-- Tab Links-->
   <div class="tab-links">
     <h3 ng-class="{active:project==1}">
       <!--  h3 -->
@@ -32,6 +32,12 @@
   <!-- Tabs Details -->
   <div class="tab-details">
     <div class="project-details fade" ng-show="project==1">
+      <!-- Responsive cover -->
+      <div class="project-responsive-img">
+        <img src="assets/img/portafolio/01.png" alt="industrial mueblera" />
+        <!-- project-title -->
+        <h3>industrial mueblera</h3>
+      </div>
       <!-- project-content -->
       <div class="project-content" style="overflow: hidden;">
         <!-- project-title -->
@@ -57,6 +63,12 @@
     <!-- ./project-details -->
 
     <div class="project-details fade" ng-show="project==2">
+      <!-- Responsive cover -->
+      <div class="project-responsive-img">
+        <img src="assets/img/portafolio/02.png" alt="landscape mexico" />
+        <!-- project-title -->
+        <h3>landscape méxico</h3>
+      </div>
       <!-- project-content -->
       <div class="project-content" style="overflow: hidden;">
         <!-- project-title -->
@@ -82,6 +94,12 @@
     <!-- ./project-details -->
 
     <div class="project-details fade" ng-show="project==3">
+
+      <!-- Responsive cover -->
+      <div class="project-responsive-img">
+        <img  src="assets/img/portafolio/03.png" alt="espanol restaurante" />
+        <h3>Restaurante El Español</h3>
+      </div>
       <!-- project-content -->
       <div class="project-content" style="overflow: hidden;">
         <!-- project-title -->
@@ -107,6 +125,12 @@
     <!-- ./project-details -->
 
     <div class="project-details fade" ng-show="project==4">
+
+        <!-- Responsive cover -->
+        <div class="project-responsive-img">
+          <img  src="assets/img/portafolio/04.png" alt="eterea productions" />
+          <h3>Etérea Art Productions</h3>
+        </div>
       <!-- project-content -->
       <div class="project-content" style="overflow: hidden;">
         <!-- project-title -->
@@ -132,11 +156,16 @@
     <!-- ./project-details -->
   </div>
   <!-- ./Tabs Details -->
-  </div>
-  
-  
-  <div class="portafolio-ki-link"> <!-- portafolio-na-link -->
-      <a class="icon-social whatsapp" href="https://api.whatsapp.com/send?phone=5213329197057" target="_blank"></a>
-      <a class="icon-social skype" href="skype:leosolutio?call"></a>
-      <a class="icon-social mail" href="mailto:iam@leonardogrinn.com"></a>
-    </div> <!-- ./portafolio-na-link -->
+</div>
+
+<div class="portafolio-ki-link">
+  <!-- portafolio-na-link -->
+  <a
+    class="icon-social whatsapp"
+    href="https://api.whatsapp.com/send?phone=5213329197057"
+    target="_blank"
+  ></a>
+  <a class="icon-social skype" href="skype:leosolutio?call"></a>
+  <a class="icon-social mail" href="mailto:iam@leonardogrinn.com"></a>
+</div>
+<!-- ./portafolio-na-link -->
