@@ -1325,6 +1325,33 @@
         /* align vertical */
         height: 100%;
 
+        /* iPad Pro */
+        @include respond(ipad-pro) {
+            overflow-y: auto;
+        }
+
+        &-content {
+
+            /* iPad Pro */
+            @include respond(ipad-pro) {
+                margin-top: 25rem;
+            }
+
+            /* iPad */
+            @include respond(ipad) {
+                margin-top: 35rem;
+            }
+
+            /* iPhone Plus */
+            @include respond(iphone-plus) {
+                margin-top: 40rem;
+            }
+
+            /* iPhone Plus */
+            @include respond(iphone) {
+                margin-top: 50rem;
+            }
+        }
 
 
         .title-vs {
@@ -1349,6 +1376,15 @@
                     font-size: 7rem;
                 }
             }
+
+            /* iPad */
+            @include respond(iphone-plus) {
+                font-size: 2.5rem;
+
+                &.active {
+                    font-size: 3.5rem;
+                }
+            }
         }
 
         .vs-acc {
@@ -1363,6 +1399,14 @@
 
             @include respond(large-desktop) {
                 margin-bottom: 0rem;
+            }
+
+            /* iPad Pro */
+            @include respond(ipad-pro) {
+                min-width: 100vw;
+                padding-left: 5vw;
+                padding-right: 5vw;  
+                margin-left: 0;
             }
         }
 
@@ -1379,6 +1423,11 @@
                 /* Large Desktop */
                 @include respond(large-desktop) {
                     padding-top: 0;
+                }
+                
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    width: 90vw;
                 }
             }
 
@@ -1404,6 +1453,16 @@
                     }  
                     
                     margin-bottom: 2rem;
+                }
+
+                /* iPad Pro */
+                @include respond(ipad-pro) {
+                    max-width: 90vw;
+                }
+
+                /* iPhone Plus */
+                @include respond(iphone-plus) {
+                    margin-top: -5rem;
                 }
             }
         }
@@ -1431,6 +1490,11 @@
             @include respond(large-desktop) {
                 font-size: 1.5rem;
             }
+
+            /* iPhone Plus */
+            @include respond(iphone-plus) {
+                font-size: 1.2em;
+            }
         }
 
         .accordion-cover {
@@ -1452,6 +1516,41 @@
                 color: $color-tertiary;
                 @include titleLi;
                 color: $color-tertiary;
+            }
+
+            /* iPad Pro */
+            @include respond(ipad-pro) {
+                position: relative; 
+                
+                img {
+                    width: 100vw;
+                    padding-right: 15vw;
+                    padding-left: 5vw;
+                    padding-top: 10rem;
+                }
+
+                h3 {
+                    position: relative;
+                    height: 6rem;
+                    width: 90vw;
+
+                    transform: translate(0,-700%);
+                }
+            }
+
+            /* iPad */
+            @include respond(ipad) {
+                h3 {
+                    transform: translate(0,-550%);
+                }
+            }
+
+            /* iPhone Plus */
+            @include respond(iphone-plus) {
+                h3 {
+                    transform: translate(0,-300%);
+                    font-size: 2rem;
+                }
             }
         }
 
@@ -1475,6 +1574,11 @@
             &:hover {
                 background-color: $color-primary;
             }
+        }
+
+        /* iPhone Plus */
+        @include respond(iphone-plus) {
+            right: 57vw;
         }
     }
 }
