@@ -10795,7 +10795,7 @@ button {
     }
     */ }
       .services__li .tab-details p {
-        font-size: 2.5rem; }
+        font-size: 2rem; }
       @media only screen and (max-width: 90em) {
         .services__li .tab-details p {
           font-size: 1.6rem;
@@ -11786,7 +11786,7 @@ button {
     }
     */ }
       .services__na .tab-details .services-content p {
-        font-size: 2.2rem;
+        font-size: 2rem;
         color: #2d2c2f;
         line-height: 3rem;
         position: fixed;
@@ -13093,8 +13093,8 @@ button {
           .services__lm .tab-details .services-content .titleService-lm {
             display: none; } }
       .services__lm .tab-details .services-content p {
-        font-size: 2.2rem;
-        line-height: 3rem;
+        font-size: 2rem;
+        line-height: 2.8rem;
         position: fixed;
         left: 5vw;
         padding-right: 55vw;
@@ -14375,9 +14375,9 @@ button {
           .services__ki .tab-details .services-content .titleService-ki {
             display: none; } }
       .services__ki .tab-details .services-content p {
-        font-size: 2.2rem;
+        font-size: 2rem;
         color: #f5f4f0;
-        line-height: 3rem;
+        line-height: 2.7rem;
         position: fixed;
         right: 10vw;
         padding-left: 55vw;
@@ -15515,7 +15515,8 @@ button {
     }
     */ }
       .services__vs .tab-details p {
-        font-size: 2rem; }
+        font-size: 2rem;
+        line-height: 2.7rem; }
       @media only screen and (max-width: 90em) {
         .services__vs .tab-details {
           margin-bottom: 2rem; }
