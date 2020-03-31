@@ -1,0 +1,100 @@
+.writing {
+
+    &__li {
+        background-color: $color-tertiary;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        &-image {
+            display: flex;
+            justify-content: center; /* align horizontal */
+            align-items: center; /* align vertical */
+
+            a {
+                height: 100%;
+                width: 100%;
+                //padding: 10% 20% 0 20%;
+                padding-left: 3vw;
+
+                img {
+                    height: 100%;
+                    
+                }
+            }
+        }
+
+        &-content {
+            font-size: 2rem;
+            display: flex;
+            justify-content: center; /* align horizontal */
+            align-items: center; /* align vertical */
+
+            p {
+                padding-right: 5vw;
+            }
+        }
+
+        @include respond(ipad-pro) {
+            grid-template-columns: 1fr;
+
+            overflow-y: auto;
+
+            &-image {
+              
+                a {
+                    height: 100%;
+                    width: 100%;
+                    padding: 0;
+
+                    display: flex;
+                    justify-content: center; /* align horizontal */
+                    align-items: center; /* align vertical */
+                    img {
+                        height: auto;
+                        width: 60%;
+                        border: none;
+                        margin-top: 15rem;
+                        margin-bottom: 15rem;
+                    }
+                }
+            }
+    
+            &-content {
+                font-size: 2rem;
+                display: flex;
+                justify-content: center; /* align horizontal */
+                align-items: center; /* align vertical */
+    
+                p {
+                    padding-right: 5vw;
+                    padding-left: 5vw;
+                    margin-bottom: 10vw;
+                }
+            }
+        }
+
+        @include respond(ipad-pro) {
+            &-image {
+              
+                a {
+
+                    img {
+                        height: auto;
+                        width: 80%;
+                   
+                        margin-top: 5rem;
+                        margin-bottom: 5rem;
+                    }
+                }
+            }
+
+            &-content {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+

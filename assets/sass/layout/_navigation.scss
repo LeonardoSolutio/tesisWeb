@@ -3,7 +3,7 @@
 }
 
 .navigation {
-    z-index: 999;
+    z-index: 2999;
     //@include transitions;
 }
 
@@ -48,11 +48,11 @@ button {
         border: none;
         width: 5rem;
         height: 5rem;
-        left: 20vw;
+        left: 22vw;
         bottom: 8vh;
         transform: translateX(-5rem);
 
-        z-index: 999;
+        z-index: 6000;
 
         /* iPad Pro */
         @include respond(ipad-pro) {
@@ -345,10 +345,10 @@ button {
 /* Orientation-dependent styles for the content of the menu */
 
 .nav-vertical {
-    width: 21vw;
+    width: 22vw;
     height: 100%;
     top: 0;
-    z-index: 999;
+    z-index: 5999;
 
     /* Medium Desktop 1300 */ 
     @include respond(medium-desktop) {

@@ -1604,6 +1604,7 @@
         /* align vertical */
         height: 100%;
 
+        overflow-y: auto;
         /* iPad Pro */
         @include respond(ipad-pro) {
             overflow-y: auto;

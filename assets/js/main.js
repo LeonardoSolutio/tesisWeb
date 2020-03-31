@@ -7,7 +7,7 @@ Cookies.set("uiCurrentState");
 Cookies.set("quizState");
 
 /* Global Variables*/
-var uiState;
+let uiState = 3;
 let lineState;
 let lastQ;
 
@@ -121,33 +121,72 @@ function navigationController($scope, $window) {
     /* L O G I C A L   M A T H E M A T H I C A L */
     if (uiState == 3) {
       // Make visible the navigation
-      document.querySelector(".lm-case").style.display = "block";
+      // document.querySelector(".lm-case").style.display = "block";
 
-      let els = document.getElementsByClassName("step");
-      let steps = [];
-      Array.prototype.forEach.call(els, e => {
-        steps.push(e);
-        e.addEventListener("click", x => {
-          progress(x.target.id);
-        });
-      });
+      // let els = document.getElementsByClassName("step");
+      // let steps = [];
+      // Array.prototype.forEach.call(els, e => {
+      //   steps.push(e);
+      //   e.addEventListener("click", x => {
+      //     progress(x.target.id);
+      //   });
+      // });
 
-      function progress(stepNum) {
-        let p = stepNum * 32;
-        document.getElementsByClassName("percent")[0].style.width = `${p}%`;
-        steps.forEach(e => {
-          if (e.id === stepNum) {
-            e.classList.add("selected");
-            e.classList.remove("completed");
+      // function progress(stepNum) {
+      //   let p = stepNum * 32;
+      //   document.getElementsByClassName("percent")[0].style.width = `${p}%`;
+      //   steps.forEach(e => {
+      //     if (e.id === stepNum) {
+      //       e.classList.add("selected");
+      //       e.classList.remove("completed");
+      //     }
+      //     if (e.id < stepNum) {
+      //       e.classList.add("completed");
+      //     }
+      //     if (e.id > stepNum) {
+      //       e.classList.remove("selected", "completed");
+      //     }
+      //   });
+      // }
+
+
+       /* Locate DOM elements */
+        let menuRight = document.querySelector(".nav-s3"),
+          main = document.querySelector(".main"),
+          navContainer = document.querySelectorAll(".link"),
+          activeLink = 0,
+          body = document.body,
+          linkCliked = document.querySelectorAll(".link");
+        let showRight = document.querySelector(".nav-trigger3");
+
+        /**/
+
+        /* Show menu */
+        showRight.onclick = function() {
+          classie.toggle(this, "active");
+          classie.toggle(menuRight, "cbp-spmenu-open");
+          disableOther("showRight");
+          //activeMenu();
+        };
+
+        /* Hide menu when a link was clicked */
+
+        for (let i = 0; i < linkCliked.length; i++) {
+          linkCliked[i].addEventListener("click", () => {
+            classie.toggle(showRight, "active");
+            classie.remove(menuRight, "cbp-spmenu-open");
+            classie.toggle(showRight, "disabled");
+          });
+        }
+
+        /* Hide menu */
+        let disableOther = button => {
+          if (button !== "showRight") {
+            classie.toggle(showRight, "disabled");
           }
-          if (e.id < stepNum) {
-            e.classList.add("completed");
-          }
-          if (e.id > stepNum) {
-            e.classList.remove("selected", "completed");
-          }
-        });
-      }
+        };
+        //Make visible the navigation.
+        document.querySelector(".na-case").style.display = "block";
     }
 
     /* K I N E S T H E T I C */
@@ -197,7 +236,8 @@ function navigationController($scope, $window) {
 
     case 3:
       $scope.navigationType = function() {
-        return "navigationTypes/navigation-lm.html";
+        // return "navigationTypes/navigation-lm.html";
+        return "navigationTypes/navigation-na.html";
       };
       break;
 
@@ -369,7 +409,20 @@ myApp.config(function($routeProvider, $locationProvider) {
     .when("/services", {
       templateUrl: "vistas/services.html",
       controller: "servicesController"
+    })
+    .when("/writing", {
+      templateUrl: "vistas/writing.html",
+      controller: "writingController"
+    })
+    .when("/photography", {
+      templateUrl: "vistas/photography.html",
+      controller: "photographyController"
+    })
+    .when("/blog", {
+      templateUrl: "vistas/blog.html",
+      controller: "blogController"
     });
+
 
   $routeProvider
     .when("/ui-quiz", {
@@ -382,7 +435,7 @@ myApp.config(function($routeProvider, $locationProvider) {
     });
 
   /* Remember to uncomment */
-  //$locationProvider.html5Mode(true);
+  $locationProvider.html5Mode(true);
 });
 
 /* =====================================
@@ -653,6 +706,76 @@ myApp.controller("servicesController", function($scope) {
   if (uiState === 1) {
   }
 });
+
+/* ===========================================
+***** W R I T I N G  C O N T R O L L E R *****
+=========================================== */
+
+myApp.controller("writingController", function($scope) {
+  /* hide navigation bar */
+  navigationBar.classList.remove("nav-invisible");
+
+  /* Choose the current uiState */
+  switch (uiState) {
+    
+
+    case 3:
+      $scope.writingType = function() {
+        return "vistas/writingTypes/writing-li.html";
+      };
+      break;
+
+    default:
+      break;
+  }
+});
+
+/* ===================================================
+***** P H O T O G R A P H Y  C O N T R O L L E R *****
+=================================================== */
+
+myApp.controller("photographyController", function($scope) {
+  /* hide navigation bar */
+  navigationBar.classList.remove("nav-invisible");
+
+  /* Choose the current uiState */
+  switch (uiState) {
+    
+
+    case 3:
+      $scope.writingType = function() {
+        return "vistas/photographyTypes/photography-li.html";
+      };
+      break;
+
+    default:
+      break;
+  }
+});
+
+/* =====================================
+***** B L O G  C O N T R O L L E R *****
+===================================== */
+
+myApp.controller("blogController", function($scope) {
+  /* hide navigation bar */
+  navigationBar.classList.remove("nav-invisible");
+
+  /* Choose the current uiState */
+  switch (uiState) {
+    
+
+    case 3:
+      $scope.blogType = function() {
+        return "vistas/blogTypes/blog-li.html";
+      };
+      break;
+
+    default:
+      break;
+  }
+});
+
 
 myApp.controller("ctrl", function($scope) {});
 
