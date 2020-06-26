@@ -4468,6 +4468,83 @@ button {
       @media only screen and (max-width: 90em) {
         .about__links-ki .row-3 {
           margin-top: -0.8rem; } }
+  .about__logo {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    padding-bottom: 5rem;
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    .about__logo img {
+      width: 50%;
+      float: right; }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .about__logo {
+        padding-bottom: 20rem; }
+        .about__logo img {
+          width: 40%;
+          display: flex;
+          align-self: flex-end; } }
+    @media only screen and (max-width: 31.25em) and (hover: none) {
+      .about__logo {
+        padding-bottom: 5rem;
+        align-items: center;
+        justify-content: center;
+        width: 100vw !important; }
+        .about__logo img {
+          align-items: center;
+          justify-content: center;
+          width: 80%; } }
   .about__empty-lm {
     display: grid;
     grid-template-rows: repeat(2, 1fr);

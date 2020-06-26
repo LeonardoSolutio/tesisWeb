@@ -70,23 +70,23 @@
     <div class="navigation nav-invisible na-case" style="display: none;">
       <nav class="nav nav-vertical nav-right nav-s3" role="navigation" ng-init="linkactive=1">
         <ul class="nav-li-container">
-          <li class="link na-a" ng-class="{active:linkactive==1}">
+          <!-- <li class="link na-a" ng-class="{active:linkactive==1}">
             <a href="#/" ng-click="linkactive = 1"><span>•</span>Home</a>
+          </li> -->
+          <li class="link na-a" ng-class="{active:linkactive==1}">
+            <a href="#/"  ng-click="linkactive = 1"><span>•</span>About</a>
           </li>
           <li class="link na-a" ng-class="{active:linkactive==2}">
-            <a href="#/about"  ng-click="linkactive = 2"><span>•</span>About</a>
+            <a href="#/services" ng-click="linkactive = 2"><span>•</span>Services</a>
           </li>
           <li class="link na-a" ng-class="{active:linkactive==3}">
-            <a href="#/services" ng-click="linkactive = 3"><span>•</span>Services</a>
+            <a href="#/portafolio" ng-click="linkactive = 3"><span>•</span>Software</a>
           </li>
           <li class="link na-a" ng-class="{active:linkactive==4}">
-            <a href="#/portafolio" ng-click="linkactive = 4"><span>•</span>Software</a>
-          </li>
-          <!-- <li class="link na-a" ng-class="{active:linkactive==5}">
-            <a href="#/photography" ng-click="linkactive = 5"><span>•</span>Photography</a>
-          </li> -->
-          <li class="link na-a" ng-class="{active:linkactive==6}">
-            <a href="#/writing" ng-click="linkactive = 6"><span>•</span>Writing</a>
+            <a href="#/photography" ng-click="linkactive = 4"><span>•</span>Photography</a>
+          </li> 
+          <li class="link na-a" ng-class="{active:linkactive==5}">
+            <a href="#/writing" ng-click="linkactive = 5"><span>•</span>Writing</a>
           </li>
           <li class="link na-a" ng-class="{active:linkactive==7}">
             <a href="https://leonardogrinn.com/blog/" target="_self" ng-click="linkactive = 7"><span>•</span>Blog</a>

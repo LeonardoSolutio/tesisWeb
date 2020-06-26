@@ -394,11 +394,11 @@ function lastUIResult() {
 // Routes configuration.
 myApp.config(function($routeProvider, $locationProvider) {
   $routeProvider
+    // .when("/", {
+    //   templateUrl: "vistas/home.html",
+    //   controller: "mainController"
+    // })
     .when("/", {
-      templateUrl: "vistas/home.html",
-      controller: "mainController"
-    })
-    .when("/about", {
       templateUrl: "vistas/about.html",
       controller: "aboutController",
     })
@@ -434,8 +434,8 @@ myApp.config(function($routeProvider, $locationProvider) {
       redirectTo: "/"
     });
 
-  /* Remember to uncomment */
-  $locationProvider.html5Mode(true);
+  /* Remember to uncomment 
+  $locationProvider.html5Mode(true); */
 });
 
 /* =====================================
