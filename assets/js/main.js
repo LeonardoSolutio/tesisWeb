@@ -402,7 +402,7 @@ myApp.config(function($routeProvider, $locationProvider) {
       templateUrl: "vistas/about.html",
       controller: "aboutController",
     })
-    .when("/portafolio", {
+    .when("/portfolio", {
       templateUrl: "vistas/portafolio.html",
       controller: "portafolioController"
     })
@@ -721,7 +721,7 @@ myApp.controller("writingController", function($scope) {
 
     case 3:
       $scope.writingType = function() {
-        return "vistas/writingTypes/writing-li.html";
+        return "vistas/writingTypes/writing-lm.html";
       };
       break;
 
@@ -735,22 +735,23 @@ myApp.controller("writingController", function($scope) {
 =================================================== */
 
 myApp.controller("photographyController", function($scope) {
-  /* hide navigation bar */
-  navigationBar.classList.remove("nav-invisible");
+ /* hide navigation bar */
+ navigationBar.classList.remove("nav-invisible");
 
-  /* Choose the current uiState */
-  switch (uiState) {
-    
+ /* Choose the current uiState */
+ switch (uiState) {
+   
 
-    case 3:
-      $scope.writingType = function() {
-        return "vistas/photographyTypes/photography-li.html";
-      };
-      break;
+   case 3:
+     $scope.photographyType = function() {
+       return "vistas/photographyTypes/photography-lm.html";
+     };
+     break;
 
-    default:
-      break;
-  }
+   default:
+     break;
+ }
+ 
 });
 
 /* =====================================
