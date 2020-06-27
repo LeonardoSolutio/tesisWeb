@@ -15808,7 +15808,33 @@ button {
         -webkit-filter: none;
         filter: none; }
   .photography__row-one {
-    grid-template-columns: 3fr 1.5fr; }
+    grid-template-columns: 3fr 1.5fr;
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
     .photography__row-one-a {
       display: grid;
       grid-template-rows: repeat(2, 1fr);
@@ -15819,14 +15845,117 @@ button {
         .photography__row-one-a-1 img, .photography__row-one-a-2 img, .photography__row-one-a-3 img, .photography__row-one-a-4 img {
           height: 100%;
           width: auto; }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .photography__row-one {
+        grid-template-columns: 1fr;
+        row-gap: 1rem; }
+        .photography__row-one-a {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(4, 1fr); }
+          .photography__row-one-a-1, .photography__row-one-a-2, .photography__row-one-a-3, .photography__row-one-a-4 {
+            overflow: hidden; }
+            .photography__row-one-a-1 img, .photography__row-one-a-2 img, .photography__row-one-a-3 img, .photography__row-one-a-4 img {
+              height: auto;
+              width: 100%; }
+        .photography__row-one-b {
+          overflow: hidden; } }
   .photography__row-two {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .photography__row-two {
+        grid-template-columns: 1fr; } }
   .photography__row-three {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
     .photography__row-three-3 {
       width: 60% !important; }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .photography__row-three {
+        grid-template-columns: 1fr; }
+        .photography__row-three-3 {
+          width: 100% !important; } }
   .photography__row-four {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    /*
+
+    @if $breakpoint == iphone-x {
+        @media only screen and (max-width: 24em) and (min-height: 50em) {@content}; //600px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+
+    @if $breakpoint == md-desktop {
+        @media only screen and (max-width: 85.3em) { @content };    //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+    */ }
+    @media only screen and (max-width: 64em), (min-height: 85.375em) and (hover: none) {
+      .photography__row-four {
+        grid-template-columns: 1fr; } }
   .photography__container {
     position: fixed;
     display: none;
