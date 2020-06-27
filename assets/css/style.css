@@ -1652,7 +1652,7 @@ body {
 /* Nav button */
 button {
   color: #f5f4f0;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 100;
   /* Transitions */
   -webkit-transition: all 0.3s ease;
@@ -2017,7 +2017,7 @@ button {
       opacity: 0; }
     .nav li a {
       color: #fff;
-      font-size: 2em;
+      font-size: 1.7em;
       font-weight: 300;
       text-decoration: none;
       text-transform: uppercase;
